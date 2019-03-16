@@ -21,9 +21,11 @@
     "react": "16.8.4",
     "react-native": "0.59.1",
     "react-native-classnames": "0.1.1",
+    "react-native-languages": "3.0.2",
     "react-native-permissions": "2.0.0-alpha.1",
     "react-native-typescript-transformer": "1.2.12",
-    "react-navigation": "3.4.0"
+    "react-navigation": "3.4.0",
+    "reactotron-react-native": "3.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
