@@ -2,9 +2,6 @@ import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 
 export default class Friends extends React.Component {
-  componentDidMount() {
-    alert('friends')
-  }
   render() {
     const { navigation } = this.props
 
@@ -24,10 +21,8 @@ export default class Friends extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
+    backgroundColor: '#fff',
     justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: 'blue',
   },
 })

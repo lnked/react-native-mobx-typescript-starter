@@ -1,14 +1,14 @@
 import { StyleSheet } from 'react-native'
-import Colors from './Colors'
+import { Colors } from './'
 
 export const CommonStyles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 24
+    paddingHorizontal: 24,
   },
 
   containerPadding: {
-    paddingHorizontal: 24
+    paddingHorizontal: 24,
   },
 
   compensateFooter: {
@@ -17,52 +17,52 @@ export const CommonStyles = StyleSheet.create({
 
   centralize: {
     justifyContent: 'center',
-    alignContent: 'center'
+    alignContent: 'center',
   },
 
   flex: {
-    flex: 1
+    flex: 1,
   },
 
   smallText: {
     fontSize: 14,
-    color: Colors.grayDark
+    color: Colors.black,
   },
 
   text: {
     fontSize: 14,
-    color: Colors.grayDark
+    color: Colors.black,
   },
 
   bigTextBold: {
     fontSize: 16,
-    color: Colors.grayDark,
-    fontWeight: 'bold'
+    color: Colors.black,
+    fontWeight: 'bold',
   },
 
   strikethroughText: {
     textDecorationLine: 'line-through',
-    textDecorationStyle: 'solid'
+    textDecorationStyle: 'solid',
   },
 
   marginBottom: {
-    marginBottom: 10
+    marginBottom: 10,
   },
 
   marginTop: {
-    marginTop: 10
+    marginTop: 10,
   },
 
   backgroundImg: {
     flex: 1,
-    width: '100%'
+    width: '100%',
   },
 
   democratic: {
-    backgroundColor: Colors.ceruleanBlue
+    backgroundColor: Colors.black,
   },
 
   republican: {
-    backgroundColor: Colors.radicalRed
-  }
+    backgroundColor: Colors.black,
+  },
 })

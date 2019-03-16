@@ -2,7 +2,7 @@ export const type = {
   base: 'IBMPlexSans',
   medium: 'IBMPlexSans-Medium',
   semiBold: 'IBMPlexSans-SemiBold',
-  italic: 'IBMPlexSans-Italic'
+  italic: 'IBMPlexSans-Italic',
 }
 
 export const size = {
@@ -13,96 +13,96 @@ export const size = {
   extraBig: 20,
   medium: 18,
   large: 24,
-  extraLarge: 32
+  extraLarge: 32,
 }
 
 export const Fonts = {
   tiny: {
     fontFamily: type.base,
-    fontSize: size.tiny
+    fontSize: size.tiny,
   },
   tinySemiBold: {
     fontFamily: type.semiBold,
-    fontSize: size.tiny
+    fontSize: size.tiny,
   },
   tinyMedium: {
     fontFamily: type.medium,
-    fontSize: size.tiny
+    fontSize: size.tiny,
   },
   small: {
     fontFamily: type.base,
-    fontSize: size.small
+    fontSize: size.small,
   },
   smallSemiBold: {
     fontFamily: type.semiBold,
-    fontSize: size.small
+    fontSize: size.small,
   },
   smallMedium: {
     fontFamily: type.medium,
-    fontSize: size.small
+    fontSize: size.small,
   },
   normal: {
     fontFamily: type.base,
-    fontSize: size.normal
+    fontSize: size.normal,
   },
   normalSemiBold: {
     fontFamily: type.semiBold,
-    fontSize: size.normal
+    fontSize: size.normal,
   },
   normalMedium: {
     fontFamily: type.medium,
-    fontSize: size.normal
+    fontSize: size.normal,
   },
   big: {
     fontFamily: type.base,
-    fontSize: size.big
+    fontSize: size.big,
   },
   bigSemiBold: {
     fontFamily: type.semiBold,
-    fontSize: size.big
+    fontSize: size.big,
   },
   bigMedium: {
     fontFamily: type.medium,
-    fontSize: size.big
+    fontSize: size.big,
   },
   extraBigMedium: {
     fontFamily: type.medium,
-    fontSize: size.extraBig
+    fontSize: size.extraBig,
   },
   medium: {
     fontFamily: type.base,
-    fontSize: size.medium
+    fontSize: size.medium,
   },
   mediumMedium: {
     fontFamily: type.medium,
-    fontSize: size.medium
+    fontSize: size.medium,
   },
   large: {
     fontFamily: type.base,
-    fontSize: size.large
+    fontSize: size.large,
   },
   largeSemiBold: {
     fontFamily: type.semiBold,
-    fontSize: size.large
+    fontSize: size.large,
   },
   largeMedium: {
     fontFamily: type.medium,
-    fontSize: size.large
+    fontSize: size.large,
   },
   extraLarge: {
     fontFamily: type.base,
-    fontSize: size.extraLarge
+    fontSize: size.extraLarge,
   },
   extraLargeSemiBold: {
     fontFamily: type.semiBold,
-    fontSize: size.extraLarge
+    fontSize: size.extraLarge,
   },
   extraLargeMedium: {
     fontFamily: type.medium,
-    fontSize: size.extraLarge
+    fontSize: size.extraLarge,
   },
   bigItalic: {
     fontFamily: type.italic,
-    fontSize: size.big
-  }
+    fontSize: size.big,
+  },
 }
