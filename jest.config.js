@@ -8,11 +8,13 @@ module.exports = {
   },
   testRegex: [
     '(/src/.*\\.(test|spec))\\.(jsx?|tsx?)$',
-    '(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$',
+    '(/__tests__/.*|\\.(test|spec))\\.(jsx?|tsx?)$',
+    '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
   ],
   testPathIgnorePatterns: [
     '\\.snap$',
     '<rootDir>/node_modules/'
   ],
+  modulePaths: ['<rootDir>'],
   cacheDirectory: '.jest/cache',
 }

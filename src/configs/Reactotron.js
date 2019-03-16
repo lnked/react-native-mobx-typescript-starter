@@ -3,11 +3,18 @@ import Reactotron from 'reactotron-react-native'
 
 import { name } from './app.json'
 
-if (__DEV__) {
-  const { scriptURL } = NativeModules.SourceCode
-  const scriptHostname = scriptURL.split('://')[1].split(':')[0]
+export const init = (enabled) => {
+  if (!enabled) {
+    return false
+  }
 
-  Reactotron.configure({ name, host: scriptHostname })
+  const { scriptURL } = NativeModules.SourceCode
+  const host = scriptURL.split('://')[1].split(':')[0]
+
+  Reactotron.configure({
+    name,
+    host,
+  })
     .useReactNative()
     .connect()
 

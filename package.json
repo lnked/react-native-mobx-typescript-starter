@@ -14,7 +14,15 @@
     "release:ios": "react-native run-ios --configuration Release",
     "build:ios": "react-native bundle --dev false --entry-file index.js --bundle-output ios/main.jsbundle --platform ios",
     "lint": "tslint -p . -t stylish",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "1 start": "node node_modules/react-native/local-cli/cli.js start",
+    "1 test": "jest",
+    "1 ios": "react-native run-ios",
+    "1 android": "react-native run-android",
+    "1 build:android": "cd android && ./gradlew assembleRelease",
+    "1 tsc": "tsc -b",
+    "1 xcode": "open ios/breathe.xcodeproj",
+    "1 studio": "open -a /Applications/Android\\ Studio.app ./android/"
   },
   "dependencies": {
     "apisauce": "1.0.2",
@@ -22,6 +30,7 @@
     "react": "16.8.4",
     "react-native": "0.59.1",
     "react-native-classnames": "0.1.1",
+    "react-native-gesture-handler": "1.1.0",
     "react-native-languages": "3.0.2",
     "react-native-permissions": "2.0.0-alpha.1",
     "react-native-typescript-transformer": "1.2.12",
