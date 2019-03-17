@@ -5292,6 +5292,11 @@ react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
   dependencies:
     prop-types "^15.6.1"
 
+react-native-tab-view@^2.0.1:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-2.0.3.tgz#0160e2d94e69c722fcefa8649ffe13fec9177a0d"
+  integrity sha512-/rv+ESxtLFIWucIlq5VhDcZsCxThovE5FWpYngTNxLQgWzI/lem48h6FiYIMU+R6/fXOHmzSIuJtuCxNX+62fw==
+
 react-native-typescript-transformer@1.2.12:
   version "1.2.12"
   resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.12.tgz#ec234d31446d1aee213a2d5fb7e7584beff5dba3"
@@ -5381,6 +5386,15 @@ react-navigation-tabs@1.0.2:
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
     react-native-tab-view "^1.0.0"
+
+react-navigation-tabs@2.0.0-alpha.0:
+  version "2.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-2.0.0-alpha.0.tgz#4efbc1413c693be1493514744b538b3c82ee7136"
+  integrity sha512-ck/FLuPHudW1zG7HaCAy1uLlodLg67BjJQjozC3Ay2b9Rn1yOsD9yYcziq+gC4blocHovpEi9pqqb1vNBYhkDQ==
+  dependencies:
+    hoist-non-react-statics "^2.5.0"
+    react-lifecycles-compat "^3.0.4"
+    react-native-tab-view "^2.0.1"
 
 react-navigation@3.4.1:
   version "3.4.1"

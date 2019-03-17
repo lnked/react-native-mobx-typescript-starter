@@ -6,6 +6,9 @@ import {
   View,
 } from 'react-native'
 
+interface Props {}
+interface State {}
+
 export default class Friends extends React.Component<any, any> {
   render() {
     const { navigation } = this.props

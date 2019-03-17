@@ -16,6 +16,9 @@ const instructions = Platform.select({
     Shake or press menu button for dev menu`,
 })
 
+interface Props {}
+interface State {}
+
 export default class Home extends React.Component<any, any> {
   render() {
     const { navigation } = this.props
