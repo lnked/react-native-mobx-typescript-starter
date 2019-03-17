@@ -1,22 +1,37 @@
 import React from 'react'
 import {
   Button,
-  StyleSheet,
   Text,
   View,
 } from 'react-native'
 
-interface Props {}
+import LogoTitle from '@/components/logo'
+
+import { styles } from './styles'
+
+interface Props {
+  navigation: any;
+}
+
 interface State {}
 
-export default class Friends extends React.Component<any, any> {
+export default class FriendsScreen extends React.Component<Props, State> {
+  static navigationOptions = ({ navigation }: any) => {
+    return {
+      headerTitle: <LogoTitle />,
+      headerStyle: {
+        backgroundColor: '#f4511e',
+      },
+      title: navigation.getParam('otherParam', 'A Nested Friends Screen'),
+    }
+  }
+
   render() {
-    const { navigation, ...props } = this.props
+    const { navigation } = this.props
 
     return (
       <View style={styles.container}>
         <Text>Add friends here!</Text>
-        <Text>props: {JSON.stringify(props)}</Text>
 
         <Button
           title='Back to home'
@@ -26,12 +41,3 @@ export default class Friends extends React.Component<any, any> {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fcfcf0',
-  },
-})

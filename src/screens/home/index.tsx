@@ -2,12 +2,13 @@ import React from 'react'
 import {
   Button,
   Platform,
-  StyleSheet,
   Text,
   View,
 } from 'react-native'
 
 import i18n from '@/i18n'
+
+import { styles } from './styles'
 
 const instructions = Platform.select({
   ios: `Press Cmd+R to reload, Cmd+D or shake for dev menu`,
@@ -19,7 +20,18 @@ const instructions = Platform.select({
 interface Props {}
 interface State {}
 
-export default class Home extends React.Component<any, any> {
+export default class HomeScreen extends React.Component<any, any> {
+  static navigationOptions = {
+    title: 'Home',
+    headerStyle: {
+      backgroundColor: '#f4511e',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  }
+
   render() {
     const { navigation, ...props } = this.props
 
@@ -40,22 +52,3 @@ export default class Home extends React.Component<any, any> {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#ddd',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-})

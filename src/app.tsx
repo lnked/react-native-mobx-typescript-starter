@@ -29,7 +29,7 @@ export class App extends Component<Props, State> {
   initDeepLinks = () => {
     Linking.addEventListener('url', this.handleOpenURL)
 
-    Linking.getInitialURL().then(url => {
+    Linking.getInitialURL().then((url: string) => {
       if (url) {
         handleDeepLinkUrl(url)
       }
@@ -43,7 +43,7 @@ export class App extends Component<Props, State> {
   }
 
   handleNavigationChange = (props: any) => {
-    console.tron.log('handleNavigationChange: ', props)
+    console.log('handleNavigationChange: ', props)
   }
 
   setAppNavigator = (ref: any) => {
@@ -56,15 +56,10 @@ export class App extends Component<Props, State> {
         <StatusBar barStyle='dark-content' />
 
         <AppContainer
+          ref={this.setAppNavigator}
           uriPrefix={uriPrefix}
           onNavigationStateChange={this.handleNavigationChange}
         />
-
-        {/*
-        <AppContainer
-          ref={this.setAppNavigator}
-          uriPrefix={uriPrefix}
-        /> */}
       </View>
     )
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Image, Text } from 'react-native'
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
 import {
   createAppContainer,
@@ -24,6 +24,15 @@ const AppNavigator = createStackNavigator({
     headerTintColor: '#f00',
     headerStyle: {
       backgroundColor: '#0f0',
+    },
+  },
+  defaultNavigationOptions: {
+    headerStyle: {
+      backgroundColor: '#f4511e',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
     },
   },
 })

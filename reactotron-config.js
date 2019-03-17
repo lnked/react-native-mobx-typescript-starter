@@ -11,15 +11,22 @@ export const init = (enabled) => {
   const { scriptURL } = NativeModules.SourceCode
   const host = scriptURL.split('://')[1].split(':')[0]
 
-  Reactotron.configure({
-    name,
-    host,
-  })
+  Reactotron.configure({ name, host })
     .useReactNative()
     .connect()
 
   // Clear Reactotron on every time we load the app
   Reactotron.clear()
 
-  console.tron = Reactotron
+  const nativeLog = console.log
+
+  console.log  = (...args) => {
+    nativeLog(...args)
+
+    Reactotron.display({
+      name: 'CONSOLE.LOG',
+      value: args,
+      preview: args.length > 1 ? JSON.stringify(args) : args[0],
+    })
+  }
 }
