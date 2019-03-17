@@ -7,7 +7,7 @@ import {
   View,
 } from 'react-native'
 
-import { AppContainer } from '@/navigation/AppContainer'
+// import { AppContainer } from '@/navigation/AppContainer'
 import { CommonStyles } from '@/resources/styles'
 
 interface Props {}
@@ -53,10 +53,10 @@ export class App extends Component<Props, State> {
     return (
       <View style={CommonStyles.flex}>
         <StatusBar barStyle='dark-content' />
-        <AppContainer
-          uriPrefix={uriPrefix}
-        />
 
+        <View style={[CommonStyles.flex, CommonStyles.centralize]}>
+          <Text>React App</Text>
+        </View>
         {/*
         <AppContainer
           ref={this.setAppNavigator}
