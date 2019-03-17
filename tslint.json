@@ -30,8 +30,8 @@
       }
     ],
     "no-empty": false,
-    "no-submodule-imports": false,
-    "no-implicit-dependencies": false,
+    "no-submodule-imports": [true, "@/*"],
+    "no-implicit-dependencies": [true, ["@/*"]],
     "no-constant-condition": false,
     "triple-equals": [
       true,
@@ -48,6 +48,8 @@
     "jsx-alignment": true,
     "jsx-no-bind": true,
     "jsx-no-lambda": false,
-    "max-classes-per-file": false
+    "no-unused-variable": [true, {"ignore-pattern": "^_"}],
+    "max-classes-per-file": false,
+    "no-import-side-effect": [true, { "ignore-module": "(jest-emotion|\\.html|\\.css|\\.test.tsx?)$" }],
   }
 }

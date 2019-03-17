@@ -1,7 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import {
+  Button,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native'
 
-export default class Friends extends React.Component {
+export default class Friends extends React.Component<any, any> {
   render() {
     const { navigation } = this.props
 

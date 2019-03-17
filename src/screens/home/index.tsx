@@ -1,5 +1,11 @@
 import React from 'react'
-import { Button, Platform, StyleSheet, Text, View } from 'react-native'
+import {
+  Button,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native'
 
 import i18n from '@/i18n'
 
@@ -10,7 +16,7 @@ const instructions = Platform.select({
     Shake or press menu button for dev menu`,
 })
 
-export default class Home extends React.Component {
+export default class Home extends React.Component<any, any> {
   render() {
     const { navigation } = this.props
 

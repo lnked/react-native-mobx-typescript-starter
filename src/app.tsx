@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
-import { Linking, Platform, StatusBar, Text, View } from 'react-native'
+import {
+  Linking,
+  Platform,
+  StatusBar,
+  Text,
+  View,
+} from 'react-native'
 
-import AppContainer from '@/navigation/AppContainer'
+import { AppContainer } from '@/navigation/AppContainer'
 import { CommonStyles } from '@/resources/styles'
 
 interface Props {}
@@ -9,13 +15,13 @@ interface State {}
 
 const uriPrefix = Platform.OS === 'android' ? 'app://app/' : 'app://'
 
-const handleDeepLinkUrl = (url: string) => alert(url)
+// const handleDeepLinkUrl = (url: string) => alert(url)
 
 export class App extends Component<Props, State> {
-  constructor(props: any) {
-    super(props)
-    this.initDeepLinks()
-  }
+  // constructor(props: any) {
+  //   super(props)
+  //   this.initDeepLinks()
+  // }
 
   navigation = null
 
@@ -23,36 +29,40 @@ export class App extends Component<Props, State> {
     console.tron.log('handleNavigationChange: ', props)
   }
 
-  initDeepLinks = () => {
-    Linking.addEventListener('url', this.handleOpenURL)
+  // initDeepLinks = () => {
+  //   Linking.addEventListener('url', this.handleOpenURL)
 
-    Linking.getInitialURL().then(url => {
-      if (url) {
-        handleDeepLinkUrl(url)
-      }
-    })
-  }
+  //   Linking.getInitialURL().then(url => {
+  //     if (url) {
+  //       handleDeepLinkUrl(url)
+  //     }
+  //   })
+  // }
 
-  handleOpenURL = (event: any) => {
-    if (event && event.url) {
-      handleDeepLinkUrl(event.url)
-    }
-  }
+  // handleOpenURL = (event: any) => {
+  //   if (event && event.url) {
+  //     handleDeepLinkUrl(event.url)
+  //   }
+  // }
 
-  setAppNavigator = (ref: any) => {
-    this.navigation = ref
-  }
+  // setAppNavigator = (ref: any) => {
+  //   this.navigation = ref
+  // }
 
   render() {
     return (
       <View style={CommonStyles.flex}>
         <StatusBar barStyle='dark-content' />
-
         <AppContainer
-          ref={this.setAppNavigator}
-          onNavigationStateChange={this.handleNavigationChange}
           uriPrefix={uriPrefix}
         />
+
+        {/*
+        <AppContainer
+          ref={this.setAppNavigator}
+          uriPrefix={uriPrefix}
+          onNavigationStateChange={this.handleNavigationChange}
+        /> */}
       </View>
     )
   }

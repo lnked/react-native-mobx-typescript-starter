@@ -1,16 +1,15 @@
-import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
-import { createStackNavigator, createAppContainer } from 'react-navigation'
-// import { createSwitchNavigator, createAppContainer } from 'react-navigation'
+// import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
+import {
+  createAppContainer,
+  createStackNavigator,
+  // createSwitchNavigator,
+} from 'react-navigation'
 
+/* Screens */
 import Friends from '@/screens/friends'
 import Home from '@/screens/home'
 
-// /* Stacks */
-// import AppStack from '@/navigator/stacks/AppStack'
-// import AuthStack from '@/navigator/stacks/AuthStack'
-// import OutdatedStack from '@/navigator/stacks/OutdatedStack'
-
-const AppNavigator = createStackNavigator({
+const Navigator = createStackNavigator({
   Home: {
     screen: Home,
   },
@@ -28,24 +27,6 @@ const AppNavigator = createStackNavigator({
       backgroundColor: '#0f0',
     },
   },
-
-  // defaultNavigationOptions: {
-  //   headerTintColor: '#fff',
-  //   headerStyle: {
-  //     backgroundColor: '#000',
-  //   },
-  // },
-  // navigationOptions: {
-  //   header: null,
-  //   tabBarLabel: 'Home!',
-  // },
-  // initialRouteName: 'Home',
-  // defaultNavigationOptions: {
-  //   headerTintColor: '#fff',
-  //   headerStyle: {
-  //     backgroundColor: '#000',
-  //   },
-  // },
 })
 
-export default createAppContainer(AppNavigator)
+export const AppContainer = createAppContainer(Navigator)
