@@ -1,55 +1,57 @@
 {
+  "project": "./tsconfig.json",
+  "defaultSeverity": "warning",
   "extends": [
-    "tslint-react-recommended"
+    "tslint:latest",
+    "tslint-react-recommended",
   ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*",
+      "**/__test__/**"
+    ]
+  },
   "rules": {
-    "ordered-imports": [
-      true
-    ],
-    "quotemark": [
-      true,
-      "single",
-      "jsx-single",
-      "avoid-escape"
-    ],
-    "semicolon": [
-      true,
-      "never"
-    ],
-    "member-access": [
-      false
-    ],
-    "member-ordering": [
-      false
-    ],
-    "trailing-comma": [
-      true,
-      {
-        "singleline": "never",
-        "multiline": "always"
-      }
-    ],
+    "eofline": true,
     "no-empty": false,
-    "no-submodule-imports": [true, "@/*"],
-    "no-implicit-dependencies": [true, ["@/*"]],
-    "no-constant-condition": false,
-    "triple-equals": [
-      true,
-      "allow-undefined-check"
-    ],
-    "ter-indent": [
-      true,
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
+    "export-name": false,
+    "import-name": false,
+    "no-console": false,
+    "no-default-export": false,
     "no-duplicate-imports": false,
+    "member-access": [true, "no-public"],
+    "member-ordering":false,
+    "ordered-imports": true,
+    "no-boolean-literal-compare": true,
+    "object-literal-sort-keys":false,
     "jsx-alignment": true,
     "jsx-no-bind": true,
     "jsx-no-lambda": false,
+    "jsx-wrap-multiline": false,
+    "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
+    "interface-name": [true, "never-prefix"],
+    "quotemark": [true, "single", "jsx-single", "avoid-escape"],
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "semicolon": [true, "never", "ignore-interfaces"],
+    "no-floating-promises": [false],
+    "no-shadowed-variable": false,
+    "no-submodule-imports": [true, "@/*"],
+    "no-implicit-dependencies": [true, ["@/*"]],
+    "no-constant-condition": false,
+    "trailing-comma": [true, {
+      "singleline": "never",
+      "multiline": "always"
+    }],
+    "typedef": [true, "parameter", "property-declaration"],
+    "triple-equals": [true, "allow-undefined-check"],
+    "ter-indent": [true, 2, {
+      "SwitchCase": 1
+    }],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
     "no-unused-variable": [true, {"ignore-pattern": "^_"}],
     "max-classes-per-file": false,
     "no-import-side-effect": [true, { "ignore-module": "(jest-emotion|\\.html|\\.css|\\.test.tsx?)$" }],
-  }
+  },
+  "exclude": ["node_modules"]
 }
