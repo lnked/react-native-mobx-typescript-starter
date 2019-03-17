@@ -11,11 +11,12 @@ interface State {}
 
 export default class Friends extends React.Component<any, any> {
   render() {
-    const { navigation } = this.props
+    const { navigation, ...props } = this.props
 
     return (
       <View style={styles.container}>
         <Text>Add friends here!</Text>
+        <Text>props: {JSON.stringify(props)}</Text>
 
         <Button
           title='Back to home'
