@@ -1,0 +1,63 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'app' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # RN pods
+  # ================================
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTBlob',
+    'RCTCameraRoll',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTLinkingIOS',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    'CxxBridge',
+  ]
+
+  # Third party deps podspec link
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  # ================================
+
+  # Pods for app
+  # ================================
+  # pod 'RNFS', :path => '../node_modules/react-native-fs'
+
+  # pod 'Firebase/Core'
+  # pod 'Firebase/Database'
+  # pod 'Firebase/Performance'
+  # pod 'Firebase/RemoteConfig'
+  # pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+  # pod 'react-native-image-resizer', :path => '../node_modules/react-native-image-resizer'
+  # pod 'RNSound', :path => '../node_modules/react-native-sound'
+  # pod 'SentryReactNative', :path => '../node_modules/react-native-sentry'
+  # pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
+  # ================================
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+end
+
+install! 'cocoapods', :deterministic_uuids => false, :integrate_targets => false
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == "React"
+      target.remove_from_project
+    end
+  end
+end

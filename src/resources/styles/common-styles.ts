@@ -18,6 +18,7 @@ export const CommonStyles = StyleSheet.create({
   centralize: {
     justifyContent: 'center',
     alignContent: 'center',
+    alignItems: 'center',
   },
 
   flex: {

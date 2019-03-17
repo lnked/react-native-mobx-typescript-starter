@@ -21,11 +21,12 @@ interface State {}
 
 export default class Home extends React.Component<any, any> {
   render() {
-    const { navigation } = this.props
+    const { navigation, ...props } = this.props
 
     return (
       <View style={styles.container}>
         <Text>Home screen</Text>
+        <Text>props: {JSON.stringify(props)}</Text>
         <Text style={styles.welcome}>React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
         <Text style={styles.instructions}>{instructions}</Text>
