@@ -6,6 +6,10 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - React (0.59.1):
+    - React/Core (= 0.59.1)
+  - react-native-splash-screen (3.2.0):
+    - React
   - React/Core (0.59.1):
     - yoga (= 0.59.1.React)
   - React/CxxBridge (0.59.1):
@@ -75,6 +79,7 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -107,6 +112,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-splash-screen:
+    :path: "../node_modules/react-native-splash-screen"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
   yoga:
@@ -118,9 +125,10 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 34a405ead72252839fdc4afc1f972a7ed984af84
+  react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
   yoga: 8fb47f180b19b0dadb285a09e4c74c8a41721d3a
 
-PODFILE CHECKSUM: c698208a86356f2d8af5731f24b3c981263c654a
+PODFILE CHECKSUM: 81ada785005804a0a0ed818784d4d0cc2d661361
 
 COCOAPODS: 1.6.1

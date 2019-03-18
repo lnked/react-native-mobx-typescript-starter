@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import SplashScreen from 'react-native-splash-screen'
 import {
   Linking,
   Platform,
@@ -22,21 +23,16 @@ const uriPrefix = Platform.OS === 'android' ? 'app://app/' : 'app://'
 const handleDeepLinkUrl = (url: string) => alert(url)
 
 export class App extends Component<Props, State> {
-  constructor(props: any) {
-    super(props)
-    this.initDeepLinks()
-  }
-
   navigation = null
+
+  componentDidMount() {
+    this.initDeepLinks()
+    // SplashScreen.hide()
+  }
 
   initDeepLinks = () => {
     Linking.addEventListener('url', this.handleOpenURL)
-
-    Linking.getInitialURL().then((url: string) => {
-      if (url) {
-        handleDeepLinkUrl(url)
-      }
-    })
+    Linking.getInitialURL().then(url => url && handleDeepLinkUrl(url))
   }
 
   handleOpenURL = (event: any) => {
