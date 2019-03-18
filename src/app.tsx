@@ -27,7 +27,7 @@ export class App extends Component<Props, State> {
 
   componentDidMount() {
     this.initDeepLinks()
-    // SplashScreen.hide()
+    SplashScreen.hide()
   }
 
   initDeepLinks = () => {
