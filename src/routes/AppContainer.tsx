@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Image, Text } from 'react-native'
-import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
+// import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
 import {
   createAppContainer,
   createStackNavigator,
@@ -13,10 +13,10 @@ import HomeScreen from '@/screens/home'
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: gestureHandlerRootHOC(HomeScreen),
+    screen: HomeScreen,
   },
   Friends: {
-    screen: gestureHandlerRootHOC(FriendsScreen),
+    screen: FriendsScreen,
   },
 }, {
   initialRouteName: 'Home',

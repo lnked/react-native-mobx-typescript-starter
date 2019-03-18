@@ -11,6 +11,9 @@ import i18n from '@/i18n'
 import { AppContainer } from '@/routes/AppContainer'
 import { CommonStyles } from '@/resources/styles'
 
+import FriendsScreen from '@/screens/friends'
+import HomeScreen from '@/screens/home'
+
 interface Props {}
 interface State {}
 

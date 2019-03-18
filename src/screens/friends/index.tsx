@@ -15,8 +15,8 @@ interface Props {
 
 interface State {}
 
-export default class FriendsScreen extends React.Component<Props, State> {
-  static navigationOptions = ({ navigation }: any) => {
+class FriendsScreen extends React.Component<Props, State> {
+  static navigationOptions = ({ navigation }: Props) => {
     return {
       headerTitle: <LogoTitle />,
       headerStyle: {
@@ -55,3 +55,5 @@ export default class FriendsScreen extends React.Component<Props, State> {
     )
   }
 }
+
+export default FriendsScreen

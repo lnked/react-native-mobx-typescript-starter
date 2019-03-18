@@ -17,10 +17,13 @@ const instructions = Platform.select({
     Shake or press menu button for dev menu`,
 })
 
-interface Props {}
+interface Props {
+  navigation: any;
+}
+
 interface State {}
 
-export default class HomeScreen extends React.Component<any, any> {
+class HomeScreen extends React.Component<Props, State> {
   static navigationOptions = {
     title: 'Home',
     headerStyle: {
@@ -33,12 +36,11 @@ export default class HomeScreen extends React.Component<any, any> {
   }
 
   render() {
-    const { navigation, ...props } = this.props
+    const { navigation } = this.props
 
     return (
       <View style={styles.container}>
         <Text>Home screen</Text>
-        <Text>props: {JSON.stringify(props)}</Text>
         <Text style={styles.welcome}>React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
         <Text style={styles.instructions}>{instructions}</Text>
@@ -52,3 +54,5 @@ export default class HomeScreen extends React.Component<any, any> {
     )
   }
 }
+
+export default HomeScreen
