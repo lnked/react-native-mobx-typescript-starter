@@ -22,6 +22,20 @@ export default class FriendsScreen extends React.Component<Props, State> {
       headerStyle: {
         backgroundColor: '#f4511e',
       },
+      headerRight: (
+        <Button
+          onPress={() => alert('This is a button!')}
+          title="Info"
+          color="#fff"
+        />
+      ),
+      // headerRight: (
+      //   <Button
+      //     onPress={navigation.getParam('increaseCount')}
+      //     title="+1"
+      //     color="#fff"
+      //   />
+      // ),
       title: navigation.getParam('otherParam', 'A Nested Friends Screen'),
     }
   }
