@@ -42,6 +42,7 @@
 		82263AAC0BC246369C0A9D20 /* libRNLanguages-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235DC1102D3740CE8F008B75 /* libRNLanguages-tvOS.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		B01C6F1D2240E5B700AAA314 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B01C6F1C2240E5B700AAA314 /* Contents.json */; };
 		B035E6B4224058F30042C809 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B035E6B3224058F30042C809 /* Images.xcassets */; };
 		B045397022403342002E6DB8 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B045396F22403317002E6DB8 /* libSplashScreen.a */; };
 		B2744FA4AB0F4289B75EEA73 /* IBMPlexSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70C95FB9E00B4895A2E7B93E /* IBMPlexSans-Italic.ttf */; };
@@ -397,6 +398,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ADC6B8EB5BFF40B9997D8BC6 /* RNLanguages.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNLanguages.xcodeproj; path = "../node_modules/react-native-languages/ios/RNLanguages.xcodeproj"; sourceTree = "<group>"; };
+		B01C6F1C2240E5B700AAA314 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = app/Images.xcassets/LaunchImage.launchimage/Contents.json; sourceTree = "<group>"; };
 		B035E6B3224058F30042C809 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = app/Images.xcassets; sourceTree = "<group>"; };
 		B045396A22403317002E6DB8 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		D08AA028FCBF4321A7C2EDDA /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "IBMPlexSans-Medium.ttf"; path = "../src/resources/fonts/IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
@@ -557,6 +559,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				B035E6B3224058F30042C809 /* Images.xcassets */,
+				B01C6F1C2240E5B700AAA314 /* Contents.json */,
 			);
 			name = app;
 			sourceTree = "<group>";
@@ -1223,6 +1226,7 @@
 			files = (
 				B035E6B4224058F30042C809 /* Images.xcassets in Resources */,
 				13B07FBF1A68108700A75B9A /* LaunchImage.launchimage in Resources */,
+				B01C6F1D2240E5B700AAA314 /* Contents.json in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				B2744FA4AB0F4289B75EEA73 /* IBMPlexSans-Italic.ttf in Resources */,
 				E4872A6090EA4409ADCAD370 /* IBMPlexSans-Medium.ttf in Resources */,
