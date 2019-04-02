@@ -5,30 +5,40 @@ target 'app' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
+  # CodePush
+  pod 'AppCenter/Crashes', '~> 1.14.0'
+  pod 'AppCenter/Analytics', '~> 1.14.0'
+  pod 'AppCenterReactNativeShared', '~> 1.13.0'
+
+  # pod 'appcenter', path: '../node_modules/appcenter/ios'
+  # pod 'appcenter-analytics', path: '../node_modules/appcenter-analytics/ios'
+  # pod 'appcenter-crashes', path: '../node_modules/appcenter-crashes/ios'
+  # pod 'appcenter-push', path: '../node_modules/appcenter-push/ios'
+
   # RN pods
   # ================================
-  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
-
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
     'Core',
-    'DevSupport',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', # Needed for debugging
+    'RCTAnimation', # Needed for FlatList and animations running on native UI thread
     'RCTActionSheet',
-    'RCTAnimation',
     'RCTGeolocation',
     'RCTBlob',
     'RCTCameraRoll',
     'RCTImage',
-    'RCTNetwork',
     'RCTLinkingIOS',
     'RCTPushNotification',
     'RCTSettings',
-    'RCTText',
     'RCTVibration',
-    'RCTWebSocket',
-    'CxxBridge',
   ]
 
   # Third party deps podspec link
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
@@ -47,11 +57,12 @@ target 'app' do
   # pod 'RNSound', :path => '../node_modules/react-native-sound'
   # pod 'SentryReactNative', :path => '../node_modules/react-native-sentry'
   # pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
-  # ================================
   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
-
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+  # ================================
 
+  # CodePush plugin dependency
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
 end
 
 install! 'cocoapods', :deterministic_uuids => false, :integrate_targets => false

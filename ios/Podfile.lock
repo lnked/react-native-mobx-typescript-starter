@@ -1,70 +1,85 @@
 PODS:
+  - AppCenter/Analytics (1.14.0):
+    - AppCenter/Core
+  - AppCenter/Core (1.14.0)
+  - AppCenter/Crashes (1.14.0):
+    - AppCenter/Core
+  - AppCenterReactNativeShared (1.13.0):
+    - AppCenter/Core (= 1.14.0)
+  - Base64 (1.1.2)
   - boost-for-react-native (1.63.0)
+  - CodePush (5.6.0):
+    - Base64 (~> 1.1)
+    - JWT (~> 3.0.0-beta.7)
+    - React
+    - SSZipArchive (~> 2.1)
   - DoubleConversion (1.1.6)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - React (0.59.1):
-    - React/Core (= 0.59.1)
+  - JWT (3.0.0-beta.11):
+    - Base64 (~> 1.1.2)
+  - React (0.59.3):
+    - React/Core (= 0.59.3)
   - react-native-splash-screen (3.2.0):
     - React
-  - React/Core (0.59.1):
-    - yoga (= 0.59.1.React)
-  - React/CxxBridge (0.59.1):
+  - React/Core (0.59.3):
+    - yoga (= 0.59.3.React)
+  - React/CxxBridge (0.59.3):
     - Folly (= 2018.10.22.00)
     - React/Core
     - React/cxxreact
     - React/jsiexecutor
-  - React/cxxreact (0.59.1):
+  - React/cxxreact (0.59.3):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/jsinspector
-  - React/DevSupport (0.59.1):
+  - React/DevSupport (0.59.3):
     - React/Core
     - React/RCTWebSocket
-  - React/fishhook (0.59.1)
-  - React/jsi (0.59.1):
+  - React/fishhook (0.59.3)
+  - React/jsi (0.59.3):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-  - React/jsiexecutor (0.59.1):
+  - React/jsiexecutor (0.59.3):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/cxxreact
     - React/jsi
-  - React/jsinspector (0.59.1)
-  - React/RCTActionSheet (0.59.1):
+  - React/jsinspector (0.59.3)
+  - React/RCTActionSheet (0.59.3):
     - React/Core
-  - React/RCTAnimation (0.59.1):
+  - React/RCTAnimation (0.59.3):
     - React/Core
-  - React/RCTBlob (0.59.1):
+  - React/RCTBlob (0.59.3):
     - React/Core
-  - React/RCTCameraRoll (0.59.1):
+  - React/RCTCameraRoll (0.59.3):
     - React/Core
     - React/RCTImage
-  - React/RCTGeolocation (0.59.1):
+  - React/RCTGeolocation (0.59.3):
     - React/Core
-  - React/RCTImage (0.59.1):
+  - React/RCTImage (0.59.3):
     - React/Core
     - React/RCTNetwork
-  - React/RCTLinkingIOS (0.59.1):
+  - React/RCTLinkingIOS (0.59.3):
     - React/Core
-  - React/RCTNetwork (0.59.1):
+  - React/RCTNetwork (0.59.3):
     - React/Core
-  - React/RCTPushNotification (0.59.1):
+  - React/RCTPushNotification (0.59.3):
     - React/Core
-  - React/RCTSettings (0.59.1):
+  - React/RCTSettings (0.59.3):
     - React/Core
-  - React/RCTText (0.59.1):
+  - React/RCTText (0.59.3):
     - React/Core
-  - React/RCTVibration (0.59.1):
+  - React/RCTVibration (0.59.3):
     - React/Core
-  - React/RCTWebSocket (0.59.1):
+  - React/RCTWebSocket (0.59.3):
     - React/Core
     - React/fishhook
     - React/RCTBlob
@@ -73,9 +88,14 @@ PODS:
     - RNPermissions/Core (= 2.0.0-alpha.1)
   - RNPermissions/Core (2.0.0-alpha.1):
     - React/Core
-  - yoga (0.59.1.React)
+  - SSZipArchive (2.1.4)
+  - yoga (0.59.3.React)
 
 DEPENDENCIES:
+  - AppCenter/Analytics (~> 1.14.0)
+  - AppCenter/Crashes (~> 1.14.0)
+  - AppCenterReactNativeShared (~> 1.13.0)
+  - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -101,9 +121,16 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AppCenter
+    - AppCenterReactNativeShared
+    - Base64
     - boost-for-react-native
+    - JWT
+    - SSZipArchive
 
 EXTERNAL SOURCES:
+  CodePush:
+    :path: "../node_modules/react-native-code-push"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
@@ -120,15 +147,21 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppCenter: 02c5efe08d3bbab5421ae41d5f7aa7238906b817
+  AppCenterReactNativeShared: 00f470c3c17b47718db8733cbe811ccdcfd86282
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  CodePush: 300e90b3481fa82569090406165b83745de3613a
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  React: 34a405ead72252839fdc4afc1f972a7ed984af84
+  JWT: 05028b9624591bba9681bb57df2c5f95fa258bad
+  React: b52fdb80565505b7e4592b313a38868f5df51641
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
-  yoga: 8fb47f180b19b0dadb285a09e4c74c8a41721d3a
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+  yoga: 1a492113f66a35e9e583bb0434f4b8cc668dd839
 
-PODFILE CHECKSUM: 81ada785005804a0a0ed818784d4d0cc2d661361
+PODFILE CHECKSUM: e5c920c8f0d88e3534c30f47c7f2be20c126bcba
 
 COCOAPODS: 1.6.1

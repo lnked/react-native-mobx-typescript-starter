@@ -1,7 +1,11 @@
 module.exports = {
-  // preset: 'react-native',
   preset: ['react-native'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  setupFiles: [
+    "<rootDir>/node_modules/appcenter/test/AppCenterMock.js",
+    "<rootDir>/node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
+    "<rootDir>/node_modules/appcenter-crashes/test/AppCenterCrashesMock.js",
+    "<rootDir>/node_modules/appcenter-push/test/AppCenterPushMock.js"
+  ],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.jsx?$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',
@@ -17,4 +21,5 @@ module.exports = {
   ],
   modulePaths: ['<rootDir>'],
   cacheDirectory: '.jest/cache',
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 }
