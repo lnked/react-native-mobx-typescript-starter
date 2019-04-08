@@ -1,4 +1,15 @@
 PODS:
+  - appcenter (1.13.0):
+    - AppCenterReactNativeShared
+    - React
+  - appcenter-analytics (1.13.0):
+    - AppCenter/Analytics
+    - AppCenterReactNativeShared
+    - React
+  - appcenter-crashes (1.13.0):
+    - AppCenter/Crashes
+    - AppCenterReactNativeShared
+    - React
   - AppCenter/Analytics (1.14.0):
     - AppCenter/Core
   - AppCenter/Core (1.14.0)
@@ -94,10 +105,10 @@ PODS:
   - yoga (0.59.3.React)
 
 DEPENDENCIES:
-  - AppCenter/Analytics (~> 1.14.0)
-  - AppCenter/Crashes (~> 1.14.0)
+  - appcenter (from `../node_modules/appcenter/ios`)
+  - appcenter-analytics (from `../node_modules/appcenter-analytics/ios`)
+  - appcenter-crashes (from `../node_modules/appcenter-crashes/ios`)
   - AppCenter/Push (~> 1.14.0)
-  - AppCenterReactNativeShared (~> 1.13.0)
   - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -132,6 +143,12 @@ SPEC REPOS:
     - SSZipArchive
 
 EXTERNAL SOURCES:
+  appcenter:
+    :path: "../node_modules/appcenter/ios"
+  appcenter-analytics:
+    :path: "../node_modules/appcenter-analytics/ios"
+  appcenter-crashes:
+    :path: "../node_modules/appcenter-crashes/ios"
   CodePush:
     :path: "../node_modules/react-native-code-push"
   DoubleConversion:
@@ -151,6 +168,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AppCenter: 02c5efe08d3bbab5421ae41d5f7aa7238906b817
+  appcenter: 90f03022968d299d5c11a9488ac20fc2009098ea
+  appcenter-analytics: 6e09a01f3411335823ac59d1af5b840f5b8e8727
+  appcenter-crashes: a8221629a8b2baf5a85b4c8c655993b4f3adf571
   AppCenterReactNativeShared: 00f470c3c17b47718db8733cbe811ccdcfd86282
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -165,6 +185,6 @@ SPEC CHECKSUMS:
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   yoga: 1a492113f66a35e9e583bb0434f4b8cc668dd839
 
-PODFILE CHECKSUM: 013d6bd0f608bb784de8c14f53e71d925034ed41
+PODFILE CHECKSUM: 3b0d950f3e09aee41207a8c503cbc8e739f206c1
 
 COCOAPODS: 1.6.1
