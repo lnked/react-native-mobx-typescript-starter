@@ -19,7 +19,7 @@ target 'app' do
     'RCTGeolocation',
     'RCTBlob',
     'RCTCameraRoll',
-    'RCTImage',
+    'RCTImage', # Add RCTImage
     'RCTLinkingIOS',
     'RCTPushNotification',
     'RCTSettings',
@@ -36,6 +36,7 @@ target 'app' do
 
   # Pods for app
   # =================================
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
   # pod 'RNFS', :path => '../node_modules/react-native-fs'
 
   # pod 'Firebase/Core'
