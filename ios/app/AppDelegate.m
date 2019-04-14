@@ -6,11 +6,6 @@
  */
 
 #import "AppDelegate.h"
-// #import <AppCenterReactNativePush/AppCenterReactNativePush.h>
-// #import <AppCenterReactNativeCrashes/AppCenterReactNativeCrashes.h>
-// #import <AppCenterReactNativeAnalytics/AppCenterReactNativeAnalytics.h>
-// #import <AppCenterReactNative/AppCenterReactNative.h>
-// #import <CodePush/CodePush.h>
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
@@ -21,10 +16,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // [AppCenterReactNative register];  // Initialize AppCenter
-  // [AppCenterReactNativePush register];  // Initialize AppCenter push
-  // [AppCenterReactNativeCrashes registerWithAutomaticProcessing];  // Initialize AppCenter crashes
-  // [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];  // Initialize AppCenter analytics
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"app" initialProperties:nil];
 
@@ -38,15 +29,6 @@
   [RNSplashScreen show];
   return YES;
 }
-
-// - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
-// {
-// #if DEBUG
-//   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-// #else
-//   return [CodePush bundleURL];
-// #endif
-// }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {

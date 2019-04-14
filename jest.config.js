@@ -1,11 +1,6 @@
 module.exports = {
   preset: ['react-native'],
-  setupFiles: [
-    "<rootDir>/node_modules/appcenter/test/AppCenterMock.js",
-    "<rootDir>/node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
-    "<rootDir>/node_modules/appcenter-crashes/test/AppCenterCrashesMock.js",
-    "<rootDir>/node_modules/appcenter-push/test/AppCenterPushMock.js"
-  ],
+  setupFiles: [],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.jsx?$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',
