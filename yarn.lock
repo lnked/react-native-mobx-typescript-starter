@@ -6193,6 +6193,11 @@ react-native-classnames@0.1.1:
   dependencies:
     classnames "^2.2.5"
 
+react-native-device-info@1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-1.4.3.tgz#dd08fbc37cc97065072045716b1ad3758424358d"
+  integrity sha512-9QdLLmBgclJo5iphsto4Nbhf+8rdM3tF9ZVd3DUN9htE8JpN/r7PSNvdvuLC3bD/XDzG7GwYxuSwi1UelgaGqw==
+
 react-native-fs@2.13.3:
   version "2.13.3"
   resolved "https://registry.yarnpkg.com/react-native-fs/-/react-native-fs-2.13.3.tgz#a422f0ecd8a093a7e99d8d51ff51440e090a18a8"

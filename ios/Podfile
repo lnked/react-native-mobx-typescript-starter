@@ -41,6 +41,7 @@ target 'app' do
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
   pod 'RNFS', :path => '../node_modules/react-native-fs'
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
 
   # pod 'Firebase/Core'
   # pod 'Firebase/Database'

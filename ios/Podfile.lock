@@ -68,6 +68,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNDeviceInfo (1.4.3):
+    - React
   - RNFS (2.13.3):
     - React
   - RNPermissions (2.0.0-alpha.1):
@@ -102,6 +104,7 @@ DEPENDENCIES:
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNFS (from `../node_modules/react-native-fs`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNSVG (from `../node_modules/react-native-svg`)
@@ -123,6 +126,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
   RNFS:
     :path: "../node_modules/react-native-fs"
   RNPermissions:
@@ -141,12 +146,13 @@ SPEC CHECKSUMS:
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 5cb71fb1a15b5ce04794ab49e24b48ebe4c94e65
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
+  RNDeviceInfo: 0e4abfc346f969b784f92da61d9c7509eac91510
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
   RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
   RNVectorIcons: 6607bd3a30291d0edb56f9bbe7ae411ee2b928b0
   yoga: 596e61c9b57751d08a22b07aba310dbd3e65ab75
 
-PODFILE CHECKSUM: d3c880c4e12d3cc1938231451d992d18946b9d15
+PODFILE CHECKSUM: 1ddd0466a5b358bfda0e7c89f9eca913316bc7e5
 
 COCOAPODS: 1.6.1

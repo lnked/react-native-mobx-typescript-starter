@@ -4,6 +4,7 @@ import {
   Text,
   View,
 } from 'react-native'
+import DeviceInfo from 'react-native-device-info'
 
 import LogoTitle from '@/components/logo'
 
@@ -38,6 +39,16 @@ class FriendsScreen extends React.Component<Props, State> {
       // ),
       title: navigation.getParam('otherParam', 'A Nested Friends Screen'),
     }
+  }
+
+  componentDidMount() {
+    alert(`
+      getAPILevel: ${DeviceInfo.getAPILevel()},
+      getModel: ${DeviceInfo.getModel()}
+      getPhoneNumber: ${DeviceInfo.getPhoneNumber()}
+      isEmulator: ${DeviceInfo.isEmulator()}
+      isLandscape: ${DeviceInfo.isLandscape()}
+    `)
   }
 
   render() {
