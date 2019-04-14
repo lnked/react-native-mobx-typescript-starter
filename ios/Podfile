@@ -6,6 +6,7 @@ target 'app' do
   # use_frameworks!
 
   # CodePush
+  # CodePush plugin dependency
   # pod 'AppCenter/Push', '~> 1.14.0'
   # pod 'AppCenter/Crashes', '~> 1.14.0'
   # pod 'AppCenter/Analytics', '~> 1.14.0'
@@ -15,9 +16,10 @@ target 'app' do
   # pod 'appcenter-analytics', path: '../node_modules/appcenter-analytics/ios'
   # pod 'appcenter-crashes', path: '../node_modules/appcenter-crashes/ios'
   # pod 'appcenter-push', path: '../node_modules/appcenter-push/ios'
+  # pod 'CodePush', :path => '../node_modules/react-native-code-push'
 
   # RN pods
-  # ================================
+  # =================================
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
     'Core',
     'CxxBridge', # Include this for RN >= 0.47
@@ -43,10 +45,10 @@ target 'app' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-  # ================================
+  # =================================
 
   # Pods for app
-  # ================================
+  # =================================
   # pod 'RNFS', :path => '../node_modules/react-native-fs'
 
   # pod 'Firebase/Core'
@@ -60,10 +62,7 @@ target 'app' do
   # pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
-  # ================================
-
-  # CodePush plugin dependency
-  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+  # =================================
 end
 
 install! 'cocoapods', :deterministic_uuids => false, :integrate_targets => false

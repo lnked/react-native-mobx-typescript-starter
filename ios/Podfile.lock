@@ -1,19 +1,11 @@
 PODS:
-  - Base64 (1.1.2)
   - boost-for-react-native (1.63.0)
-  - CodePush (5.6.0):
-    - Base64 (~> 1.1)
-    - JWT (~> 3.0.0-beta.7)
-    - React
-    - SSZipArchive (~> 2.1)
   - DoubleConversion (1.1.6)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - JWT (3.0.0-beta.11):
-    - Base64 (~> 1.1.2)
   - React (0.59.4):
     - React/Core (= 0.59.4)
   - react-native-splash-screen (3.2.0):
@@ -81,11 +73,9 @@ PODS:
     - RNPermissions/Core (= 2.0.0-alpha.1)
   - RNPermissions/Core (2.0.0-alpha.1):
     - React/Core
-  - SSZipArchive (2.1.4)
   - yoga (0.59.4.React)
 
 DEPENDENCIES:
-  - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -111,14 +101,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Base64
     - boost-for-react-native
-    - JWT
-    - SSZipArchive
 
 EXTERNAL SOURCES:
-  CodePush:
-    :path: "../node_modules/react-native-code-push"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
@@ -135,19 +120,15 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  CodePush: 300e90b3481fa82569090406165b83745de3613a
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  JWT: 05028b9624591bba9681bb57df2c5f95fa258bad
   React: 5cb71fb1a15b5ce04794ab49e24b48ebe4c94e65
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
-  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   yoga: 596e61c9b57751d08a22b07aba310dbd3e65ab75
 
-PODFILE CHECKSUM: c19eec73efdcc8491a3e032f73ad646a2521ad0a
+PODFILE CHECKSUM: db21cd803dcbe05d504491cd76c376919ae07eea
 
 COCOAPODS: 1.6.1
