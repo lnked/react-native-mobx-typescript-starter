@@ -5,6 +5,7 @@ import {
   View,
 } from 'react-native'
 
+import DeviceInfo from 'react-native-device-info'
 import LogoTitle from '@/components/logo'
 
 import { styles } from './styles'
@@ -40,12 +41,20 @@ class FriendsScreen extends React.Component<Props, State> {
     }
   }
 
+  componentDidMount() {
+    if (!DeviceInfo.isEmulator()) {
+      DeviceInfo.getBatteryLevel().then((level: number) => alert(level))
+    }
+  }
+
   render() {
     const { navigation } = this.props
 
     return (
       <View style={styles.container}>
         <Text>Add friends here!</Text>
+        <Text>apiLevel: {DeviceInfo.getBrand()}</Text>
+        <Text>phoneNumber: {DeviceInfo.getPhoneNumber()}</Text>
 
         <Button
           title='Back to home'
