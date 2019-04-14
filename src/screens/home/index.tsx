@@ -6,6 +6,8 @@ import {
   View,
 } from 'react-native'
 
+import Icon from 'react-native-vector-icons/FontAwesome5'
+
 import i18n from '@/i18n'
 
 import { styles } from './styles'
@@ -35,6 +37,23 @@ class HomeScreen extends React.Component<Props, State> {
     },
   }
 
+  renderIcons = () => {
+    return (
+      <View>
+        <Icon.Button
+          name="facebook"
+          backgroundColor="#3b5998"
+          onPress={() => alert('facebook')}
+        >
+          Login with Facebook
+        </Icon.Button>
+        <Icon name="comments" size={30} color="#900" />
+        <Icon name="comments" size={30} color="#900" solid />
+        <Icon name="comments" size={30} color="#900" light />
+      </View>
+    )
+  }
+
   render() {
     const { navigation } = this.props
 
@@ -44,6 +63,8 @@ class HomeScreen extends React.Component<Props, State> {
         <Text style={styles.welcome}>React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+
+        <View>{this.renderIcons()}</View>
 
         <View><Text>{i18n.t('main.button.text')}</Text></View>
         <Button
