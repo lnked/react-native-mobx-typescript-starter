@@ -1,6 +1,10 @@
 # Example code
 src/store/providers/example
 
+# Build
+#
+android/app/src/release/res/*
+
 # OSX
 #
 .DS_Store
