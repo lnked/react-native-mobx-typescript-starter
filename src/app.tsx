@@ -1,33 +1,18 @@
-import React, { Component } from 'react'
-import SplashScreen from 'react-native-splash-screen'
-import {
-  Linking,
-  Platform,
-  StatusBar,
-  Text,
-  View,
-} from 'react-native'
+import * as React from 'react'
+import { Linking, StatusBar, View } from 'react-native'
 
-import i18n from '@/i18n'
-import { AppContainer } from '@/routes/AppContainer'
+import Core from '@/core'
 import { CommonStyles } from '@/resources/styles'
+import { handleDeepLinkUrl } from '@/utils'
 
-import FriendsScreen from '@/screens/friends'
-import HomeScreen from '@/screens/home'
-
-interface Props {}
-interface State {}
-
-const uriPrefix = Platform.OS === 'android' ? 'app://app/' : 'app://'
-
-const handleDeepLinkUrl = (url: string) => alert(url)
-
-export class App extends Component<Props, State> {
-  navigation = null
+export class App extends React.Component<void, void> {
 
   componentDidMount() {
     this.initDeepLinks()
-    SplashScreen.hide()
+  }
+
+  componentWillUnmount() {
+    Linking.removeEventListener('url', this.handleOpenURL)
   }
 
   initDeepLinks = () => {
@@ -35,31 +20,17 @@ export class App extends Component<Props, State> {
     Linking.getInitialURL().then(url => url && handleDeepLinkUrl(url))
   }
 
-  handleOpenURL = (event: any) => {
-    if (event && event.url) {
-      handleDeepLinkUrl(event.url)
-    }
-  }
-
-  handleNavigationChange = (props: any) => {
-    console.log('handleNavigationChange: ', props)
-  }
-
-  setAppNavigator = (ref: any) => {
-    this.navigation = ref
+  handleOpenURL = (e: any) => {
+    e && e.url && handleDeepLinkUrl(e.url)
   }
 
   render() {
     return (
       <View style={CommonStyles.flex}>
         <StatusBar barStyle='dark-content' />
-
-        <AppContainer
-          ref={this.setAppNavigator}
-          uriPrefix={uriPrefix}
-          onNavigationStateChange={this.handleNavigationChange}
-        />
+        <Core />
       </View>
     )
   }
+
 }
