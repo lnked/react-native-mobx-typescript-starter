@@ -23,7 +23,7 @@
     "clear:all": "yarn clear:yarn && yarn clear:android && yarn clear:ios && yarn clear:metro",
     "1clear:ios": "rm -rf ios/build/ && kill (lsof -t -i:8081) && react-native run-ios",
     "tsc": "tsc -b",
-    "lint": "tslint -p . -t stylish",
+    "lint": "tslint -p tsconfig.json 'src/**/*.{ts,tsx}' -t stylish",
     "test": "jest --coverage",
     "xcode": "open ios/app.xcodeproj",
     "studio": "open -a /Applications/Android\\ Studio.app ./android/"
@@ -86,7 +86,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": ""
+      "pre-push": "npm version patch"
     }
   },
   "jest": {

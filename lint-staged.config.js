@@ -1,4 +1,7 @@
 module.exports = {
-  "**/*.{ts,tsx,js,jsx}": ["git add"],
-  "**/*.{json,md,scss,yaml,yml}": ["git add"],
+  "linters": {
+    "**/*.{ts,tsx,js,jsx}": ["yarn lint", "git add"],
+    "**/*.{json,md,yaml,yml}": ["git add"],
+  },
+  "ignore": ["**/dist/*.*"],
 };

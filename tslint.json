@@ -3,7 +3,7 @@
   "defaultSeverity": "warning",
   "extends": [
     "tslint:latest",
-    "tslint-react-recommended",
+    "tslint-react-recommended"
   ],
   "linterOptions": {
     "exclude": [
@@ -20,10 +20,10 @@
     "no-default-export": false,
     "no-duplicate-imports": false,
     "member-access": [true, "no-public"],
-    "member-ordering":false,
-    "ordered-imports": true,
+    "member-ordering": false,
+    "ordered-imports": false,
     "no-boolean-literal-compare": true,
-    "object-literal-sort-keys":false,
+    "object-literal-sort-keys": false,
     "jsx-alignment": true,
     "jsx-no-bind": true,
     "jsx-no-lambda": false,
@@ -31,7 +31,7 @@
     "jsx-boolean-value": false,
     "jsx-no-multiline-js": false,
     "interface-name": [true, "never-prefix"],
-    "quotemark": [true, "single", "jsx-single", "avoid-escape"],
+    "quotemark": [true, "single", "jsx-double", "avoid-escape"],
     "arrow-parens": [true, "ban-single-arg-parens"],
     "semicolon": [true, "never", "ignore-interfaces"],
     "no-floating-promises": [false],
@@ -49,9 +49,8 @@
       "SwitchCase": 1
     }],
     "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
-    "no-unused-variable": [true, {"ignore-pattern": "^_"}],
     "max-classes-per-file": false,
-    "no-import-side-effect": [true, { "ignore-module": "(jest-emotion|\\.html|\\.css|\\.test.tsx?)$" }],
+    "no-import-side-effect": [true, { "ignore-module": "(\\.html|\\.css|\\.test.tsx?)$" }]
   },
   "exclude": ["node_modules"]
 }
