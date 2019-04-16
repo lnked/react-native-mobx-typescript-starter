@@ -76,7 +76,7 @@
     "lint-staged": "8.1.5",
     "metro-react-native-babel-preset": "0.53.1",
     "react-test-renderer": "16.8.6",
-    "tslint": "5.15.0",
+    "tslint": "5.16.0",
     "tslint-eslint-rules": "5.4.0",
     "tslint-react": "4.0.0",
     "tslint-react-recommended": "1.0.15",
