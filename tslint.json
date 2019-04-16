@@ -2,7 +2,7 @@
   "project": "./tsconfig.json",
   "defaultSeverity": "warning",
   "extends": [
-    "tslint:latest",
+    "tslint:recommended",
     "tslint-react-recommended"
   ],
   "linterOptions": {
