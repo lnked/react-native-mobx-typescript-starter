@@ -68,7 +68,7 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNDeviceInfo (1.4.3):
+  - RNDeviceInfo (1.5.0):
     - React
   - RNFS (2.13.3):
     - React
@@ -146,7 +146,7 @@ SPEC CHECKSUMS:
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 5cb71fb1a15b5ce04794ab49e24b48ebe4c94e65
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
-  RNDeviceInfo: 0e4abfc346f969b784f92da61d9c7509eac91510
+  RNDeviceInfo: a716865d784cda2df3b073afd659459540c8d321
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
   RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
