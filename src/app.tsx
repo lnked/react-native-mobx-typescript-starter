@@ -5,7 +5,7 @@ import Core from '@/core'
 import { CommonStyles } from '@/resources/styles'
 import { handleDeepLinkUrl } from '@/utils'
 
-export class App extends React.Component<void, void> {
+export class App extends React.Component<{}, {}> {
 
   componentDidMount() {
     this.initDeepLinks()
@@ -27,7 +27,7 @@ export class App extends React.Component<void, void> {
   render() {
     return (
       <View style={CommonStyles.flex}>
-        <StatusBar barStyle='dark-content' />
+        <StatusBar barStyle="dark-content" />
         <Core />
       </View>
     )

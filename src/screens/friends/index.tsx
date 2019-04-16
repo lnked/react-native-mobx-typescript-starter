@@ -57,7 +57,7 @@ class FriendsScreen extends React.Component<Props, State> {
         <Text>phoneNumber: {DeviceInfo.getPhoneNumber()}</Text>
 
         <Button
-          title='Back to home'
+          title="Back to home"
           onPress={() => navigation.navigate('Home')}
         />
       </View>

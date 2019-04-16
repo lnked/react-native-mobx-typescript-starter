@@ -68,7 +68,7 @@ class HomeScreen extends React.Component<Props, State> {
 
         <View><Text>{i18n.t('main.button.text')}</Text></View>
         <Button
-          title='Add some friends'
+          title="Add some friends"
           onPress={() => navigation.navigate('Friends')}
         />
       </View>
