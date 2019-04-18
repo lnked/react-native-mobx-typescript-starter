@@ -80,7 +80,7 @@
     "tslint-eslint-rules": "5.4.0",
     "tslint-react": "4.0.0",
     "tslint-react-recommended": "1.0.15",
-    "typescript": "3.4.3",
+    "typescript": "3.4.4",
     "webpack": "4.30.0"
   },
   "husky": {
