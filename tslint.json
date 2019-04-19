@@ -37,6 +37,7 @@
     "quotemark": [true, "single", "jsx-double", "avoid-escape"],
     "arrow-parens": [true, "ban-single-arg-parens"],
     "semicolon": [true, "never", "ignore-interfaces"],
+    "max-line-length": [true, 120],
     "no-floating-promises": [false],
     "no-shadowed-variable": false,
     "no-submodule-imports": false,
@@ -47,15 +48,23 @@
       "singleline": "never",
       "multiline": "always"
     }],
+    "function-name": [true, {
+      "method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+      "private-method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+      "protected-method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+      "static-method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+      "function-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$"
+    }],
     "typedef": [true, "parameter", "property-declaration"],
     "triple-equals": [true, "allow-undefined-check"],
     "ter-indent": [true, 2, {
       "SwitchCase": 1
-      }],
-      "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
-      "max-classes-per-file": false,
-      "no-import-side-effect": [true, { "ignore-module": "(\\.html|\\.css|\\.test.tsx?)$" }],
-      "space-before-function-paren": [true, {"anonymous": "always", "named": "always", "asyncArrow": "always"}]
+    }],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
+    "max-classes-per-file": false,
+    "no-import-side-effect": [true, { "ignore-module": "(\\.html|\\.css|\\.test.tsx?)$" }],
+    "space-before-function-paren": [true, {"anonymous": "always", "named": "always", "asyncArrow": "always"}],
+    "object-shorthand-properties-first": false
   },
   "exclude": ["node_modules"]
 }
