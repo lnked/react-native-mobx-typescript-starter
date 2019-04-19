@@ -7894,6 +7894,11 @@ tslint-eslint-rules@5.4.0:
     tslib "1.9.0"
     tsutils "^3.0.0"
 
+tslint-react-hooks@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslint-react-hooks/-/tslint-react-hooks-2.1.0.tgz#cc9841da0cef20d3527c8d16412f029c33767898"
+  integrity sha512-ccjyguEHGEU5rXikLDaQ6kT1AVo3C0HV8gi2MIJc7SbYAXjbzJkpbs4IXulgfqdEY1T6RnNSuGhyXg+2jTm5Bg==
+
 tslint-react-recommended@1.0.15:
   version "1.0.15"
   resolved "https://registry.yarnpkg.com/tslint-react-recommended/-/tslint-react-recommended-1.0.15.tgz#4166dc7d87b57280110673c99315a35ac5a76a7e"
