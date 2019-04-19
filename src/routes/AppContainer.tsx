@@ -18,7 +18,7 @@ const AppNavigator = createStackNavigator({
   Friends: {
     screen: FriendsScreen,
   },
-}, {
+},                                        {
   initialRouteName: 'Home',
   navigationOptions: {
     headerTintColor: '#f00',

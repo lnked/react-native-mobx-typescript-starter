@@ -19,13 +19,12 @@ const instructions = Platform.select({
     Shake or press menu button for dev menu`,
 })
 
-interface Props {
+export interface OuterProps {
   navigation: any;
 }
 
-interface State {}
+class HomeScreen extends React.Component<OuterProps, {}> {
 
-class HomeScreen extends React.Component<Props, State> {
   static navigationOptions = {
     title: 'Home',
     headerStyle: {

@@ -9,15 +9,12 @@ import { createStore } from '@/store'
 import { isAndroid } from '@/configs'
 import { AppContainer } from '@/routes/AppContainer'
 
-export interface OuterProps {}
-export interface InnerState {}
-
 const uriPrefix = isAndroid ? 'app://app/' : 'app://'
 
 const navigation = React.createRef<any>()
 
 @observer
-class Core extends React.Component<OuterProps, InnerState> {
+class Core extends React.Component<{}, {}> {
 
   componentDidMount() {
     // store.appConfig.fetchAppConfig()

@@ -8,8 +8,8 @@ export const androidStatusBarHeight = StatusBar.currentHeight || 24
 export const deviceWidth = width
 export const deviceHeight = height
 
-export const ios = Platform.OS === 'ios'
-export const android = Platform.OS === 'android'
+export const isIOS = Platform.OS === 'ios'
+export const isAndroid = Platform.OS === 'android'
 
 // import {Platform, StyleSheet} from 'react-native';
 

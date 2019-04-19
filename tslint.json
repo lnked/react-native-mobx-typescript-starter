@@ -3,7 +3,9 @@
   "defaultSeverity": "warning",
   "extends": [
     "tslint:recommended",
-    "tslint-react-recommended"
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-react-hooks"
   ],
   "linterOptions": {
     "exclude": [
@@ -38,6 +40,7 @@
     "no-floating-promises": [false],
     "no-shadowed-variable": false,
     "no-submodule-imports": false,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
     "no-implicit-dependencies": [true, "dev", ["src", "@/*", "@/i18n", "@/core", "@/components", "@/resources", "@/utils", "@/store", "@/routes", "@/configs", "@/screens"]],
     "no-constant-condition": false,
     "trailing-comma": [true, {

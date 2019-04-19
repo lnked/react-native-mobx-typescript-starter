@@ -10,14 +10,13 @@ import LogoTitle from '@/components/logo'
 
 import { styles } from './styles'
 
-interface Props {
+export interface OuterProps {
   navigation: any;
 }
 
-interface State {}
+class FriendsScreen extends React.Component<OuterProps, {}> {
 
-class FriendsScreen extends React.Component<Props, State> {
-  static navigationOptions = ({ navigation }: Props) => {
+  static navigationOptions = ({ navigation }: OuterProps) => {
     return {
       headerTitle: <LogoTitle />,
       headerStyle: {
@@ -63,6 +62,7 @@ class FriendsScreen extends React.Component<Props, State> {
       </View>
     )
   }
+
 }
 
 export default FriendsScreen
