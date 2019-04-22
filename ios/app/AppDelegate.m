@@ -6,7 +6,8 @@
  */
 
 #import "AppDelegate.h"
-
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -16,8 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [Fabric with:@[[Crashlytics class]]];
+  // TODO: Move this to where you establish a user session
+  [self logUser];
   [UIDevice currentDevice].batteryMonitoringEnabled = true;
-
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"app" initialProperties:nil];
 
@@ -30,6 +33,14 @@
   [self.window makeKeyAndVisible];
   [RNSplashScreen show];
   return YES;
+}
+
+- (void) logUser {
+  // TODO: Use the current user's information
+  // You can call any combination of these three methods
+  [CrashlyticsKit setUserIdentifier:@"12345"];
+  [CrashlyticsKit setUserEmail:@"user@fabric.io"];
+  [CrashlyticsKit setUserName:@"Test User"];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

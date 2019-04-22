@@ -17,7 +17,7 @@ export class App extends React.Component<{}, {}> {
 
   initDeepLinks = () => {
     Linking.addEventListener('url', this.handleOpenURL)
-    Linking.getInitialURL().then(url => url && handleDeepLinkUrl(url))
+    Linking.getInitialURL().then((url: string) => url && handleDeepLinkUrl(url))
   }
 
   handleOpenURL = (e: any) => {

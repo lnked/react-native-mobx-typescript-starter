@@ -1,6 +1,9 @@
 PODS:
   - boost-for-react-native (1.63.0)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
   - DoubleConversion (1.1.6)
+  - Fabric (1.9.0)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -75,7 +78,9 @@ PODS:
   - yoga (0.59.6.React)
 
 DEPENDENCIES:
+  - Crashlytics
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - Fabric
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
@@ -101,6 +106,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
+    - Crashlytics
+    - Fabric
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -128,7 +135,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 0bb58efca577aa4b3c8f03a9fbf0d9a8ebdb5ac4
@@ -140,6 +149,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 6607bd3a30291d0edb56f9bbe7ae411ee2b928b0
   yoga: 8dacc3c5977cb8e07c346e203bb5f4ffe01296df
 
-PODFILE CHECKSUM: b72b69bdb7783e271294392fcad4228f0fca0195
+PODFILE CHECKSUM: 7743adc5663a2adfdef2062d03e86fe417b4e15e
 
 COCOAPODS: 1.6.1

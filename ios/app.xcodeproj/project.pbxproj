@@ -38,6 +38,8 @@
 		B01C6F1D2240E5B700AAA314 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B01C6F1C2240E5B700AAA314 /* Contents.json */; };
 		B035E6B4224058F30042C809 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B035E6B3224058F30042C809 /* Images.xcassets */; };
 		B045397022403342002E6DB8 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B045396F22403317002E6DB8 /* libSplashScreen.a */; };
+		B09086D5226E314100B17330 /* Fabric.framework in Resources */ = {isa = PBXBuildFile; fileRef = B09086D3226E314100B17330 /* Fabric.framework */; };
+		B09086D9226E76AE00B17330 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09086D8226E76AE00B17330 /* Crashlytics.framework */; };
 		B0FC4A8E2254A22B002F12D0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FC4A8D2254A22B002F12D0 /* libz.tbd */; };
 		B2744FA4AB0F4289B75EEA73 /* IBMPlexSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70C95FB9E00B4895A2E7B93E /* IBMPlexSans-Italic.ttf */; };
 		B4CE252AC0BC4369B6A3B379 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B4944B23924FADABDF854F /* IBMPlexSans-SemiBold.ttf */; };
@@ -426,6 +428,8 @@
 		B01C6F1C2240E5B700AAA314 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = app/Images.xcassets/LaunchImage.launchimage/Contents.json; sourceTree = "<group>"; };
 		B035E6B3224058F30042C809 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = app/Images.xcassets; sourceTree = "<group>"; };
 		B045396A22403317002E6DB8 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
+		B09086D3226E314100B17330 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B09086D8226E76AE00B17330 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		B0FC4A8D2254A22B002F12D0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CC6743BA5AF94E5F964EADAD /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		D08AA028FCBF4321A7C2EDDA /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "IBMPlexSans-Medium.ttf"; path = "../src/resources/fonts/IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
@@ -452,6 +456,7 @@
 			files = (
 				B00B714F2263D56500489AF5 /* libRNDeviceInfo.a in Frameworks */,
 				B0FC4A8E2254A22B002F12D0 /* libz.tbd in Frameworks */,
+				B09086D9226E76AE00B17330 /* Crashlytics.framework in Frameworks */,
 				B045397022403342002E6DB8 /* libSplashScreen.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -656,6 +661,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B09086D8226E76AE00B17330 /* Crashlytics.framework */,
+				B09086D3226E314100B17330 /* Fabric.framework */,
 				13B07FAE1A68108700A75B9A /* app */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* appTests */,
@@ -793,6 +800,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				B09086D7226E6FFA00B17330 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1229,6 +1237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09086D5226E314100B17330 /* Fabric.framework in Resources */,
 				B035E6B4224058F30042C809 /* Images.xcassets in Resources */,
 				13B07FBF1A68108700A75B9A /* LaunchImage.launchimage in Resources */,
 				B01C6F1D2240E5B700AAA314 /* Contents.json in Resources */,
@@ -1261,7 +1270,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -1272,6 +1281,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		B09086D7226E6FFA00B17330 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 19677e091e665976eda736e404442c99ee09352d b64355239b88116ba22dbc33bd97481356d21ff8c6561705e3cfe3c9b9272bdf\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1396,8 +1423,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/Crashlytics",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/../../React",
 					"$(SRCROOT)/../node_modules/react-native-languages/ios",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
@@ -1405,8 +1437,8 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
-					"$(SRCROOT)/../../React",
-					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
+					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
 				);
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1430,8 +1462,13 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/Crashlytics",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/../../React",
 					"$(SRCROOT)/../node_modules/react-native-languages/ios",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
@@ -1439,8 +1476,8 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
-					"$(SRCROOT)/../../React",
-					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
+					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
 				);
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
