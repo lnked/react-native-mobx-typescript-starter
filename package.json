@@ -71,7 +71,7 @@
     "babel-jest": "24.7.1",
     "babel-plugin-module-resolver": "3.2.0",
     "babel-preset-mobx": "2.0.0",
-    "husky": "2.0.0",
+    "husky": "2.1.0",
     "jest": "24.7.1",
     "lint-staged": "8.1.5",
     "metro-react-native-babel-preset": "0.53.1",
