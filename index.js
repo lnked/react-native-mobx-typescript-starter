@@ -3,6 +3,8 @@ import { App } from '@/app'
 import { name as appName } from './app.json'
 import * as Reactotron from './reactotron-config'
 
+// console.disableYellowBox = true
+
 YellowBox.ignoreWarnings([
   'Module RCTImageLoader requires',
   'Warning: componentWillMount is deprecated',

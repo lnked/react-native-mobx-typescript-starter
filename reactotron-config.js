@@ -20,7 +20,7 @@ export const init = (enabled) => {
 
   const nativeLog = console.log
 
-  console.log  = (...args) => {
+  console.log = (...args) => {
     nativeLog(...args)
 
     Reactotron.display({
