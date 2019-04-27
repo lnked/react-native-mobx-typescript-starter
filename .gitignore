@@ -1,5 +1,11 @@
 # Example code
+#
 src/store/providers/example
+
+# Configs
+#
+.env.local
+.env.*.local
 
 # Build
 #
