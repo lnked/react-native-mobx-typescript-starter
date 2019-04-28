@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Image, Text } from 'react-native'
-// import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
+
 import {
   createAppContainer,
   createStackNavigator,

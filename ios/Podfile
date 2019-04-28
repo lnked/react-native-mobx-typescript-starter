@@ -40,6 +40,7 @@ target 'app' do
   # =================================
   pod 'RNFS', :path => '../node_modules/react-native-fs'
   pod 'RNSVG', :path => '../node_modules/react-native-svg'
+  pod 'RNLanguages', :path => '../node_modules/react-native-languages'
   pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'

@@ -6,7 +6,7 @@ import {
   View,
 } from 'react-native'
 
-import Icon from 'react-native-vector-icons/FontAwesome5'
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 
 import i18n from '@/i18n'
 
@@ -36,19 +36,21 @@ class HomeScreen extends React.Component<OuterProps, {}> {
     },
   }
 
-  renderIcons = () => {
+  renderFontAwesome5s = () => {
     return (
       <View>
-        <Icon.Button
+        {/*
+        <FontAwesome5.Button
           name="facebook"
           backgroundColor="#3b5998"
           onPress={() => console.log('facebook')}
         >
           Login with Facebook
-        </Icon.Button>
-        <Icon name="comments" size={30} color="#900" />
-        <Icon name="comments" size={30} color="#900" solid />
-        <Icon name="comments" size={30} color="#900" light />
+        </FontAwesome5.Button>
+        */}
+        <FontAwesome5 name="comments" size={30} color="#900" />
+        <FontAwesome5 name="comments" size={30} color="#900" solid />
+        <FontAwesome5 name="comments" size={30} color="#900" light />
       </View>
     )
   }
@@ -63,7 +65,7 @@ class HomeScreen extends React.Component<OuterProps, {}> {
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
         <Text style={styles.instructions}>{instructions}</Text>
 
-        <View>{this.renderIcons()}</View>
+        <View>{this.renderFontAwesome5s()}</View>
 
         <View><Text>{i18n.t('main.button.text')}</Text></View>
         <Button

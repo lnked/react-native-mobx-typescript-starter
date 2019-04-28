@@ -11,7 +11,7 @@ export const isIphoneX = (): boolean => {
 
   return (
     // This has to be iOS
-    Platform.OS === 'ios' && !Platform.isPad && !Platform.isTVOS &&
+    Platform.OS === 'ios' && !Platform.isPad &&
     // Check either, iPhone X or XR
     (isIPhoneXSize(dim) || isIPhoneXrSize(dim))
   )

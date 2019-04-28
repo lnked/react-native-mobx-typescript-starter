@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import {
   View,
   Text,
 } from 'react-native';
 
-class WelcomeScreen extends PureComponent {
+class WelcomeScreen extends React.PureComponent {
   render() {
     return (
       <View>

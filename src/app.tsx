@@ -6,7 +6,7 @@ import {
 } from 'react-native'
 
 import Core from '@/core'
-import { CommonStyles } from '@/resources/styles'
+import { Colors, CommonStyles } from '@/resources/styles'
 import { handleDeepLinkUrl } from '@/utils'
 
 class App extends React.Component<{}, {}> {
@@ -31,7 +31,10 @@ class App extends React.Component<{}, {}> {
   render() {
     return (
       <View style={CommonStyles.flex}>
-        <StatusBar barStyle="dark-content" />
+        <StatusBar
+          barStyle="dark-content"
+          backgroundColor={Colors.orange}
+        />
         <Core />
       </View>
     )
