@@ -3,8 +3,10 @@
   "version": "0.0.16",
   "private": true,
   "scripts": {
+    "clear:watch": "watchman watch-del-all",
     "clear:cache": "rm -rf android/build/ ios/build/",
-    "reset:cache": "watchman watch-del-all && rm -rf node_modules && yarn install  && rm -rf /tmp/metro-bundler-cache-*",
+    "clear:react-native": "rm -rf $TMPDIR/react-native-packager-cache-*",
+    "clear:metro": "rm -rf $TMPDIR/metro-bundler-cache-*",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "debugger": "open 'rndebugger://set-debugger-loc?host=localhost&port=8081'",
     "run:ios": "react-native run-ios -- --reset-cache",
@@ -19,12 +21,13 @@
     "bundle:android2": "cd android && ./gradlew assembleRelease",
     "clear:yarn": "rm -rf node_modules yarn.lock && yarn cache clean --force && yarn",
     "clear:ios": "(cd ios && rm -rf build Podfile.lock Pods/* && pod install)",
+    "clear:ios2": "rm -rf ios/build/ && kill (lsof -t -i:8081) && react-native run-ios",
     "clear:android": "(cd android && ./gradlew clean)",
-    "clear:all": "yarn clear:yarn && yarn clear:android && yarn clear:ios && yarn clear:metro",
-    "1clear:ios": "rm -rf ios/build/ && kill (lsof -t -i:8081) && react-native run-ios",
+    "clear:all": "yarn clear:yarn && yarn clear:android && yarn clear:ios && yarn clear:cache && yarn clear:watch && yarn clear:metro && yarn clear:react-native",
     "tsc": "tsc -b",
     "lint": "tslint -p tsconfig.json 'src/**/*.{ts,tsx}' -t stylish",
-    "test": "jest --coverage",
+    "test": "jest",
+    "coverage": "rimraf coverage && jest --coverage",
     "xcode": "open ios/app.xcodeproj",
     "studio": "open -a /Applications/Android\\ Studio.app ./android/"
   },
@@ -88,9 +91,6 @@
       "pre-commit": "lint-staged",
       "pre-push": "npm version patch"
     }
-  },
-  "jest": {
-    "preset": "react-native"
   },
   "rnpm": {
     "assets": [
