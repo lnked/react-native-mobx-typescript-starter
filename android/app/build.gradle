@@ -138,10 +138,10 @@ android {
 }
 
 dependencies {
-    implementation project(':react-native-device-info')
     implementation project(':react-native-fs')
-    implementation project(':react-native-vector-icons')
     implementation project(':react-native-svg')
+    implementation project(':react-native-vector-icons')
+    implementation project(':react-native-device-info')
     implementation project(':react-native-splash-screen')
     implementation project(':react-native-permissions')
     implementation project(':react-native-gesture-handler')

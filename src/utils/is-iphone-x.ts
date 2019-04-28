@@ -1,10 +1,5 @@
 import { Dimensions, Platform, StatusBar } from 'react-native'
 
-// export function isIphoneX();
-// export function ifIphoneX<T, U>(iphoneXVal: T, regularVal: U): T | U;
-// export function getStatusBarHeight(safe?: boolean): number;
-// export function getBottomSpace(): number;
-
 export const isIPhoneXSize = (dim: any): boolean =>
   (dim.height === 812) || (dim.width === 812)
 
