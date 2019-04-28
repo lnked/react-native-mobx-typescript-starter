@@ -1,11 +1,15 @@
 import * as React from 'react'
-import { Linking, StatusBar, View } from 'react-native'
+import {
+  StatusBar,
+  Linking,
+  View,
+} from 'react-native'
 
 import Core from '@/core'
 import { CommonStyles } from '@/resources/styles'
 import { handleDeepLinkUrl } from '@/utils'
 
-export class App extends React.Component<{}, {}> {
+class App extends React.Component<{}, {}> {
 
   componentDidMount() {
     this.initDeepLinks()
@@ -34,3 +38,5 @@ export class App extends React.Component<{}, {}> {
   }
 
 }
+
+export default App
