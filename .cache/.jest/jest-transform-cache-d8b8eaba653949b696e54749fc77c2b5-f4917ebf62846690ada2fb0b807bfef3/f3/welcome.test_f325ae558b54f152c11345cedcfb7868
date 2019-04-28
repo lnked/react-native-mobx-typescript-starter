@@ -1,0 +1,24 @@
+4c2338f9745a9466415b22710fa78b59
+import React from 'react';
+import renderer from 'react-test-renderer';
+import WelcomeScreen from '../welcome';
+
+describe('WelcomeScreen', () => {
+  it('should render correctly', () => {
+    const component = renderer.create(
+      <WelcomeScreen />
+    );
+    expect(component).toMatchSnapshot();
+  });
+});
+
+// import React from 'react';
+// import renderer from 'react-test-renderer';
+// import App from './App';
+
+// jest.useFakeTimers();
+
+// it('renders without crashing', () => {
+//   const rendered = renderer.create(<App />).toJSON();
+//   expect(rendered).toBeTruthy();
+// });

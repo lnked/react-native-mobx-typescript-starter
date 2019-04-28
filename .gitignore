@@ -2,6 +2,11 @@
 #
 src/store/providers/example
 
+# Generated
+#
+.cache
+coverage
+
 # Configs
 #
 .env.local
