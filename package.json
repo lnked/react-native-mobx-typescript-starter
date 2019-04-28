@@ -25,7 +25,7 @@
     "clear:android": "(cd android && ./gradlew clean)",
     "clear:all": "yarn clear:yarn && yarn clear:android && yarn clear:ios && yarn clear:cache && yarn clear:watch && yarn clear:metro && yarn clear:react-native",
     "tsc": "tsc -b",
-    "lint": "tslint -p tsconfig.json 'src/**/*.{ts,tsx}' -t stylish",
+    "lint": "tslint -t stylish -p tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "test": "jest",
     "coverage": "rimraf coverage && jest --coverage",
