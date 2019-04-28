@@ -1,1 +1,1 @@
-export const handleDeepLinkUrl = (url: string) => alert(url)
+export const handleDeepLinkUrl = (url: string) => console.log(url)

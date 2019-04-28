@@ -24,7 +24,7 @@ class FriendsScreen extends React.Component<OuterProps, {}> {
       },
       headerRight: (
         <Button
-          onPress={() => alert('This is a button!')}
+          onPress={() => console.log('This is a button!')}
           title="Info"
           color="#fff"
         />
@@ -42,7 +42,7 @@ class FriendsScreen extends React.Component<OuterProps, {}> {
 
   componentDidMount() {
     if (!DeviceInfo.isEmulator()) {
-      DeviceInfo.getBatteryLevel().then((level: number) => alert(level))
+      DeviceInfo.getBatteryLevel().then((level: number) => console.log(level))
     }
   }
 

@@ -42,7 +42,7 @@ class HomeScreen extends React.Component<OuterProps, {}> {
         <Icon.Button
           name="facebook"
           backgroundColor="#3b5998"
-          onPress={() => alert('facebook')}
+          onPress={() => console.log('facebook')}
         >
           Login with Facebook
         </Icon.Button>
