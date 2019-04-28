@@ -12,7 +12,7 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   transformIgnorePatterns: [
-    'node_modules/(?!(jest-)?react-native|react-navigation|@react-navigation.*)',
+    'node_modules/(?!(jest-)?react-native|react-native-animatable|react-navigation|@react-navigation.*)',
   ],
   testMatch: [
     '**/__tests__/**/*.(ts|tsx|js|jsx)',
