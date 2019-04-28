@@ -5,6 +5,7 @@ src/store/providers/example
 # Generated
 #
 .cache
+.cache/*
 coverage
 
 # Configs
