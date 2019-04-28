@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import WelcomeScreen from '@/screens/welcome/welcome';
+import WelcomeScreen from '@/screens/welcome';
 
 describe('<WelcomeScreen />', () => {
   it('renders without crashing', () => {

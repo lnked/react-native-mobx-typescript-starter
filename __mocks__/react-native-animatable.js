@@ -2,7 +2,7 @@ import {
   View as CoreView,
   Image as CoreImage,
   Text as CoreText,
-  Animated
+  Animated,
  } from 'react-native';
 
 

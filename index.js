@@ -7,10 +7,10 @@ import App from '@/app'
 // console.disableYellowBox = true
 
 YellowBox.ignoreWarnings([
-  'Module RCTImageLoader requires',
-  'Warning: componentWillMount is deprecated',
-  'Warning: componentWillReceiveProps is deprecated',
-  'Warning: isMounted(...) is deprecated',
+  // 'Module RCTImageLoader requires',
+  // 'Warning: componentWillMount is deprecated',
+  // 'Warning: componentWillReceiveProps is deprecated',
+  // 'Warning: isMounted(...) is deprecated',
 ])
 
 Reactotron.init(__DEV__)
