@@ -984,10 +984,10 @@
   resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.1.tgz#35cc15b9c4f30a18ef21852e255fdb02f6d59b89"
   integrity sha512-yALhelO3i0hqZwhjtcr6dYyaLoCHbAMshwtj6cGxTvHZAKXHsYGdff6E8EPw3xLKY0ELUTQ69Q1rQiJENnccMA==
 
-"@types/jest@24.0.11":
-  version "24.0.11"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.11.tgz#1f099bea332c228ea6505a88159bfa86a5858340"
-  integrity sha512-2kLuPC5FDnWIDvaJBzsGTBQaBbnDweznicvK7UGYzlIJP4RJR2a4A/ByLUXEyEgag6jz8eHdlWExGDtH3EYUXQ==
+"@types/jest@24.0.12":
+  version "24.0.12"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.12.tgz#0553dd0a5ac744e7dc4e8700da6d3baedbde3e8f"
+  integrity sha512-60sjqMhat7i7XntZckcSGV8iREJyXXI6yFHZkSZvCPUeOnEJ/VP1rU/WpEWQ56mvoh8NhC+sfKAuJRTyGtCOow==
   dependencies:
     "@types/jest-diff" "*"
 
@@ -1021,10 +1021,18 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
-"@types/react-native@*", "@types/react-native@0.57.50":
+"@types/react-native@*":
   version "0.57.50"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.50.tgz#b809960e0ce70190f8082d050bb2aa99b5ee4db2"
   integrity sha512-mGLmamsi9R2vNtKPBC92BO/RR1UNmCAco7e4ImybnHg6jI7K4y9FZlWMSnjn2Fl0/SAQ0kx2hz/xU5NysVFhLg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/react" "*"
+
+"@types/react-native@0.57.51":
+  version "0.57.51"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.51.tgz#adcb02141734b72822848351be734971e508f5f1"
+  integrity sha512-0LkXPeV1Hn+5zZ0BE6RBrBJTpM2P4S+306H9lKdi220PHFwMtHt1k8SiQpqUA2yjpi+c6pFIq6H2zZGusPHT9w==
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
