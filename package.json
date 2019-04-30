@@ -8,6 +8,7 @@
     "clear:react-native": "rm -rf $TMPDIR/react-native-packager-cache-*",
     "clear:metro": "rm -rf $TMPDIR/metro-bundler-cache-*",
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "poststart": "yarn react-devtools",
     "debugger": "open 'rndebugger://set-debugger-loc?host=localhost&port=8081'",
     "run:ios": "react-native run-ios -- --reset-cache",
     "run:start": "react-native start --port=8088",
@@ -28,8 +29,10 @@
     "lint": "tslint -t stylish -p tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "test": "jest",
+    "react-devtools": "react-devtools",
     "coverage": "rimraf coverage && jest --coverage",
     "xcode": "open ios/app.xcodeproj",
+    "rninit": "react-native init RN059 --version react-native@next",
     "studio": "open -a /Applications/Android\\ Studio.app ./android/"
   },
   "dependencies": {
@@ -85,6 +88,7 @@
     "jest": "24.7.1",
     "lint-staged": "8.1.5",
     "metro-react-native-babel-preset": "0.53.1",
+    "react-devtools": "3.6.1",
     "react-native-jest-mocks": "1.4.0",
     "react-native-testing-library": "1.7.0",
     "react-test-renderer": "16.8.6",
