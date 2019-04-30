@@ -4,7 +4,11 @@ module.exports = {
       'yarn lint',
       'git add -A'
     ],
-    '**/*.{json,md,yaml,yml}': ['git add -A'],
+    '**/*.{json,md,yaml,yml}': [
+      'git add -A',
+    ],
   },
-  ignore: ['**/dist/*.*'],
+  ignore: [
+    '**/dist/*.*',
+  ],
 };
