@@ -44,6 +44,7 @@ target 'app' do
   pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
   # pod 'Firebase/Core'
