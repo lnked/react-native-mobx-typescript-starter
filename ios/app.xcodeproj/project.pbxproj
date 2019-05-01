@@ -1469,6 +1469,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PODS_PODFILE_DIR_PATH = "${SRCROOT}/.";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1508,6 +1509,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PODS_PODFILE_DIR_PATH = "${SRCROOT}/.";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
