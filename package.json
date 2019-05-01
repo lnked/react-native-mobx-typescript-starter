@@ -33,6 +33,7 @@
     "coverage": "rimraf coverage && jest --coverage",
     "xcode": "open ios/app.xcodeproj",
     "rninit": "react-native init RN059 --version react-native@next",
+    "configure": "./node_modules/react-native/third-party/glog-0.3.5/configure",
     "studio": "open -a /Applications/Android\\ Studio.app ./android/"
   },
   "dependencies": {
