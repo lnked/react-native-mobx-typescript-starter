@@ -19,7 +19,7 @@
 {
   [Fabric with:@[[Crashlytics class]]];
   // TODO: Move this to where you establish a user session
-  [self logUser];
+  // [self logUser];
   [UIDevice currentDevice].batteryMonitoringEnabled = true;
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"app" initialProperties:nil];
@@ -35,13 +35,13 @@
   return YES;
 }
 
-- (void) logUser {
-  // TODO: Use the current user's information
-  // You can call any combination of these three methods
-  [CrashlyticsKit setUserIdentifier:@"12345"];
-  [CrashlyticsKit setUserEmail:@"user@fabric.io"];
-  [CrashlyticsKit setUserName:@"Test User"];
-}
+// - (void) logUser {
+//   // TODO: Use the current user's information
+//   // You can call any combination of these three methods
+//   [CrashlyticsKit setUserIdentifier:@"12345"];
+//   [CrashlyticsKit setUserEmail:@"user@fabric.io"];
+//   [CrashlyticsKit setUserName:@"Test User"];
+// }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
