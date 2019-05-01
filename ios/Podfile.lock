@@ -11,7 +11,7 @@ PODS:
   - glog (0.3.5)
   - React (0.59.5):
     - React/Core (= 0.59.5)
-  - react-native-netinfo (2.0.7):
+  - react-native-netinfo (2.0.8):
     - React
   - react-native-splash-screen (3.2.0):
     - React
@@ -64,7 +64,7 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNDeviceInfo (1.6.0):
+  - RNDeviceInfo (1.6.1):
     - React
   - RNFS (2.13.3):
     - React
@@ -151,9 +151,9 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 90adac468c7b72bf1fa6c64bf230650f851a8388
-  react-native-netinfo: 15cad8c39475a4294b648fc62e299ea6e725e7ea
+  react-native-netinfo: 73774249933883b2586a0543d21b119834244d6f
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
-  RNDeviceInfo: 47a8b26b7e367f8d71c4012be7523a23d6512003
+  RNDeviceInfo: 958a1ed6f94e04557b865b8ef848cfc83db0ebba
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   RNLanguages: 962e562af0d34ab1958d89bcfdb64fafc37c513e
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
