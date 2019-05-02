@@ -9,33 +9,44 @@ target 'app' do
   pod 'Fabric'
   pod 'Crashlytics'
 
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  # =================================
+  pod 'yoga', :path => "#{rn_path}/ReactCommon/yoga"
+  # =================================
+
   # RN pods
   # =================================
   pod 'React', :path => rn_path, :subspecs => [
     'Core',
     'CxxBridge', # Include this for RN >= 0.47
-    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
-    'RCTText',
-    'RCTBlob',
-    'RCTNetwork',
-    'RCTWebSocket', # Needed for debugging
-    'RCTAnimation', # Needed for FlatList and animations running on native UI thread
-    'RCTActionSheet',
-    # 'RCTGeolocation',
-    # 'RCTCameraRoll',
-    'RCTImage', # Add RCTImage
-    'RCTSettings',
-    'RCTLinkingIOS',
-    # 'RCTVibration',
-    # 'RCTPushNotification',
+    # 'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    # 'RCTText',
+    # 'RCTBlob',
+    # 'RCTNetwork',
+    # 'RCTWebSocket', # Needed for debugging
+    # 'RCTAnimation', # Needed for FlatList and animations running on native UI thread
+    # 'RCTActionSheet',
+    # # 'RCTGeolocation',
+    # # 'RCTCameraRoll',
+    # 'RCTImage', # Add RCTImage
+    # 'RCTSettings',
+    # 'RCTLinkingIOS',
+    # # 'RCTVibration',
+    # # 'RCTPushNotification',
   ]
 
+  # pod 'React', path: '../node_modules/react-native', subspecs: %w(
+  #   Core ART CxxBridge DevSupport
+  #   RCTAnimation RCTImage RCTLinkingIOS RCTNetwork
+  #   RCTPushNotification RCTText RCTWebSocket
+  # )
+  # =================================
+
   # Third party deps podspec link
-  # Explicitly include Yoga if you are using RN >= 0.42.0
-  pod 'yoga', :path => "#{rn_path}/ReactCommon/yoga"
-  pod 'glog', :podspec => "#{rn_path}/third-party-podspecs/glog.podspec"
-  pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
+  # =================================
   pod 'DoubleConversion', :podspec => "#{rn_path}/third-party-podspecs/DoubleConversion.podspec"
+  pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
+  pod 'glog', :podspec => "#{rn_path}/third-party-podspecs/glog.podspec"
   # =================================
 
   # Pods for app
