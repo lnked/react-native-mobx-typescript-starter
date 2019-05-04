@@ -37,7 +37,7 @@
     "studio": "open -a /Applications/Android\\ Studio.app ./android/"
   },
   "dependencies": {
-    "@react-native-community/netinfo": "2.0.8",
+    "@react-native-community/netinfo": "2.0.9",
     "apisauce": "1.0.2",
     "i18n-js": "3.2.1",
     "mobx": "5.9.4",
@@ -75,7 +75,7 @@
     "@types/i18n-js": "3.0.1",
     "@types/jest": "24.0.12",
     "@types/node": "12.0.0",
-    "@types/react": "16.8.15",
+    "@types/react": "16.8.16",
     "@types/react-dom": "16.8.4",
     "@types/react-native": "0.57.51",
     "@types/react-native-vector-icons": "6.4.0",
