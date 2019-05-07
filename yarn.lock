@@ -884,10 +884,10 @@
     xcode "^2.0.0"
     xmldoc "^0.4.0"
 
-"@react-native-community/netinfo@2.0.9":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-2.0.9.tgz#5730a5e3c8959448bda10b9b395f6f7042157c93"
-  integrity sha512-q6bSAgLBs5Z4WfopJQsDH1Q0ns6YVILOuZoS1wxN5GNKvJSqg01s+23gN+4hAbc5fmzAyzCIRwKZteGRDl448g==
+"@react-native-community/netinfo@2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-2.0.10.tgz#d28a446352e75754b78509557988359133cdbcca"
+  integrity sha512-NrIzyLe0eSbhgMnHl2QdSEhaA7yXh6p9jzMomfUa//hoTXE+xbObGDdiWWSQm2bnXnZJg8XCU3AB9qzvqcuLnA==
 
 "@react-navigation/core@~3.4.1":
   version "3.4.1"
@@ -1054,7 +1054,7 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
-"@types/react-native@*", "@types/react-native@0.57.51":
+"@types/react-native@*":
   version "0.57.51"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.51.tgz#adcb02141734b72822848351be734971e508f5f1"
   integrity sha512-0LkXPeV1Hn+5zZ0BE6RBrBJTpM2P4S+306H9lKdi220PHFwMtHt1k8SiQpqUA2yjpi+c6pFIq6H2zZGusPHT9w==
@@ -1062,10 +1062,18 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-navigation@3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@types/react-navigation/-/react-navigation-3.0.6.tgz#97ab418eb6e29919f0f78785c5c360954e886d75"
-  integrity sha512-4JoHIR7qrjwYDmJiuvYEOgme2Nl5ieiDEM5eRMHV3HkRiUmeHRlVfmqTCljcDUwkFJHhK2JZfyhppA/CZY+M8w==
+"@types/react-native@0.57.53":
+  version "0.57.53"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.53.tgz#f54a1886c8de1bf4b54bd5f463d5d2e7cf3a7634"
+  integrity sha512-dBcehLQmES4gQxZAd4XifbaQA9cTtFIjDsIcYRIy2SG6aoQsqQjZmC2a/Nv2orvG8qR9pLgoO3GlJS2/lj5jAA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/react" "*"
+
+"@types/react-navigation@3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@types/react-navigation/-/react-navigation-3.0.7.tgz#5d327b00de2bb58203977002c3ea21302da72034"
+  integrity sha512-JFsNeCAQEQGTpObiD1QczDyCyQkFBaQA/F85Fo2W8QML1b6UNYHlUDtEYJA6jcfXqPoL15dVPBVj9NBJlHToqA==
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
