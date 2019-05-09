@@ -9,36 +9,36 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - React (0.59.5):
-    - React/Core (= 0.59.5)
-  - react-native-netinfo (2.0.8):
+  - React (0.59.8):
+    - React/Core (= 0.59.8)
+  - react-native-netinfo (2.0.10):
     - React
   - react-native-splash-screen (3.2.0):
     - React
-  - React/Core (0.59.5):
-    - yoga (= 0.59.5.React)
-  - React/CxxBridge (0.59.5):
+  - React/Core (0.59.8):
+    - yoga (= 0.59.8.React)
+  - React/CxxBridge (0.59.8):
     - Folly (= 2018.10.22.00)
     - React/Core
     - React/cxxreact
     - React/jsiexecutor
-  - React/cxxreact (0.59.5):
+  - React/cxxreact (0.59.8):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/jsinspector
-  - React/jsi (0.59.5):
+  - React/jsi (0.59.8):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-  - React/jsiexecutor (0.59.5):
+  - React/jsiexecutor (0.59.8):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/cxxreact
     - React/jsi
-  - React/jsinspector (0.59.5)
+  - React/jsinspector (0.59.8)
   - RNDeviceInfo (1.6.1):
     - React
   - RNFS (2.13.3):
@@ -54,7 +54,7 @@ PODS:
     - React
   - RNVectorIcons (6.4.2):
     - React
-  - yoga (0.59.5.React)
+  - yoga (0.59.8.React)
 
 DEPENDENCIES:
   - Crashlytics
@@ -115,8 +115,8 @@ SPEC CHECKSUMS:
   Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  React: 90adac468c7b72bf1fa6c64bf230650f851a8388
-  react-native-netinfo: 73774249933883b2586a0543d21b119834244d6f
+  React: 76e6aa2b87d05eb6cccb6926d72685c9a07df152
+  react-native-netinfo: 39c221d058dca040a69e46a083e692bbd65d5ab5
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   RNDeviceInfo: 958a1ed6f94e04557b865b8ef848cfc83db0ebba
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
@@ -124,7 +124,7 @@ SPEC CHECKSUMS:
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
   RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
   RNVectorIcons: 6607bd3a30291d0edb56f9bbe7ae411ee2b928b0
-  yoga: 2e571f113e8cbeb0eb752aeebc86c1bfe7a8200c
+  yoga: 92b2102c3d373d1a790db4ab761d2b0ffc634f64
 
 PODFILE CHECKSUM: f3efd0b334351cbfdd1c4a24841fecd19dec3b59
 
