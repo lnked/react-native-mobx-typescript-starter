@@ -4097,10 +4097,10 @@ husky@2.2.0:
     run-node "^1.0.0"
     slash "^2.0.0"
 
-i18n-js@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-3.2.1.tgz#26cea8e327207bebccf1030baa761c5245ceb63b"
-  integrity sha512-AN8Ol+7QMcRml338l5W7JeNsJgXZqXHOwF+e2iKu6gqRM87bmbxk3g2CAfapo7+5ASKOhl+0PiH+YP8OjN+rXg==
+i18n-js@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-3.2.2.tgz#9f7f552320c0e4cc6b35c50a790cc50465c7dc90"
+  integrity sha512-CSTJelBrTDa54Utpj5BNEcplB4i/kXytjVNdQe4k/OQv1r9rVHtRZHWnhvRwkOrhdeJn7Wt05cv/rj5UT9Efhg==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.17, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   version "0.4.24"
@@ -7569,19 +7569,19 @@ react@16.8.6:
     prop-types "^15.6.2"
     scheduler "^0.13.6"
 
-reactotron-core-client@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/reactotron-core-client/-/reactotron-core-client-2.6.1.tgz#9e9bcbc3ff921fdfa080167ccb6f7e8579a966d8"
-  integrity sha512-WPIwqguoLdKgnPRzj1VO6gL3JTbSnYbXCFfyuiOAJV+APgANvjS3ixcZPkiVXTdfiGNhVpwnelTXGfhwqEiKBw==
+reactotron-core-client@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/reactotron-core-client/-/reactotron-core-client-2.7.0.tgz#f2cf769a059ddb7d39bc573eee930036c89db564"
+  integrity sha512-K44DOvB9OfIHfK7I/oE4dtAUuhu3mP2qu8qSCKDihCLeyQqyoJ70xoKNBzBY2gW4EN8Lz6sNbsKngidsmBHsdw==
 
-reactotron-react-native@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/reactotron-react-native/-/reactotron-react-native-3.4.1.tgz#22efdb32bb7388988288092b15d32d445545f501"
-  integrity sha512-oW//69saYrT5x8PaxIm9afvEgvMjIdFyI/Oo2sI1vs4byL2AjIJbjL8/MQysC0z9AcWgYKYxPTI+4FMshe8Qog==
+reactotron-react-native@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/reactotron-react-native/-/reactotron-react-native-3.5.0.tgz#bd1fc22740e8d557b0114502accb756b85daf489"
+  integrity sha512-eOkCAyotWUJfRhPKR00yzDDvyPJX4BpFwgiUWqn0+2cCEqYQe5wx2BF0yqqFuRgdsI5iiX8UloRHe48TNJm2vA==
   dependencies:
     mitt "^1.1.3"
     query-string "^6.4.2"
-    reactotron-core-client "^2.6.1"
+    reactotron-core-client "^2.7.0"
     rn-host-detect "^1.1.5"
 
 read-pkg-up@^1.0.1:
@@ -9285,10 +9285,10 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.30.0:
-  version "4.30.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.30.0.tgz#aca76ef75630a22c49fcc235b39b4c57591d33a9"
-  integrity sha512-4hgvO2YbAFUhyTdlR4FNyt2+YaYBYHavyzjCMbZzgglo02rlKi/pcsEzwCuCpsn1ryzIl1cq/u8ArIKu8JBYMg==
+webpack@4.31.0:
+  version "4.31.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.31.0.tgz#ae201d45f0571336e42d1c2b5c8ab56c4d3b0c63"
+  integrity sha512-n6RVO3X0LbbipoE62akME9K/JI7qYrwwufs20VvgNNpqUoH4860KkaxJTbGq5bgkVZF9FqyyTG/0WPLH3PVNJA==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
