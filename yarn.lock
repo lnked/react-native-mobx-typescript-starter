@@ -876,10 +876,10 @@
     xcode "^2.0.0"
     xmldoc "^0.4.0"
 
-"@react-native-community/netinfo@2.0.10":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-2.0.10.tgz#d28a446352e75754b78509557988359133cdbcca"
-  integrity sha512-NrIzyLe0eSbhgMnHl2QdSEhaA7yXh6p9jzMomfUa//hoTXE+xbObGDdiWWSQm2bnXnZJg8XCU3AB9qzvqcuLnA==
+"@react-native-community/netinfo@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-2.1.0.tgz#877ad251cb0e8b6e1840b68f08586e27cedca415"
+  integrity sha512-3bp2NlIeO9ONMFzvIx2HTfqtYFNsrK9VlW/NF//50ouVYz+lpecfNqQ9Z4BEy5SC7HNjC0/UXFDQL/RoF8QD8A==
 
 "@react-navigation/core@~3.4.1":
   version "3.4.1"
@@ -1062,10 +1062,10 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-native@0.57.56":
-  version "0.57.56"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.56.tgz#433c54f371a0e98297863c652714d262f66f7101"
-  integrity sha512-Pakr71mP9GO7FAN9/OFBt7kq5tABNajg0M7EJj23ezUtstwxnhxm3kP3Tz030PBIiwOpdyDShb9Ku5xyLqs17Q==
+"@types/react-native@0.57.57":
+  version "0.57.57"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.57.tgz#4b59068acf6e542ac8e1e02e8a639b47e3e02c02"
+  integrity sha512-OZyBlMyMeU3gXAmc1nnJhlWGihWUOiVR5Tj0y4TAA0rkKKHJwuNPPba6aaFmEaNcoZ9ejc3G30H+dneDOqICdg==
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
