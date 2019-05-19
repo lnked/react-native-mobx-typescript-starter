@@ -876,10 +876,10 @@
     xcode "^2.0.0"
     xmldoc "^0.4.0"
 
-"@react-native-community/netinfo@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-3.0.1.tgz#920e0afb6225bd0d6dbf18c02e21f245cfd689b8"
-  integrity sha512-VbVpgtDpMS642q06Z8vO4yGZortJLyQ37g0h+dD/UMQ8BppeJ54QASsym1B8iEhr1FFThNSorpd2dWUmpwqmvg==
+"@react-native-community/netinfo@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-3.1.0.tgz#760ec7f6da4aa4fc187a3d03e801490621abd714"
+  integrity sha512-orOm3Up28xlVVmYWHl0RFKSQW38kPejqByqSrZDxQ2Yf2lVlEk95Sq6ug7Ez92bhs9V78/27QBAZQ2zOYKFLJA==
 
 "@react-navigation/core@~3.4.1":
   version "3.4.1"
