@@ -1,9 +1,9 @@
 PODS:
   - boost-for-react-native (1.63.0)
-  - Crashlytics (3.13.0):
-    - Fabric (~> 1.10.0)
+  - Crashlytics (3.13.1):
+    - Fabric (~> 1.10.1)
   - DoubleConversion (1.1.6)
-  - Fabric (1.10.0)
+  - Fabric (1.10.1)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -11,7 +11,7 @@ PODS:
   - glog (0.3.5)
   - React (0.59.8):
     - React/Core (= 0.59.8)
-  - react-native-netinfo (2.0.10):
+  - react-native-netinfo (3.1.0):
     - React
   - react-native-splash-screen (3.2.0):
     - React
@@ -73,7 +73,7 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNDeviceInfo (1.8.0):
+  - RNDeviceInfo (2.0.0):
     - React
   - RNFS (2.13.3):
     - React
@@ -158,15 +158,15 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  Crashlytics: 1f5f752c7feac0add0cc1774756f96444fa3b1a7
+  Crashlytics: 5aa8e90dcbf2f34898b4f5a0037787531246cca0
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
-  Fabric: 09de1e053eb7dc415593166ad3e53d4c88123405
+  Fabric: f6f21452846788bb44595d73e9909d79d328e617
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 76e6aa2b87d05eb6cccb6926d72685c9a07df152
-  react-native-netinfo: 39c221d058dca040a69e46a083e692bbd65d5ab5
+  react-native-netinfo: bb6019953e06182c376be748bdfdde92e13840ce
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
-  RNDeviceInfo: 9e6a0aece8e7455515103ce23372b393843a7ee7
+  RNDeviceInfo: 437d3e84a73732d4fce95f3449017656e1a5cdbb
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   RNLanguages: 962e562af0d34ab1958d89bcfdb64fafc37c513e
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
