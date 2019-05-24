@@ -1,4 +1,4 @@
-module.exports = (api) => {
+module.exports = function (api) {
   const test = api.env('test');
   const production = api.env('production');
   const development = api.env('development');
@@ -8,6 +8,7 @@ module.exports = (api) => {
   return {
     presets: [
       'module:metro-react-native-babel-preset',
+      'module:react-native-dotenv',
       'mobx',
     ],
     plugins: [
@@ -24,7 +25,13 @@ module.exports = (api) => {
         },
       }],
     ],
+    env: {
+      production: {
+        plugins: ['ignite-ignore-reactotron', MODULE_RESOLVER],
+      },
+    },
     comments: false,
+    sourceMaps: true,
   };
 };
 
