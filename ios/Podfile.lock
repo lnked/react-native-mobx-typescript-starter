@@ -11,7 +11,7 @@ PODS:
   - glog (0.3.5)
   - React (0.59.8):
     - React/Core (= 0.59.8)
-  - react-native-netinfo (3.1.3):
+  - react-native-netinfo (3.2.0):
     - React
   - react-native-splash-screen (3.2.0):
     - React
@@ -73,6 +73,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNCAsyncStorage (1.4.2):
+    - React
   - RNDeviceInfo (2.0.2):
     - React
   - RNFS (2.13.3):
@@ -114,6 +116,7 @@ DEPENDENCIES:
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNFS (from `../node_modules/react-native-fs`)
   - RNLanguages (from `../node_modules/react-native-languages`)
@@ -141,6 +144,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/netinfo"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-community/async-storage"
   RNDeviceInfo:
     :path: "../node_modules/react-native-device-info"
   RNFS:
@@ -164,8 +169,9 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 76e6aa2b87d05eb6cccb6926d72685c9a07df152
-  react-native-netinfo: 09723cd6c8fa87d6961da027253239d9e75345e3
+  react-native-netinfo: 5e4f338e9f667d1a289c1a648dc9cdd2c49436e4
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
+  RNCAsyncStorage: 0d2b0cf659d2def90d8ed7de76f502d335268156
   RNDeviceInfo: a74f061640be5fbb5485a4cc29f7eac534759391
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   RNLanguages: 962e562af0d34ab1958d89bcfdb64fafc37c513e
@@ -174,6 +180,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 6607bd3a30291d0edb56f9bbe7ae411ee2b928b0
   yoga: 92b2102c3d373d1a790db4ab761d2b0ffc634f64
 
-PODFILE CHECKSUM: 9a9510b700de8eae3900f48b84a867de8fbb6179
+PODFILE CHECKSUM: e05b809ab40ef603935b1f8327432edcba493e25
 
 COCOAPODS: 1.6.1
