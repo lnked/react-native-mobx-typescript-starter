@@ -27,7 +27,7 @@ module.exports = function (api) {
     ],
     env: {
       production: {
-        plugins: ['ignite-ignore-reactotron', MODULE_RESOLVER],
+        plugins: ['ignite-ignore-reactotron'],
       },
     },
     comments: false,
