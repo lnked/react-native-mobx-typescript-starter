@@ -4,6 +4,7 @@ import {
   Linking,
   View,
 } from 'react-native'
+import SplashScreen from 'react-native-splash-screen'
 
 import Core from '@/core'
 import { Colors, CommonStyles } from '@/resources/styles'
@@ -13,6 +14,7 @@ class App extends React.Component<{}, {}> {
 
   componentDidMount() {
     this.initDeepLinks()
+    SplashScreen.hide()
   }
 
   componentWillUnmount() {

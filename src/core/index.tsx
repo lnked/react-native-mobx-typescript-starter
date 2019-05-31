@@ -1,9 +1,8 @@
 import * as React from 'react'
-import SplashScreen from 'react-native-splash-screen'
 
-import { observer, Provider } from 'mobx-react/native'
+// import { observer } from 'mobx-react'
 
-import { createStore } from '@/store'
+// import { createStore } from '@/store'
 
 // import i18n from '@/i18n'
 import { isAndroid } from '@/configs'
@@ -13,27 +12,23 @@ const uriPrefix = isAndroid ? 'app://app/' : 'app://'
 
 const navigation = React.createRef<any>()
 
-@observer
+// @observer
 class Core extends React.Component<{}, {}> {
 
   componentDidMount() {
     // store.appConfig.fetchAppConfig()
-    SplashScreen.hide()
   }
 
   handleNavigationChange = (props: any) => {
     console.log('handleNavigationChange: ', props)
   }
-
   render () {
     return (
-      <Provider {...createStore()}>
-        <AppContainer
-          ref={navigation}
-          uriPrefix={uriPrefix}
-          onNavigationStateChange={this.handleNavigationChange}
-        />
-      </Provider>
+      <AppContainer
+        ref={navigation}
+        uriPrefix={uriPrefix}
+        onNavigationStateChange={this.handleNavigationChange}
+      />
     )
   }
 

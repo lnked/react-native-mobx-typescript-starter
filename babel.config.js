@@ -3,13 +3,11 @@ module.exports = function (api) {
   const production = api.env('production');
   const development = api.env('development');
 
-  console.log({ test, production, development });
-
   return {
     presets: [
       'module:metro-react-native-babel-preset',
       'module:react-native-dotenv',
-      'mobx',
+      // 'mobx',
     ],
     plugins: [
       '@babel/plugin-transform-modules-commonjs',
