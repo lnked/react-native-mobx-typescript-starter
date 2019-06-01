@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.4.2",
-    "@react-native-community/netinfo": "3.2.0",
+    "@react-native-community/netinfo": "3.2.1",
     "apisauce": "1.0.2",
     "i18n-js": "3.2.2",
     "mobx": "5.9.4",
@@ -49,7 +49,7 @@
     "react-native-classnames": "0.1.1",
     "react-native-device-info": "2.0.3",
     "react-native-fs": "2.13.3",
-    "react-native-gesture-handler": "1.2.2",
+    "react-native-gesture-handler": "1.3.0",
     "react-native-languages": "3.0.2",
     "react-native-permissions": "2.0.0-alpha.1",
     "react-native-splash-screen": "3.2.0",
