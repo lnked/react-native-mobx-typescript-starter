@@ -37,7 +37,7 @@
     "studio": "open -a /Applications/Android\\ Studio.app ./android/"
   },
   "dependencies": {
-    "@react-native-community/async-storage": "1.4.2",
+    "@react-native-community/async-storage": "1.5.0",
     "@react-native-community/netinfo": "3.2.1",
     "apisauce": "1.0.2",
     "i18n-js": "3.3.0",
