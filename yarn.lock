@@ -7354,10 +7354,10 @@ react-native-classnames@0.1.1:
   dependencies:
     classnames "^2.2.5"
 
-react-native-device-info@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-2.1.1.tgz#c6ddc022033756a5e4c5899eb83e390b5a18cc17"
-  integrity sha512-H0qq9UdP3zGESYH4HMPuv2A/FwOMszVbktj0JWuT/eVhW97PyRkYcobhFd1ggW0U+ksVSewSyX+JenQejGp7+w==
+react-native-device-info@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-2.1.2.tgz#5c553498e8930410aa65796b83f8f8c8fb9893b4"
+  integrity sha512-q14hVR0eLRXnKeRyKX4naydXstCWetCIL+K+vUqREGkVj6qKoBouKd2yd8AxBfyomQN4uP3XRT6hTCwErIj9Ew==
 
 react-native-dotenv@0.2.0:
   version "0.2.0"
@@ -8209,6 +8209,9 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   version "2.4.11"
   resolved "https://registry.yarnpkg.com/sha.js/-/sha.js-2.4.11.tgz#37a5cf0b81ecbc6943de109ba2960d1b26584ae7"
   integrity sha512-QMEp5B7cftE7APOjk5Y6xgrbWu+WkLVQwk8JNjZ8nKRciZaByEW6MubieAiToS7+dwvrjGhH8jRXz3MVd0AYqQ==
+  dependencies:
+    inherits "^2.0.1"
+    safe-buffer "^5.0.1"
 
 shebang-command@^1.2.0:
   version "1.2.0"
