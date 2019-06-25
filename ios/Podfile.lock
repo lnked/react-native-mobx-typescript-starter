@@ -9,73 +9,73 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - React (0.59.8):
-    - React/Core (= 0.59.8)
-  - react-native-netinfo (3.2.0):
+  - React (0.59.9):
+    - React/Core (= 0.59.9)
+  - react-native-netinfo (3.2.1):
     - React
   - react-native-splash-screen (3.2.0):
     - React
-  - React/Core (0.59.8):
-    - yoga (= 0.59.8.React)
-  - React/CxxBridge (0.59.8):
+  - React/Core (0.59.9):
+    - yoga (= 0.59.9.React)
+  - React/CxxBridge (0.59.9):
     - Folly (= 2018.10.22.00)
     - React/Core
     - React/cxxreact
     - React/jsiexecutor
-  - React/cxxreact (0.59.8):
+  - React/cxxreact (0.59.9):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/jsinspector
-  - React/DevSupport (0.59.8):
+  - React/DevSupport (0.59.9):
     - React/Core
     - React/RCTWebSocket
-  - React/fishhook (0.59.8)
-  - React/jsi (0.59.8):
+  - React/fishhook (0.59.9)
+  - React/jsi (0.59.9):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-  - React/jsiexecutor (0.59.8):
+  - React/jsiexecutor (0.59.9):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/cxxreact
     - React/jsi
-  - React/jsinspector (0.59.8)
-  - React/RCTActionSheet (0.59.8):
+  - React/jsinspector (0.59.9)
+  - React/RCTActionSheet (0.59.9):
     - React/Core
-  - React/RCTAnimation (0.59.8):
+  - React/RCTAnimation (0.59.9):
     - React/Core
-  - React/RCTBlob (0.59.8):
+  - React/RCTBlob (0.59.9):
     - React/Core
-  - React/RCTCameraRoll (0.59.8):
+  - React/RCTCameraRoll (0.59.9):
     - React/Core
     - React/RCTImage
-  - React/RCTGeolocation (0.59.8):
+  - React/RCTGeolocation (0.59.9):
     - React/Core
-  - React/RCTImage (0.59.8):
+  - React/RCTImage (0.59.9):
     - React/Core
     - React/RCTNetwork
-  - React/RCTLinkingIOS (0.59.8):
+  - React/RCTLinkingIOS (0.59.9):
     - React/Core
-  - React/RCTNetwork (0.59.8):
+  - React/RCTNetwork (0.59.9):
     - React/Core
-  - React/RCTPushNotification (0.59.8):
+  - React/RCTPushNotification (0.59.9):
     - React/Core
-  - React/RCTSettings (0.59.8):
+  - React/RCTSettings (0.59.9):
     - React/Core
-  - React/RCTText (0.59.8):
+  - React/RCTText (0.59.9):
     - React/Core
-  - React/RCTVibration (0.59.8):
+  - React/RCTVibration (0.59.9):
     - React/Core
-  - React/RCTWebSocket (0.59.8):
+  - React/RCTWebSocket (0.59.9):
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNCAsyncStorage (1.4.2):
+  - RNCAsyncStorage (1.5.0):
     - React
-  - RNDeviceInfo (2.0.3):
+  - RNDeviceInfo (2.1.3):
     - React
   - RNFS (2.13.3):
     - React
@@ -86,11 +86,11 @@ PODS:
     - RNPermissions/Core (= 2.0.0-alpha.1)
   - RNPermissions/Core (2.0.0-alpha.1):
     - React/Core
-  - RNSVG (9.4.0):
+  - RNSVG (9.5.1):
     - React
-  - RNVectorIcons (6.4.2):
+  - RNVectorIcons (6.5.0):
     - React
-  - yoga (0.59.8.React)
+  - yoga (0.59.9.React)
 
 DEPENDENCIES:
   - Crashlytics
@@ -168,17 +168,17 @@ SPEC CHECKSUMS:
   Fabric: f6f21452846788bb44595d73e9909d79d328e617
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  React: 76e6aa2b87d05eb6cccb6926d72685c9a07df152
-  react-native-netinfo: 5e4f338e9f667d1a289c1a648dc9cdd2c49436e4
+  React: a86b92f00edbe1873a63e4a212c29b7a7ad5224f
+  react-native-netinfo: 0da34082d2cec3100c9b5073bb217e35f1142bdd
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
-  RNCAsyncStorage: 0d2b0cf659d2def90d8ed7de76f502d335268156
-  RNDeviceInfo: f9fd971ff5d6f70f9e70e6d0a738ae5f2189001d
+  RNCAsyncStorage: 9436928b444c5f5361960a7eea051a697c244b68
+  RNDeviceInfo: a67eef80ee1e68e1824f3ed3dc0ccf9e2d4fdc59
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   RNLanguages: 962e562af0d34ab1958d89bcfdb64fafc37c513e
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
-  RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
-  RNVectorIcons: 6607bd3a30291d0edb56f9bbe7ae411ee2b928b0
-  yoga: 92b2102c3d373d1a790db4ab761d2b0ffc634f64
+  RNSVG: 0eb087cfb5d7937be93c45b163b26352a647e681
+  RNVectorIcons: f6cf608dee5b2cb5726ff3b629a5258586d5677b
+  yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
 
 PODFILE CHECKSUM: e05b809ab40ef603935b1f8327432edcba493e25
 
