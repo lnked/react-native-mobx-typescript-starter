@@ -78,7 +78,7 @@
     "@types/node": "12.0.10",
     "@types/react": "16.8.22",
     "@types/react-dom": "16.8.4",
-    "@types/react-native": "0.57.63",
+    "@types/react-native": "0.57.64",
     "@types/react-native-vector-icons": "6.4.1",
     "@types/react-navigation": "3.0.7",
     "@types/react-test-renderer": "16.8.2",
