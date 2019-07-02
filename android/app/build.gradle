@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+// apply plugin: 'com.google.gms.google-services'
 
 import com.android.build.OutputFile
 
@@ -73,10 +74,14 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    entryFile: "index.js"
+  entryFile: "index.js",
+  bundleInRelease: true,
+  resourcesDirRelease: "src/main/res"
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -86,48 +91,114 @@ apply from: "../../node_modules/react-native/react.gradle"
  * Upload all the APKs to the Play Store and people will download
  * the correct one based on the CPU architecture of their device.
  */
-def enableSeparateBuildPerCPUArchitecture = false
+def enableSeparateBuildPerCPUArchitecture = true
 
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 android {
-  compileSdkVersion rootProject.ext.compileSdkVersion
+  // it tells Gradle what version of Android SDK to compile your app with.
+  // It is recommended to compile with the latest SDK.
+  compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
+  buildToolsVersion BUILD_TOOLS_VERSION
+
+  defaultConfig {
+    applicationId "com.app"
+
+    // it describes the minimum Android OS version that your app will support.
+    // React Native supports all Android versions higher than 4.1 (API 16).
+    minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
+
+    // it specifies the Android version your app is targeting.
+    targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+
+    // this is basically an integer number that describes your build version.
+    // It is used to determine which application file is newer.
+    // You will not be able to upload new .apk with this number lower or equal to the previous version.
+    versionCode Integer.parseInt(APP_VERSION_CODE)
+
+    // this is the version of your app that will be visible to users
+    versionName APP_VERSION_NAME
+
+    ndk {
+      /**
+       * Specifies the Application Binary Interfaces (ABI)
+       * that Gradle should build outputs for and package with your APK.
+       */
+      abiFilters = []
+    }
+
+    packagingOptions {
+      exclude 'lib/arm64-v8a/libimagepipeline.so'
+    }
+  }
 
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
   }
 
-  defaultConfig {
-    applicationId "com.app"
-    minSdkVersion rootProject.ext.minSdkVersion
-    targetSdkVersion rootProject.ext.targetSdkVersion
-    versionCode 1
-    versionName "1.0.0"
+  lintOptions {
+    checkReleaseBuilds false
+    abortOnError true
+    textReport true
+    lintConfig file("lint/suppressing.xml")
   }
+
   splits {
     abi {
-      reset()
+      /**
+       * Configures multiple APKs based on screen density.
+       * Enables building multiple APKs per ABI
+       */
       enable enableSeparateBuildPerCPUArchitecture
-      universalApk false  // If true, also generate a universal APK
+
+      // Resets the list of ABIs that Gradle should create APKs for to none.
+      reset()
+
+      // Specifies the two ABIs we want to generate APKs for.
       include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+
+      /**
+       * If true, Gradle generates a universal APK in addition to per-ABI APKs.
+       * A universal APK contains code and resources for all ABIs in a single APK.
+       * The default value is false. Note that this option is only available in the splits.abi block.
+       * When building multiple APKs based on screen density, Gradle always generates a universal APK
+       * that contains code and resources for all screen densities.
+       */
+      universalApk false
     }
   }
+
   buildTypes {
     release {
+      // Enables code shrinking, obfuscation, and optimization for only
+      // your project's release build type.
       minifyEnabled enableProguardInReleaseBuilds
-      proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+
+      // Enables resource shrinking, which is performed by the
+      // Android Gradle plugin.
+      shrinkResources true
+
+      // Includes the default ProGuard rules files that are packaged with
+      // the Android Gradle plugin. To learn more, go to the section about
+      // R8 configuration files.
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+
+    debug {
+      debuggable true
     }
   }
-    // applicationVariants are e.g. debug, release
+
+  // applicationVariants are e.g. debug, release
   applicationVariants.all { variant ->
     variant.outputs.each { output ->
       // For each separate APK per architecture, set a unique version code as described here:
       // http://tools.android.com/tech-docs/new-build-system/user-guide/apk-splits
-      def versionCodes = ["armeabi-v7a":1, "x86":2, "arm64-v8a": 3, "x86_64": 4]
+      def versionCodes = ["armeabi-v7a": 1, "x86": 2, "arm64-v8a": 3, "x86_64": 4]
       def abi = output.getFilter(OutputFile.ABI)
       if (abi != null) {  // null for the universal-debug, universal-release variants
           output.versionCodeOverride =
@@ -138,19 +209,28 @@ android {
 }
 
 dependencies {
-  implementation project(':@react-native-community_async-storage')
+  // Support Libraries
+  implementation "com.android.support:appcompat-v7:$SUPPORT_LIB_VERSION"
+  implementation "com.android.support:design:$SUPPORT_LIB_VERSION"
+  implementation "com.android.support:support-v4:$SUPPORT_LIB_VERSION"
+
+  implementation fileTree(dir: "libs", include: ["*.jar"])
+  implementation ("com.facebook.react:react-native:$REACT_NATIVE_VERSION") { force = true }
+
   implementation project(':react-native-fs')
   implementation project(':react-native-svg')
-  implementation project(':react-native-vector-icons')
-  implementation project(':react-native-device-info')
-  implementation project(':react-native-splash-screen')
+  implementation project(':react-native-localize')
+  implementation project(':react-native-code-push')
   implementation project(':react-native-permissions')
+  implementation project(':react-native-device-info')
+  implementation project(':react-native-vector-icons')
+  implementation project(':react-native-splash-screen')
   implementation project(':react-native-gesture-handler')
-  implementation project(':react-native-languages')
-  implementation project(':react-native-community_netinfo')
-  implementation fileTree(dir: "libs", include: ["*.jar"])
-  implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
-  implementation "com.facebook.react:react-native:+"  // From node_modules
+  implementation project(':@react-native-community_netinfo')
+  implementation project(':@react-native-community_async-storage')
+
+  // Google Play Services
+  implementation "com.google.android.gms:play-services-base:$GOOGLE_PLAY_SERVICES_VERSION"
 }
 
 // Run this once to be able to run the application with BUCK

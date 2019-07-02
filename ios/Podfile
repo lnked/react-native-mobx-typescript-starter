@@ -52,16 +52,18 @@ target 'app' do
   # =================================
   pod 'RNFS', :path => "../node_modules/react-native-fs"
   pod 'RNSVG', :path => "../node_modules/react-native-svg"
-  pod 'RNLanguages', :path => "../node_modules/react-native-languages"
+  pod 'RNLocalize', :path => '../node_modules/react-native-localize'
   pod 'RNDeviceInfo', :path => "../node_modules/react-native-device-info"
   pod 'RNPermissions', :path => "../node_modules/react-native-permissions"
   pod 'RNVectorIcons', :path => "../node_modules/react-native-vector-icons"
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
+  # CodePush plugin dependency
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
 
   pod 'react-native-netinfo', :path => "../node_modules/@react-native-community/netinfo"
   pod 'react-native-splash-screen', :path => "../node_modules/react-native-splash-screen"
   # =================================
-
-  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
 
   target 'appTests' do
     inherit! :search_paths

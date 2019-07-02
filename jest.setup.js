@@ -28,8 +28,8 @@ jest.mock('react-native-device-info', () => ({
   getModel: jest.fn(),
 }));
 
-jest.mock('react-native-languages', () => ({
-  RNLanguages: {
+jest.mock('react-native-localize', () => ({
+  RNLocalize: {
     language: 'en',
     languages: ['en'],
   },

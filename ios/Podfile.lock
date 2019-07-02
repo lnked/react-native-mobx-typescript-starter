@@ -9,67 +9,67 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - React (0.59.9):
-    - React/Core (= 0.59.9)
+  - React (0.59.10):
+    - React/Core (= 0.59.10)
   - react-native-netinfo (3.2.1):
     - React
   - react-native-splash-screen (3.2.0):
     - React
-  - React/Core (0.59.9):
-    - yoga (= 0.59.9.React)
-  - React/CxxBridge (0.59.9):
+  - React/Core (0.59.10):
+    - yoga (= 0.59.10.React)
+  - React/CxxBridge (0.59.10):
     - Folly (= 2018.10.22.00)
     - React/Core
     - React/cxxreact
     - React/jsiexecutor
-  - React/cxxreact (0.59.9):
+  - React/cxxreact (0.59.10):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/jsinspector
-  - React/DevSupport (0.59.9):
+  - React/DevSupport (0.59.10):
     - React/Core
     - React/RCTWebSocket
-  - React/fishhook (0.59.9)
-  - React/jsi (0.59.9):
+  - React/fishhook (0.59.10)
+  - React/jsi (0.59.10):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-  - React/jsiexecutor (0.59.9):
+  - React/jsiexecutor (0.59.10):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
     - React/cxxreact
     - React/jsi
-  - React/jsinspector (0.59.9)
-  - React/RCTActionSheet (0.59.9):
+  - React/jsinspector (0.59.10)
+  - React/RCTActionSheet (0.59.10):
     - React/Core
-  - React/RCTAnimation (0.59.9):
+  - React/RCTAnimation (0.59.10):
     - React/Core
-  - React/RCTBlob (0.59.9):
+  - React/RCTBlob (0.59.10):
     - React/Core
-  - React/RCTCameraRoll (0.59.9):
+  - React/RCTCameraRoll (0.59.10):
     - React/Core
     - React/RCTImage
-  - React/RCTGeolocation (0.59.9):
+  - React/RCTGeolocation (0.59.10):
     - React/Core
-  - React/RCTImage (0.59.9):
+  - React/RCTImage (0.59.10):
     - React/Core
     - React/RCTNetwork
-  - React/RCTLinkingIOS (0.59.9):
+  - React/RCTLinkingIOS (0.59.10):
     - React/Core
-  - React/RCTNetwork (0.59.9):
+  - React/RCTNetwork (0.59.10):
     - React/Core
-  - React/RCTPushNotification (0.59.9):
+  - React/RCTPushNotification (0.59.10):
     - React/Core
-  - React/RCTSettings (0.59.9):
+  - React/RCTSettings (0.59.10):
     - React/Core
-  - React/RCTText (0.59.9):
+  - React/RCTText (0.59.10):
     - React/Core
-  - React/RCTVibration (0.59.9):
+  - React/RCTVibration (0.59.10):
     - React/Core
-  - React/RCTWebSocket (0.59.9):
+  - React/RCTWebSocket (0.59.10):
     - React/Core
     - React/fishhook
     - React/RCTBlob
@@ -79,7 +79,7 @@ PODS:
     - React
   - RNFS (2.13.3):
     - React
-  - RNLanguages (3.0.2):
+  - RNLocalize (1.1.3):
     - React
   - RNPermissions (2.0.0-alpha.1):
     - React/Core
@@ -90,7 +90,7 @@ PODS:
     - React
   - RNVectorIcons (6.6.0):
     - React
-  - yoga (0.59.9.React)
+  - yoga (0.59.10.React)
 
 DEPENDENCIES:
   - Crashlytics
@@ -119,7 +119,7 @@ DEPENDENCIES:
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNFS (from `../node_modules/react-native-fs`)
-  - RNLanguages (from `../node_modules/react-native-languages`)
+  - RNLocalize (from `../node_modules/react-native-localize`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -150,8 +150,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-device-info"
   RNFS:
     :path: "../node_modules/react-native-fs"
-  RNLanguages:
-    :path: "../node_modules/react-native-languages"
+  RNLocalize:
+    :path: "../node_modules/react-native-localize"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
   RNSVG:
@@ -168,18 +168,18 @@ SPEC CHECKSUMS:
   Fabric: f6f21452846788bb44595d73e9909d79d328e617
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  React: a86b92f00edbe1873a63e4a212c29b7a7ad5224f
+  React: 36d0768f9e93be2473b37e7fa64f92c1d5341eef
   react-native-netinfo: 0da34082d2cec3100c9b5073bb217e35f1142bdd
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   RNCAsyncStorage: 9436928b444c5f5361960a7eea051a697c244b68
   RNDeviceInfo: a67eef80ee1e68e1824f3ed3dc0ccf9e2d4fdc59
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
-  RNLanguages: 962e562af0d34ab1958d89bcfdb64fafc37c513e
+  RNLocalize: c3bc4ed498b008d6e2e172638f546129ef307b21
   RNPermissions: 064e4eb34c8c3da493ab48bda0af53cdd019b6a7
   RNSVG: 0eb087cfb5d7937be93c45b163b26352a647e681
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
-  yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
+  yoga: 684513b14b03201579ba3cee20218c9d1298b0cc
 
-PODFILE CHECKSUM: e05b809ab40ef603935b1f8327432edcba493e25
+PODFILE CHECKSUM: cdf31a2d219f83061325051710a67f5cd914619c
 
 COCOAPODS: 1.6.1
