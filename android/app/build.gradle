@@ -75,8 +75,8 @@ import com.android.build.OutputFile
 
 project.ext.react = [
   entryFile: "index.js",
-  bundleInRelease: true,
-  resourcesDirRelease: "src/main/res"
+  bundleInRelease: true
+  // resourcesDirRelease: "src/main/res"
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
