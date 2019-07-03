@@ -12,9 +12,14 @@ import { handleDeepLinkUrl } from '@/utils'
 
 class App extends React.Component<{}, {}> {
 
+  constructor (props: any) {
+    super(props)
+    alert('xx')
+    SplashScreen.hide()
+  }
+
   componentDidMount() {
     this.initDeepLinks()
-    SplashScreen.hide()
   }
 
   componentWillUnmount() {

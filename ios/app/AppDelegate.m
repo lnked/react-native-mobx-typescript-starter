@@ -6,7 +6,7 @@
  */
 
 #import "AppDelegate.h"
-#import <CodePush/CodePush.h>
+// #import <CodePush/CodePush.h>
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <React/RCTBridge.h>
@@ -49,7 +49,7 @@
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 #else
-  return [CodePush bundleURL];
+  // return [CodePush bundleURL];
 #endif
 }
 
