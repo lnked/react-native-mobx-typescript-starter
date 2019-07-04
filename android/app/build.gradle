@@ -80,7 +80,6 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
-apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
@@ -242,7 +241,6 @@ dependencies {
   implementation project(':react-native-fs')
   implementation project(':react-native-svg')
   implementation project(':react-native-localize')
-  implementation project(':react-native-code-push')
   implementation project(':react-native-permissions')
   implementation project(':react-native-device-info')
   implementation project(':react-native-vector-icons')
