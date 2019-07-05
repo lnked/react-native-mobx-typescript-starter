@@ -7367,6 +7367,11 @@ react-native-classnames@0.1.1:
   dependencies:
     classnames "^2.2.5"
 
+react-native-clean-project@3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-clean-project/-/react-native-clean-project-3.2.3.tgz#40313a3a4131353d5d082d7691b41b4de6f40eb2"
+  integrity sha512-c8NgNTXAwugyuP+bS5b5mwpML4JrSP+u9D5b6X5OudU6hPlzPsiFLnBzQUvJVSPRHRwCFj30/qHGCjLc/jPzUw==
+
 react-native-device-info@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-2.2.1.tgz#0c14285927fc7beeaf9241ea1ded90f5d5ebf836"

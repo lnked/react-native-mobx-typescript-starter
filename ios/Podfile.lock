@@ -89,6 +89,13 @@ PODS:
   - React-RCTWebSocket (0.60.0):
     - React-Core (= 0.60.0)
     - React-fishhook (= 0.60.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - ReactNativePermissions (1.1.1):
     - React
   - RNCAsyncStorage (1.5.0):
@@ -120,8 +127,8 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - "react-native-geolocation (from `/Users/lnked/web/starters/react-native/node_modules/@react-native-community/geolocation`)"
-  - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
-  - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
+  - "react-native-netinfo (from `/Users/lnked/web/starters/react-native/node_modules/@react-native-community/netinfo`)"
+  - react-native-splash-screen (from `/Users/lnked/web/starters/react-native/node_modules/react-native-splash-screen`)
   - react-native-webview (from `/Users/lnked/web/starters/react-native/node_modules/react-native-webview`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -133,19 +140,21 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - ReactiveCocoa (~> 2.5)
   - ReactNativePermissions (from `/Users/lnked/web/starters/react-native/node_modules/react-native-permissions`)
-  - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
-  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
-  - RNFS (from `../node_modules/react-native-fs`)
+  - "RNCAsyncStorage (from `/Users/lnked/web/starters/react-native/node_modules/@react-native-community/async-storage`)"
+  - RNDeviceInfo (from `/Users/lnked/web/starters/react-native/node_modules/react-native-device-info`)
+  - RNFS (from `/Users/lnked/web/starters/react-native/node_modules/react-native-fs`)
   - RNGestureHandler (from `/Users/lnked/web/starters/react-native/node_modules/react-native-gesture-handler`)
-  - RNLocalize (from `../node_modules/react-native-localize`)
-  - RNSVG (from `../node_modules/react-native-svg`)
-  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - RNLocalize (from `/Users/lnked/web/starters/react-native/node_modules/react-native-localize`)
+  - RNSVG (from `/Users/lnked/web/starters/react-native/node_modules/react-native-svg`)
+  - RNVectorIcons (from `/Users/lnked/web/starters/react-native/node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
+    - ReactiveCocoa
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -173,9 +182,9 @@ EXTERNAL SOURCES:
   react-native-geolocation:
     :path: "/Users/lnked/web/starters/react-native/node_modules/@react-native-community/geolocation"
   react-native-netinfo:
-    :path: "../node_modules/@react-native-community/netinfo"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/@react-native-community/netinfo"
   react-native-splash-screen:
-    :path: "../node_modules/react-native-splash-screen"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-splash-screen"
   react-native-webview:
     :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-webview"
   React-RCTActionSheet:
@@ -201,19 +210,19 @@ EXTERNAL SOURCES:
   ReactNativePermissions:
     :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-permissions"
   RNCAsyncStorage:
-    :path: "../node_modules/@react-native-community/async-storage"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/@react-native-community/async-storage"
   RNDeviceInfo:
-    :path: "../node_modules/react-native-device-info"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-device-info"
   RNFS:
-    :path: "../node_modules/react-native-fs"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-fs"
   RNGestureHandler:
     :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-gesture-handler"
   RNLocalize:
-    :path: "../node_modules/react-native-localize"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-localize"
   RNSVG:
-    :path: "../node_modules/react-native-svg"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-svg"
   RNVectorIcons:
-    :path: "../node_modules/react-native-vector-icons"
+    :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-vector-icons"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -244,6 +253,7 @@ SPEC CHECKSUMS:
   React-RCTText: 685fca2e13b024271048e7e247ef24476f28a41e
   React-RCTVibration: 4ee1cf208ab17a50fafb1c16ffe28fe594a64e4f
   React-RCTWebSocket: fca087d583724aa0e5fef7d911f0f2a28d0f2736
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactNativePermissions: b64e084dff6a5cad51587d38c306f09246246384
   RNCAsyncStorage: 9436928b444c5f5361960a7eea051a697c244b68
   RNDeviceInfo: 94d7ce92098f9653c93b8306b7dc40a761d145ff
@@ -254,6 +264,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   yoga: 616fde658be980aa60a2158835170f3f9c2d04b4
 
-PODFILE CHECKSUM: 8224a48c446f590b8bec5e15137e5954b86236e4
+PODFILE CHECKSUM: 8bc36d63bb77751d07b267000edd2c391c951419
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.3

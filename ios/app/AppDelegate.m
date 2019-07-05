@@ -6,19 +6,14 @@
  */
 
 #import "AppDelegate.h"
-// #import <CodePush/CodePush.h>
-#import <Fabric/Fabric.h>
-#import <Crashlytics/Crashlytics.h>
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import "RNSplashScreen.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [Fabric with:@[[Crashlytics class]]];
   // TODO: Move this to where you establish a user session
   // [self logUser];
   [UIDevice currentDevice].batteryMonitoringEnabled = true;
@@ -32,17 +27,8 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  [RNSplashScreen show];
   return YES;
 }
-
-// - (void) logUser {
-//   // TODO: Use the current user's information
-//   // You can call any combination of these three methods
-//   [CrashlyticsKit setUserIdentifier:@"12345"];
-//   [CrashlyticsKit setUserEmail:@"user@fabric.io"];
-//   [CrashlyticsKit setUserName:@"Test User"];
-// }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
