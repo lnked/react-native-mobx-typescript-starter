@@ -13,9 +13,9 @@
     "react-navigation": "3.11.0"
   },
   "devDependencies": {
-    "@babel/core": "7.5.0",
-    "@babel/plugin-proposal-object-rest-spread": "7.5.3",
-    "@babel/runtime": "7.5.3",
+    "@babel/core": "7.5.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.4",
+    "@babel/runtime": "7.5.4",
     "@gfx/zopfli": "1.0.14",
     "@react-native-community/eslint-config": "0.0.5",
     "babel-jest": "24.8.0",
