@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
+    "start:ios": "react-native run-ios",
+    "start:android": "react-native run-android",
     "test": "jest",
+    "clear:android": "cd android && ./gradlew clean",
+    "release:android": "react-native run-android --variant release",
     "lint": "eslint ."
   },
   "dependencies": {
