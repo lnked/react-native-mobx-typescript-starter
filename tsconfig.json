@@ -30,9 +30,10 @@
   "exclude": [
     "node_modules",
     "**/*.(spec|test).tsx?",
+    "jest.setup.js",
     "jest.config.js",
     "babel.config.js",
     "metro.config.js",
-    "rn-cli.config.js"
+    "react-native.config.js"
   ]
 }

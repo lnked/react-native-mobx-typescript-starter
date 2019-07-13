@@ -11,10 +11,6 @@ module.exports = {
   // },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 
-  // transformIgnorePatterns: [
-  //   'node_modules/(?!(jest-)?react-native|react-native-animatable|react-navigation|@react-navigation.*)',
-  // ],
-
   // globals: {
   //   'ts-jest': {
   //     tsConfig: 'tsconfig.jest.json',

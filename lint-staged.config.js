@@ -1,6 +1,6 @@
 module.exports = {
-  "./src/**/*.ts?(x)": [
-    "yarn lint",
-    "git add"
-  ]
-}
+  './src/**/*.ts?(x)': [
+    'yarn lint',
+    'git add',
+  ],
+};
