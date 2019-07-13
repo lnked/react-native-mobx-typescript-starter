@@ -68,8 +68,5 @@
       "pre-push": "npm version patch",
       "post-commit": "git update-index --again"
     }
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
