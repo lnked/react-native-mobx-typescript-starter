@@ -1,6 +1,2 @@
-/* eslint global-require: 0 */
-const Images = {
-  // appIcon: require('./appIcon.png'),
-}
-
-export default Images
+export const logo = require('./logo.png');
+export const appIcon = require('./appIcon.png');

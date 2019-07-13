@@ -7,6 +7,7 @@
     "start:ios": "react-native run-ios",
     "start:android": "react-native run-android",
     "test": "jest",
+    "clear:ios": "cd ios && rm -rf Podfile.lock Pods/ && pod install",
     "clear:android": "cd android && ./gradlew clean",
     "release:android": "react-native run-android --variant release",
     "lint": "eslint .",
@@ -14,8 +15,11 @@
     "tslint:fix": "yarn lint --fix"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "1.5.1",
+    "@react-native-community/netinfo": "4.1.0",
     "react": "16.8.6",
     "react-native": "0.60.3",
+    "react-native-localize": "1.1.4",
     "react-navigation": "3.11.1",
     "reactotron-react-native": "3.6.4"
   },
