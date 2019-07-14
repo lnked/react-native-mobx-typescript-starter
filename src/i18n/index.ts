@@ -1,12 +1,26 @@
 import * as RNLocalize from 'react-native-localize';
 import { I18nManager } from 'react-native';
-import memoize from 'lodash.memoize';
+import memoize from 'fast-memoize';
 import i18n from 'i18n-js';
 
 const translationGetters: any = {
   en: () => require('./translations/en.json'),
   ru: () => require('./translations/ru.json'),
 };
+
+// const translate = memoize(() => {}, {
+//   cache: {
+//     create() {
+//       const store: any = {};
+
+//       return {
+//         has(key: string) { return (key in store); },
+//         get(key: string) { return store[key]; },
+//         set(key: string, value: any) { store[key] = value; }
+//       };
+//     },
+//   },
+// });
 
 const translate = memoize(
   (key: string, config: any) => i18n.t(key, config),
