@@ -1,0 +1,12 @@
+{
+  "test": "Test",
+  "global": {
+    "hide": "Hide",
+    "show": "Show"
+  },
+  "main": {
+    "button": {
+      "text": "Button test text"
+    }
+  }
+}
