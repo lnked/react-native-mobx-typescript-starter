@@ -41,3 +41,18 @@ allprojects {
   //   distributionUrl = distributionUrl.replace("bin", "all")
   // }
 }
+
+subprojects {
+  afterEvaluate {project ->
+    if (project.hasProperty("android")) {
+      android {
+        compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
+        buildToolsVersion BUILD_TOOLS_VERSION
+
+        lintOptions {
+          abortOnError false
+        }
+      }
+    }
+  }
+}
