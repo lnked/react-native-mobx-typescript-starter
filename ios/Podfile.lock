@@ -101,7 +101,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
-  - "react-native-netinfo (from `/Users/lnked/web/starters/react-native/node_modules/@react-native-community/netinfo`)"
+  - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -112,8 +112,8 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
-  - "RNCAsyncStorage (from `/Users/lnked/web/starters/react-native/node_modules/@react-native-community/async-storage`)"
-  - RNLocalize (from `/Users/lnked/web/starters/react-native/node_modules/react-native-localize`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
+  - RNLocalize (from `../node_modules/react-native-localize`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -144,7 +144,7 @@ EXTERNAL SOURCES:
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-netinfo:
-    :path: "/Users/lnked/web/starters/react-native/node_modules/@react-native-community/netinfo"
+    :path: "../node_modules/@react-native-community/netinfo"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -166,9 +166,9 @@ EXTERNAL SOURCES:
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   RNCAsyncStorage:
-    :path: "/Users/lnked/web/starters/react-native/node_modules/@react-native-community/async-storage"
+    :path: "../node_modules/@react-native-community/async-storage"
   RNLocalize:
-    :path: "/Users/lnked/web/starters/react-native/node_modules/react-native-localize"
+    :path: "../node_modules/react-native-localize"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
