@@ -1141,10 +1141,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.2.tgz#a5ccec6abb6060d5f20d256fb03ed743e9774999"
   integrity sha512-gojym4tX0FWeV2gsW4Xmzo5wxGjXGm550oVUII7f7G5o4BV6c7DBdiG1RRQd+y1bvqRyYtPfMK85UM95vsapqQ==
 
-"@types/node@12.6.5":
-  version "12.6.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.5.tgz#716f6b4258d04c0439e19b35b33242d431603368"
-  integrity sha512-8IUaNE8dbiVyv6wdi3mgrxZ9IYfDaulRY8A2MKiDugYj/tjPz/+JdwuC/uuBlGb+yTapiTratHfksPCy8trPQg==
+"@types/node@12.6.6":
+  version "12.6.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.6.tgz#831587377c35bb28fa33b6fe5f849a26a3f4a412"
+  integrity sha512-SMgj3x28MkJyHdWaMv/g/ca3LYDi5gR7O8mX0VKazvFOnmlDXctSEdd/8jfSqozjKFK1R9If1QZWkafX7yQTpA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -5990,10 +5990,10 @@ react-native-tab-view@^1.2.0, react-native-tab-view@^1.4.1:
   dependencies:
     prop-types "^15.6.1"
 
-react-native-testing-library@1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/react-native-testing-library/-/react-native-testing-library-1.11.0.tgz#19fddea5edcac95207fa5710cf6b80adda354155"
-  integrity sha512-qVuKRNpI7HPJ+zFf4I7cGRIjaokyp3OY93x+MFb04bhFYaPQvZoxyByiEI72Xzrfs66Ksr9kfRmGC6/4k0eYxg==
+react-native-testing-library@1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/react-native-testing-library/-/react-native-testing-library-1.11.1.tgz#0e2d73991110cf7d7800d86610ad7b7f8a4c9455"
+  integrity sha512-PTwDn1sgegvFqqF1v9zrRUChHqFqp5rWVUjXgkk134wssVhfc2oAuS6kiOvr3w7tLmFzuspxvT5sw0gMrRnDfQ==
   dependencies:
     pretty-format "^24.0.0"
 
