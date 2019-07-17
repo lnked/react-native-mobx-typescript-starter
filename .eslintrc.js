@@ -16,6 +16,24 @@ module.exports = {
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/prop-types": ["warn"],
-    "no-return-assign": ["off"]
+    "no-return-assign": ["off"],
+    "react/sort-comp": [1, {
+      order: [
+        'type-annotations',
+        'static-methods',
+        'instance-variables',
+        // 'instance-methods',
+        'lifecycle',
+        '/^on.+$/',
+        'everything-else',
+        'rendering',
+      ],
+      groups: {
+        rendering: [
+          '/^render.+$/',
+          'render'
+        ],
+      },
+    }],
   },
 };
