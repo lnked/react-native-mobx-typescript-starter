@@ -22,7 +22,7 @@
     "fast-memoize": "2.5.1",
     "i18n-js": "3.3.0",
     "react": "16.8.6",
-    "react-native": "0.60.3",
+    "react-native": "0.60.4",
     "react-native-localize": "1.1.4",
     "react-navigation": "3.11.1",
     "reactotron-react-native": "3.6.4"
