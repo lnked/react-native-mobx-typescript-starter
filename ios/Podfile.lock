@@ -1,6 +1,9 @@
 PODS:
   - boost-for-react-native (1.63.0)
+  - Crashlytics (3.13.4):
+    - Fabric (~> 1.10.2)
   - DoubleConversion (1.1.6)
+  - Fabric (1.10.2)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -83,7 +86,11 @@ PODS:
   - React-RCTWebSocket (0.60.4):
     - React-Core (= 0.60.4)
     - React-fishhook (= 0.60.4)
-  - RNCAsyncStorage (1.5.1):
+  - ReactNativeFabric (0.5.2):
+    - Crashlytics
+    - Fabric
+    - React
+  - RNCAsyncStorage (1.6.1):
     - React
   - RNLocalize (1.1.4):
     - React
@@ -112,6 +119,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - ReactNativeFabric (from `../node_modules/react-native-fabric`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - RNLocalize (from `../node_modules/react-native-localize`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -119,6 +127,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
+    - Crashlytics
+    - Fabric
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -165,6 +175,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
+  ReactNativeFabric:
+    :path: "../node_modules/react-native-fabric"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-community/async-storage"
   RNLocalize:
@@ -174,7 +186,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   React: ff7ee2ae5ee1c1d9ae2183b4111045b25294bb01
@@ -196,7 +210,8 @@ SPEC CHECKSUMS:
   React-RCTText: e0f224898b13af9aa036ea7cb3d438daa68c1044
   React-RCTVibration: 0bea40cd51bd089bd591a8f74c86e91fdf2666c5
   React-RCTWebSocket: 163873f4cdd5f1058a9483443404fc3801581cb6
-  RNCAsyncStorage: b63d6e83fc629b01df6b624688f17944cea5637f
+  ReactNativeFabric: d05320ff347d5c72567c115b97edeead111ac4d2
+  RNCAsyncStorage: 2e2e3feb9bdadc752a026703d8c4065ca912e75a
   RNLocalize: 62a949d2ec5bee0eb8f39a80a48f01e2f4f67080
   yoga: c2c050f6ae6e222534760cc82f559b89214b67e2
 
