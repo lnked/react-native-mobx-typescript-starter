@@ -77,7 +77,6 @@ import com.android.build.OutputFile
 
 project.ext.react = [
   entryFile: "index.js",
-  cliPath: "node_modules/haul/bin/cli.js",
   enableHermes: true
 ]
 
