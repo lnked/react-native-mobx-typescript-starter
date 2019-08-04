@@ -1,34 +1,42 @@
-import { StyleSheet } from 'react-native'
-
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen'
+import { StyleSheet } from 'react-native';
+import { Colors, Fonts } from '@/resources/styles';
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  disabled: {
+    opacity: 0.5,
   },
-  body: {
-    backgroundColor: Colors.white,
+
+  btn: {
+    height: 49,
+    borderRadius: 4,
+    shadowColor: Colors.ceruleanBlue15,
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowRadius: 10,
+    shadowOpacity: 1,
+    justifyContent: 'center',
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+
+  btnText: {
+    ...Fonts.normalSemiBold,
+    letterSpacing: 1,
+    textAlign: 'center',
+    color: Colors.white,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+
+  btnlight: {
+    color: Colors.darkText,
+  },
+
+  btntransparent: {
+    color: Colors.white,
+  },
+
+  btnsecondary: {
     color: Colors.black,
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-})
+});
 
-export default styles
+export default styles;

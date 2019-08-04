@@ -3,7 +3,7 @@ export const type = {
   medium: 'IBMPlexSans-Medium',
   semiBold: 'IBMPlexSans-SemiBold',
   italic: 'IBMPlexSans-Italic',
-}
+};
 
 export const size = {
   tiny: 10,
@@ -14,7 +14,7 @@ export const size = {
   medium: 18,
   large: 24,
   extraLarge: 32,
-}
+};
 
 export const Fonts = {
   tiny: {
@@ -105,4 +105,4 @@ export const Fonts = {
     fontFamily: type.italic,
     fontSize: size.big,
   },
-}
+};
