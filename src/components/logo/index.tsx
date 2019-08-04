@@ -1,5 +1,5 @@
-import React from 'react'
-import { Image } from 'react-native'
+import React from 'react';
+import { Image } from 'react-native';
 
 const style = {
   width: 100,
@@ -17,4 +17,4 @@ class Logo extends React.Component {
   }
 }
 
-export default Logo
+export default Logo;
