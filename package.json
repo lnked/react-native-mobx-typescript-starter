@@ -7,15 +7,15 @@
     "start:ios": "react-native run-ios",
     "start:android": "react-native run-android",
     "test": "jest",
-    "clear:all": "yarn clear:ios && yarn clear:android",
+    "clear:all": "npm run clear:ios && npm run clear:android",
     "clear:ios": "cd ios && rm -rf Podfile.lock Pods/ && pod install",
     "clear:android": "cd android && ./gradlew clean",
     "release:android": "cd android && ./gradlew assembleRelease",
     "release:android:old": "react-native run-android --variant release",
     "eslint": "eslint .",
     "tslint": "tslint -t stylish -p tsconfig.json 'src/**/*.{ts,tsx}'",
-    "lint": "yarn tslint",
-    "lint:fix": "yarn tslint --fix"
+    "lint": "npm run tslint",
+    "lint:fix": "npm run tslint --fix"
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.6.1",
@@ -31,7 +31,8 @@
     "react-native-localize": "1.1.4",
     "react-native-vector-icons": "6.6.0",
     "react-navigation": "3.11.1",
-    "reactotron-react-native": "3.6.4"
+    "reactotron-react-native": "3.6.4",
+    "theme": "0.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
