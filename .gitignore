@@ -50,8 +50,9 @@ build/
 local.properties
 *.iml
 
-# Visual Studio Code
+# Editors
 #
+.deco/
 .vscode/
 
 # node.js
