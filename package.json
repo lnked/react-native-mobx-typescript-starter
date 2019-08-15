@@ -1,6 +1,6 @@
 {
   "name": "DemoApp",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "private": true,
   "scripts": {
     "start": "react-native start",
