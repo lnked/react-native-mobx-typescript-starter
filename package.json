@@ -22,7 +22,7 @@
     "@react-native-community/netinfo": "4.2.0",
     "fast-memoize": "2.5.1",
     "i18n-js": "3.3.0",
-    "native-base": "2.13.6",
+    "native-base": "2.13.7",
     "react": "16.9.0",
     "react-native": "0.60.5",
     "react-native-classnames": "0.1.1",
