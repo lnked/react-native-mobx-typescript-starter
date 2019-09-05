@@ -1,45 +1,52 @@
-sudo: false
-
-language: node_js
-
-node_js:
-  - "8"
-
 branches:
   only:
     - master
-
-notifications:
-  email:
-    on_failure: change
-    on_success: change
-  slack:
-    rooms:
-      - celebro:RBaf3z6RftDAVPt3TjN4QBgE#react-starter
-
-cache:
-  yarn: true
-  directories:
-    - node_modules
+    - /^release\/.+$/
 
 before_install:
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH="$HOME/.yarn/bin:$PATH"
 
-install:
-  # TODO: Use npm again functions runtime is updated to a node verion with lock files
-  - yarn install
+matrix:
+  include:
+    - language: android
+      sudo: required
+      jdk: oraclejdk8
+      before_cache:
+        - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+        - rm -rf $HOME/.gradle/caches/*/plugin-resolution/
+      cache:
+        directories:
+          - $HOME/.yarn-cache
+          - $HOME/.gradle/caches/
+          - $HOME/.gradle/wrapper/
+      before_install:
+        - nvm install 8
+        - .travis/before_install.sh
+        - echo yes | sdkmanager "platforms;android-28"
+      android:
+        components:
+          - tools
+          - platform-tools
+          - build-tools-28.0.3
+          - tools
+      env: LANE='android'
+      script: .travis/run.sh
 
-script:
-  - yarn lint
-  - yarn test
-  - yarn build
-
-after_success:
-  # - firebase deploy --token $FIREBASE_TOKEN --non-interactive
-  - yarn deploy
-
-addons:
-  code_climate:
-    repo_token: 2b32652090b39c2cc95f0ea3ca3e2c7ff452b75388a81f0f4cfacbce4588f6e6
+    - language: objective-c
+      os: osx
+      osx_image: xcode9.4
+      node_js: '8'
+      cache:
+        - bundler
+        - pip
+        - yarn
+      env: LANE='ios'
+      before_install:
+        - .travis/before_install.sh
+      before_script:
+        - nvm install 8
+        - sudo easy_install virtualenv
+        - virtualenv ~/virtualenv
+        - source ~/virtualenv/bin/activate
+      script: .travis/run.sh
