@@ -37,16 +37,18 @@ class App extends Component {
   handleLocalizationChange = () => {
     setI18nConfig();
     this.forceUpdate();
-  };
+  }
 
   render() {
     return (
       <Fragment>
         <StatusBar barStyle="dark-content" />
+
         <SafeAreaView>
           <ScrollView
             contentInsetAdjustmentBehavior="automatic"
-            style={styles.scrollView}>
+            style={styles.scrollView}
+          >
             <Header />
             <View style={styles.body}>
               <View style={styles.sectionContainer}>
@@ -83,6 +85,6 @@ class App extends Component {
       </Fragment>
     );
   }
-};
+}
 
 export default App;

@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import { Colors } from './'
+import { StyleSheet } from 'react-native';
+import { Colors } from './';
 
 export const CommonStyles = StyleSheet.create({
   container: {
@@ -66,4 +66,4 @@ export const CommonStyles = StyleSheet.create({
   republican: {
     backgroundColor: Colors.black,
   },
-})
+});
