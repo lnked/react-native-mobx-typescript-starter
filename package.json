@@ -10,6 +10,7 @@
     "clear:all": "npm run clear:ios && npm run clear:android",
     "clear:ios": "cd ios && rm -rf Podfile.lock Pods/ && pod install",
     "clear:android": "cd android && ./gradlew clean",
+    "release:ios": "react-native run-ios --configuration Release",
     "release:android": "cd android && ./gradlew assembleRelease",
     "release:android:old": "react-native run-android --variant release",
     "eslint": "eslint .",
