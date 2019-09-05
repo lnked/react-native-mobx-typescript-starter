@@ -1,45 +1,83 @@
-sudo: false
+matrix:
+  include:
+    - language: node_js
+      node_js:
+        - "9"
+      script: .travis/ci_node.sh
 
-language: node_js
+    - language: node_js
+      node_js:
+        - "8"
+      script: .travis/ci_node.sh
 
-node_js:
-  - "8"
+    - os: osx
+      language: objective-c
+      osx_image: xcode9.4
+      env:
+        - JOB_NAME=IOS
+      script: .travis/ci.sh
 
-branches:
-  only:
-    - master
+    - os: linux
+      language: android
+      jdk: oraclejdk8
+      sudo: required
+      android:
+        components:
+          - platform-tools
+          - tools
+          - build-tools-26.0.3
+          - android-21
+          - android-26
+          - sys-img-armeabi-v7a-android-21
+          - extra-android-m2repository
+          - extra-google-m2repository
+          - extra-google-google_play_services
+      env:
+        - JOB_NAME=ANDROID
+      script: .travis/ci.sh
 
-notifications:
-  email:
-    on_failure: change
-    on_success: change
-  slack:
-    rooms:
-      - celebro:RBaf3z6RftDAVPt3TjN4QBgE#react-starter
+# sudo: false
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
+# language: node_js
 
-before_install:
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+# node_js:
+#   - "8"
 
-install:
-  # TODO: Use npm again functions runtime is updated to a node verion with lock files
-  - yarn install
+# branches:
+#   only:
+#     - master
 
-script:
-  - yarn lint
-  - yarn test
-  - yarn build
+# notifications:
+#   email:
+#     on_failure: change
+#     on_success: change
+#   slack:
+#     rooms:
+#       - celebro:RBaf3z6RftDAVPt3TjN4QBgE#react-starter
 
-after_success:
-  # - firebase deploy --token $FIREBASE_TOKEN --non-interactive
-  - yarn deploy
+# cache:
+#   yarn: true
+#   directories:
+#     - node_modules
 
-addons:
-  code_climate:
-    repo_token: 2b32652090b39c2cc95f0ea3ca3e2c7ff452b75388a81f0f4cfacbce4588f6e6
+# before_install:
+#   - export CHROME_BIN=chromium-browser
+#   - export DISPLAY=:99.0
+#   - sh -e /etc/init.d/xvfb start
+
+# install:
+#   # TODO: Use npm again functions runtime is updated to a node verion with lock files
+#   - yarn install
+
+# script:
+#   - yarn lint
+#   - yarn test
+#   - yarn build
+
+# after_success:
+#   # - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+#   - yarn deploy
+
+# addons:
+#   code_climate:
+#     repo_token: 2b32652090b39c2cc95f0ea3ca3e2c7ff452b75388a81f0f4cfacbce4588f6e6
