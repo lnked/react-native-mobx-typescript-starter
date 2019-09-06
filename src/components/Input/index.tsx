@@ -4,9 +4,9 @@ import { Input as NativeInput, Label, Item } from 'native-base';
 import styles from './styles';
 
 export interface OuterProps {
-  style?: string;
-  label?: string;
-  placeholder?: string;
+    style?: string;
+    label?: string;
+    placeholder?: string;
 }
 
 const Input: React.FC<OuterProps> = ({ label, placeholder, style, ...props } = {}) => {

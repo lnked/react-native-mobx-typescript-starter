@@ -1,8 +1,8 @@
 export const type = {
-  base: 'IBMPlexSans',
-  medium: 'IBMPlexSans-Medium',
-  semiBold: 'IBMPlexSans-SemiBold',
-  italic: 'IBMPlexSans-Italic',
+  base: 'PTSans',
+  italic: 'PTSans-Italic',
+  medium: 'PTSans-Medium',
+  semiBold: 'PTSans-SemiBold',
 };
 
 export const size = {

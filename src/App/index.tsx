@@ -1,25 +1,23 @@
-import React, { Component, Fragment } from 'react';
+import * as React from 'react';
 import * as RNLocalize from 'react-native-localize';
-import {
-  SafeAreaView,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import { StatusBar, View } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 
-import {
-  Header,
-  LearnMoreLinks,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import { configure } from 'mobx';
+import { observer, Provider } from 'mobx-react';
 
+import AppContainer from '@/navigation';
 import i18n, { setI18nConfig } from '@/i18n';
+import { Footer } from '@/components';
+import { CommonStyles, Colors } from '@/resources/styles';
+import NavigationService from '@/navigation/NavigationService';
 
-import styles from './styles';
+configure({
+  enforceActions: 'observed',
+});
 
-class App extends Component {
+@observer
+class App extends React.Component {
   constructor (props: any) {
     super(props);
 
@@ -27,6 +25,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    SplashScreen.hide();
     RNLocalize.addEventListener('change', this.handleLocalizationChange);
   }
 
@@ -40,49 +39,23 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <Fragment>
-        <StatusBar barStyle="dark-content" />
+    const stores = {};
 
-        <SafeAreaView>
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={styles.scrollView}
-          >
-            <Header />
-            <View style={styles.body}>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>{i18n.t('test')}</Text>
-                <Text style={styles.sectionTitle}>{i18n.t('global.show')}</Text>
-                <Text style={styles.sectionTitle}>Step One</Text>
-                <Text style={styles.sectionDescription}>
-                  Edit <Text style={styles.highlight}>App.js</Text> to change this
-                  screen and then come back to see your edits.
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>See Your Changes</Text>
-                <Text style={styles.sectionDescription}>
-                  <ReloadInstructions />
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Debug</Text>
-                <Text style={styles.sectionDescription}>
-                  <DebugInstructions />
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Learn More</Text>
-                <Text style={styles.sectionDescription}>
-                  Read the docs to discover what to do next:
-                </Text>
-              </View>
-              <LearnMoreLinks />
-            </View>
-          </ScrollView>
-        </SafeAreaView>
-      </Fragment>
+    return (
+      <React.Fragment>
+        <StatusBar backgroundColor={Colors.orange} barStyle="dark-content" />
+
+        <Provider {...stores}>
+          <View style={[CommonStyles.centralize, CommonStyles.flex]}>
+            <AppContainer
+              ref={(navigatorRef: any) => {
+                NavigationService.setTopLevelNavigator(navigatorRef);
+              }}
+            />
+            <Footer />
+          </View>
+        </Provider>
+      </React.Fragment>
     );
   }
 }

@@ -1,31 +1,28 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
-import { HomeScreen } from 'screens';
+import { HomeScreen, LoginScreen, DetailsScreen } from '@/screens';
 
-const stackNavigatorConfig = {
-  initialRouteName: 'Home',
-};
+import { stackNavigatorConfig } from './config';
 
 const AppNavigator = createStackNavigator(
   {
-    Demo: HomeScreen,
     Home: {
       screen: HomeScreen,
     },
-    Details: HomeScreen,
+    Login: {
+      screen: LoginScreen,
+    },
+    Details: {
+      screen: DetailsScreen,
+      navigationOptions: {
+        title: 'Details',
+      },
+    },
   },
   {
     ...stackNavigatorConfig,
-  },
+  }
 );
 
 export default createAppContainer(AppNavigator);
-
-// import { AppContainer } from 'AppContainer';
-
-// export default class App extends React.Component {
-//   render() {
-//     return <AppContainer />;
-//   }
-// }
