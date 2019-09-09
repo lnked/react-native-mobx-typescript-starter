@@ -43,7 +43,7 @@
     "no-submodule-imports": false,
     "no-floating-promises": [false],
     "no-unused-expression": [true, "allow-fast-null-checks"],
-    "no-implicit-dependencies": [true, "dev", ["src", "@/*", "@/i18n", "@/core", "@/components", "@/resources", "@/navigation", "@/utils", "@/store", "@/routes", "@/configs", "@/screens"]],
+    "no-implicit-dependencies": [true, "dev", ["src", "@/*", "@/i18n", "@/core", "@/modules", "@/components", "@/resources", "@/navigation", "@/utils", "@/store", "@/routes", "@/configs", "@/screens"]],
     "no-constant-condition": false,
     "trailing-comma": [true, {
       "singleline": "never",

@@ -6,10 +6,10 @@ import SplashScreen from 'react-native-splash-screen';
 import { configure } from 'mobx';
 import { observer, Provider } from 'mobx-react';
 
-import AppContainer from '@/navigation';
 import i18n, { setI18nConfig } from '@/i18n';
-import { Footer } from '@/components';
+import { Footer } from '@/modules';
 import { CommonStyles, Colors } from '@/resources/styles';
+import AppContainer from '@/navigation';
 import NavigationService from '@/navigation/NavigationService';
 
 configure({

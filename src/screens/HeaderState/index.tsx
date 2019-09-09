@@ -1,5 +1,5 @@
 class HomeScreen extends React.Component {
-    static navigationOptions = ({ navigation }) => {
+  static navigationOptions = ({ navigation }) => {
     return {
       headerTitle: <LogoTitle />,
       headerRight: (
@@ -12,15 +12,15 @@ class HomeScreen extends React.Component {
     };
   }
 
-    componentDidMount() {
-    this.props.navigation.setParams({ increaseCount: this._increaseCount });
+  componentDidMount() {
+    this.props.navigation.setParams({ increaseCount: this.increaseCount });
   }
 
-    state = {
+  state = {
     count: 0,
   };
 
-    _increaseCount = () => {
+  increaseCount = () => {
     this.setState({ count: this.state.count + 1 });
   }
 

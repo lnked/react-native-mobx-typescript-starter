@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 
 class DetailsScreen extends React.Component {
-    static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = ({ navigation }) => ({
     header: () => null,
   })
 
@@ -17,7 +17,7 @@ class DetailsScreen extends React.Component {
   //   ),
   // };
 
-    render() {
+  render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Details Screen</Text>
