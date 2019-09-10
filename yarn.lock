@@ -2793,7 +2793,14 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@6.2.0, eslint-config-prettier@^6.0.0:
+eslint-config-prettier@6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.3.0.tgz#e73b48e59dc49d950843f3eb96d519e2248286a3"
+  integrity sha512-EWaGjlDAZRzVFveh2Jsglcere2KK5CJBhkNSa1xs3KfMUGdRiT7lG089eqPdvlzWHpAqaekubOsOMu8W8Yk71A==
+  dependencies:
+    get-stdin "^6.0.0"
+
+eslint-config-prettier@^6.0.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.2.0.tgz#80e0b8714e3f6868c4ac2a25fbf39c02e73527a7"
   integrity sha512-VLsgK/D+S/FEsda7Um1+N8FThec6LqE3vhcMyp8mlmto97y3fGf3DX7byJexGuOb1QY0Z/zz222U5t+xSfcZDQ==
@@ -7012,10 +7019,10 @@ react-native-linear-gradient@2.5.6:
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
   integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
 
-react-native-localize@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-1.1.4.tgz#d48aa4f75afd39a42dcd0bdf40f7f44a8ccd604c"
-  integrity sha512-NHsA812yvoH9ktPl1IqIxwDDwykipyH7K4zeW/nnipZuQb2g73SQEB3ryqKHmRASWD0DZl0hIxHr9IszzG5W5w==
+react-native-localize@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-1.2.0.tgz#40bd5390a1b2ca7e200086901d937a47e4bb602b"
+  integrity sha512-V/OhS3LFpx7lqqIIFTwEStlsQF4jod5DCpE1GVvpnIHnPwZ+R1w2q4NzEfkWX6t5h9cy7/XG9OWMRD6rCuv0ww==
 
 react-native-safe-area-view@^0.14.1:
   version "0.14.8"
@@ -8622,10 +8629,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.2.tgz#105b0f1934119dde543ac8eb71af3a91009efe54"
-  integrity sha512-lmQ4L+J6mnu3xweP8+rOrUwzmN+MRAj7TgtJtDaXE5PMyX2kCrklhg3rvOsOIfNeAWMQWO2F1GPc1kMD2vLAfw==
+typescript@3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
+  integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
 
 ua-parser-js@^0.7.18:
   version "0.7.20"
