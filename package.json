@@ -1,6 +1,6 @@
 {
   "name": "DemoApp",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "private": true,
   "scripts": {
     "run:metro": "react-native start --reset-cache",
