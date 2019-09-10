@@ -134,6 +134,18 @@ android {
 
     // this is the version of your app that will be visible to users
     versionName APP_VERSION_NAME
+
+    defaultConfig {
+      manifestPlaceholders = [
+        versionName: APP_VERSION_NAME,
+        versionCode: Integer.parseInt(APP_VERSION_CODE),
+        buildToolsVersion: BUILD_TOOLS_VERSION,
+        minSdkVersion: Integer.parseInt(MIN_SDK_VERSION),
+        compileSdkVersion: Integer.parseInt(COMPILE_SDK_VERSION),
+        targetSdkVersion: Integer.parseInt(TARGET_SDK_VERSION),
+        supportLibVersion: SUPPORT_LIB_VERSION,
+      ]
+    }
   }
   lintOptions {
     checkReleaseBuilds false

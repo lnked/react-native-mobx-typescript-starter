@@ -23,6 +23,7 @@
     "release:ios": "react-native run-ios --configuration Release",
     "release:android": "(cd android && ./gradlew assembleRelease && cd ..)",
     "release:android:old": "react-native run-android --variant release",
+    "release:android:old2": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "eslint": "eslint .",
     "tslint": "tslint -t stylish -p tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint": "yarn tslint",
