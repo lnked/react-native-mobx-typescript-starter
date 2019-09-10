@@ -36,10 +36,10 @@ allprojects {
     jcenter()
   }
 
-  // wrapper {
-  //   gradleVersion = ANDROID_GRADLE_VERSION
-  //   distributionUrl = distributionUrl.replace("bin", "all")
-  // }
+  wrapper {
+    gradleVersion = ANDROID_GRADLE_VERSION
+    distributionUrl = distributionUrl.replace("bin", "all")
+  }
 }
 
 subprojects {
