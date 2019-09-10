@@ -89,7 +89,7 @@ PODS:
     - React
   - RNGestureHandler (1.4.1):
     - React
-  - RNLocalize (1.1.4):
+  - RNLocalize (1.2.0):
     - React
   - yoga (0.60.5.React)
 
@@ -209,7 +209,7 @@ SPEC CHECKSUMS:
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
   RNCAsyncStorage: 2e2e3feb9bdadc752a026703d8c4065ca912e75a
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
-  RNLocalize: 62a949d2ec5bee0eb8f39a80a48f01e2f4f67080
+  RNLocalize: 18737f1e6c0762579c8c5730c8f7eca881e2d205
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
 PODFILE CHECKSUM: 88f76dc1ed66ebd9cd18878f618729a4bd3a7a6b
