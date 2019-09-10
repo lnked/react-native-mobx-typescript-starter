@@ -1,4 +1,5 @@
 import { CommonStyles, Colors } from '@/resources/styles';
+import { initialRouteName } from '@/configs';
 
 const defaultNavigationOptions = {
   // headerMode: 'none',
@@ -15,6 +16,6 @@ const defaultNavigationOptions = {
 };
 
 export const stackNavigatorConfig = {
-  initialRouteName: 'Home',
+  initialRouteName,
   defaultNavigationOptions,
 };

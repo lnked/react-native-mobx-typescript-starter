@@ -1,20 +1,24 @@
 import * as React from 'react';
 import * as RNLocalize from 'react-native-localize';
-import { StatusBar, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-
+import { Container } from 'native-base';
 import { configure } from 'mobx';
+
 import { observer, Provider } from 'mobx-react';
 
-import i18n, { setI18nConfig } from '@/i18n';
-import { Footer } from '@/modules';
-import { CommonStyles, Colors } from '@/resources/styles';
+import * as stores from '@/stores';
 import AppContainer from '@/navigation';
 import NavigationService from '@/navigation/NavigationService';
+import { setI18nConfig } from '@/i18n';
+import { Header, Footer } from '@/modules';
+import { Colors } from '@/resources/styles';
+import { isAndroid } from '@/configs';
+import { getActiveRouteName } from '@/utils';
 
-configure({
-  enforceActions: 'observed',
-});
+const uriPrefix = isAndroid ? 'app://app/' : 'app://';
+
+configure({ enforceActions: 'observed' });
 
 @observer
 class App extends React.Component {
@@ -38,22 +42,35 @@ class App extends React.Component {
     this.forceUpdate();
   }
 
-  render() {
-    const stores = {};
+  handleNavigationChange = (prevState, currentState) => {
+    const currentScreen = getActiveRouteName(currentState);
+    const prevScreen = getActiveRouteName(prevState);
 
+    if (prevScreen !== currentScreen) {
+      stores.app.setRoute(currentScreen);
+      console.log('stores', currentScreen, prevScreen);
+    }
+  }
+
+  render() {
     return (
       <React.Fragment>
         <StatusBar backgroundColor={Colors.orange} barStyle="dark-content" />
 
         <Provider {...stores}>
-          <View style={[CommonStyles.centralize, CommonStyles.flex]}>
+          <Container>
+            <Header />
+
             <AppContainer
+              uriPrefix={uriPrefix}
+              onNavigationStateChange={this.handleNavigationChange}
               ref={(navigatorRef: any) => {
                 NavigationService.setTopLevelNavigator(navigatorRef);
               }}
             />
+
             <Footer />
-          </View>
+          </Container>
         </Provider>
       </React.Fragment>
     );
