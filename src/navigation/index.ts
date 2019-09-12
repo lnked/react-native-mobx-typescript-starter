@@ -25,4 +25,10 @@ const AppNavigator = createStackNavigator(
   }
 );
 
+// createStackNavigator({
+//   drawer: createDrawerNavigator({
+//     tabs: createBottomTabNavigator()
+//   })
+// })
+
 export default createAppContainer(AppNavigator);
