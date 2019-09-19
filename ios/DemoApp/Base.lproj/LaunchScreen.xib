@@ -15,27 +15,65 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Powered by React Native v0.60.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Demo Application" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="89" width="441" height="59"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="120" y="268" width="240" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="y9E-m6-Mrw"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="-123" y="460" width="583" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="583" id="xUQ-6U-HVy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="v1.0.5" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9TN-ro-yle">
+                    <rect key="frame" x="405" y="432" width="55" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="A4O-Fb-V3Y"/>
+                        <constraint firstAttribute="height" constant="34" id="Zte-9a-qGj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Powered by React Native" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mg4-Eo-vBV">
+                    <rect key="frame" x="20" y="429" width="188" height="31"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="IFI-xe-gRG"/>
+                        <constraint firstAttribute="width" constant="188" id="j43-x4-UmS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTb-ob-8tV">
+                    <rect key="frame" x="161" y="57" width="158" height="177"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="TDe-mZ-Lat"/>
+                        <constraint firstAttribute="width" constant="240" id="yDV-gK-5bq"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstAttribute="bottom" secondItem="9TN-ro-yle" secondAttribute="bottom" constant="14" id="2Z5-fG-ivL"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="bottom" secondItem="mg4-Eo-vBV" secondAttribute="bottom" id="3w1-Ka-Zj8"/>
+                <constraint firstItem="mg4-Eo-vBV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="57p-Ov-4Iv"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="kTb-ob-8tV" secondAttribute="bottom" constant="57" id="68W-zQ-Obk"/>
+                <constraint firstItem="9TN-ro-yle" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="7ek-tD-obu"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="8qT-M8-los"/>
+                <constraint firstItem="kTb-ob-8tV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MJu-Pp-ArQ"/>
+                <constraint firstItem="9TN-ro-yle" firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" id="ZNm-Fs-mbx"/>
+                <constraint firstItem="kTb-ob-8tV" firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" id="aBp-nW-oIL"/>
+                <constraint firstItem="kTb-ob-8tV" firstAttribute="leading" secondItem="kId-c2-rCX" secondAttribute="leading" id="hNK-N4-gkI"/>
+                <constraint firstItem="kTb-ob-8tV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="83" id="kEq-Tc-8S0"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
