@@ -14,21 +14,19 @@ const Footer = () => {
     <FooterZone>
       <FooterTab>
         <Button active={currentRoute === 'Home'} onPress={() => NavigationService.navigate('Home')}>
-          <Icon name="apps" />
+          <Icon name="basket" />
         </Button>
 
         <Button active={currentRoute === 'Details'} onPress={() => NavigationService.navigate('Details')}>
-          <Icon name="camera" />
+          <Icon name="wallet" />
         </Button>
-
-        {/*
-        <Button>
-          <Icon active name="navigate" />
-        </Button>
-        */}
 
         <Button active={currentRoute === 'Login'} onPress={() => NavigationService.navigate('Login')}>
-          <Icon name="person" />
+          <Icon name="pie" />
+        </Button>
+
+        <Button active={currentRoute === 'Settings'} onPress={() => NavigationService.navigate('Settings')}>
+          <Icon name="cog" />
         </Button>
       </FooterTab>
     </FooterZone>

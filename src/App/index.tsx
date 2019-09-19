@@ -59,7 +59,7 @@ class App extends React.Component {
 
         <Provider {...stores}>
           <Container>
-            <Header />
+            {/* <Header /> */}
 
             <AppContainer
               uriPrefix={uriPrefix}

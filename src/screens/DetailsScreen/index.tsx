@@ -2,9 +2,13 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 
 class DetailsScreen extends React.Component {
-  static navigationOptions = ({ navigation }) => ({
-    header: () => null,
-  })
+  static navigationOptions = {
+    header: null,
+  };
+
+  // static navigationOptions = ({ navigation }) => ({
+  //   header: () => null,
+  // })
 
   // static navigationOptions = {
   //   headerTitle: <LogoTitle />,

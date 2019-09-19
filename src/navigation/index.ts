@@ -1,7 +1,7 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
-import { HomeScreen, LoginScreen, DetailsScreen } from '@/screens';
+import { HomeScreen, LoginScreen, DetailsScreen, QRScanner } from '@/screens';
 
 import { stackNavigatorConfig } from './config';
 
@@ -13,11 +13,14 @@ const AppNavigator = createStackNavigator(
     Login: {
       screen: LoginScreen,
     },
+    Settings: {
+      screen: QRScanner,
+    },
     Details: {
       screen: DetailsScreen,
-      navigationOptions: {
-        title: 'Details',
-      },
+      // navigationOptions: {
+      //   title: 'Details',
+      // },
     },
   },
   {

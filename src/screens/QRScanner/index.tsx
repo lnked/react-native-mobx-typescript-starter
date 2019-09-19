@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 import {
@@ -11,8 +10,12 @@ import {
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
 
-class ScanScreen extends Component {
-  onSuccess = (e) => {
+class QRScanner extends Component {
+  static navigationOptions = {
+    header: null,
+  };
+
+  onSuccess = (e: any) => {
     Linking
       .openURL(e.data)
       .catch(err => console.error('An error occured', err));
@@ -57,4 +60,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('default', () => ScanScreen);
+export default QRScanner;
