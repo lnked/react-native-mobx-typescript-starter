@@ -66,7 +66,7 @@ PODS:
     - React
   - react-native-camera/RN (3.4.0):
     - React
-  - react-native-netinfo (4.2.1):
+  - react-native-netinfo (4.2.2):
     - React
   - react-native-splash-screen (3.2.0):
     - React
@@ -222,7 +222,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 90ad2f9db09513fc763bc757fdc3c4ff8bde2a30
   React-jsinspector: e08662d1bf5b129a3d556eb9ea343a3f40353ae4
   react-native-camera: f4f2144140ae1e808cad97cc7caf013767c11f1b
-  react-native-netinfo: aeb1752abb78a9c15cdcea067a6c95d596dcfc45
+  react-native-netinfo: 2bb2e5094edcfecfb340a85053608526cb20f185
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   React-RCTActionSheet: b0f1ea83f4bf75fb966eae9bfc47b78c8d3efd90
   React-RCTAnimation: 359ba1b5690b1e87cc173558a78e82d35919333e
