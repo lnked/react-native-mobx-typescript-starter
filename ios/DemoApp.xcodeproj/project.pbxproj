@@ -794,6 +794,7 @@
 			baseConfigurationReference = 90CC61BCC06F2B587EB0655D /* Pods-DemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 5U3S68BML9;
@@ -815,6 +816,7 @@
 			baseConfigurationReference = 6A9477FFAECA1799DA9AE98F /* Pods-DemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5U3S68BML9;
 				INFOPLIST_FILE = DemoApp/Info.plist;
