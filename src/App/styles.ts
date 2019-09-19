@@ -12,8 +12,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 20,
-    borderWidth: 1,
-    borderColor: Colors.lighter,
   },
   body: {
     backgroundColor: Colors.white,

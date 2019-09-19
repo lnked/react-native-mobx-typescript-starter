@@ -8,7 +8,7 @@ class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1, borderWidth: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text style={{ fontSize: 20 }}>Home Screen</Text>
       </View>
     );
