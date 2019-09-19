@@ -93,13 +93,13 @@ PODS:
     - React-Core (= 0.60.5)
   - React-RCTWebSocket (0.60.5):
     - React-Core (= 0.60.5)
-  - ReactNativePermissions (1.2.0):
+  - ReactNativePermissions (1.2.1):
     - React
   - RNCAsyncStorage (1.6.1):
     - React
   - RNGestureHandler (1.4.1):
     - React
-  - RNLocalize (1.2.0):
+  - RNLocalize (1.2.1):
     - React
   - RNReanimated (1.2.0):
     - React
@@ -234,10 +234,10 @@ SPEC CHECKSUMS:
   React-RCTText: b074d89033583d4f2eb5faf7ea2db3a13c7553a2
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
-  ReactNativePermissions: f3beb8871251594a8ea2c6b19a3f8252d5c7379d
+  ReactNativePermissions: 7cfad56d13c8961cd2a1005b4955b1400c79ef3e
   RNCAsyncStorage: 2e2e3feb9bdadc752a026703d8c4065ca912e75a
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
-  RNLocalize: 18737f1e6c0762579c8c5730c8f7eca881e2d205
+  RNLocalize: f42aea3133d91d7fa3ec01284a6895019af1a83f
   RNReanimated: 1b52415c4302f198cb581282a0166690bad62c43
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
