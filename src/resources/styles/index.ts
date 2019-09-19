@@ -1,3 +1,3 @@
-export { Fonts } from './fonts';
-export { Colors } from './colors';
-export { CommonStyles } from './common-styles';
+export { Fonts } from './Fonts';
+export { Colors } from './Colors';
+export { CommonStyles } from './CommonStyles';

@@ -24,7 +24,7 @@ const translationGetters: any = {
 
 const translate = memoize(
   (key: string, config: any) => i18n.t(key, config),
-  (key: string, config: any) => (config ? key + JSON.stringify(config) : key),
+  (key: string, config: any) => (config ? key + JSON.stringify(config) : key)
 );
 
 export const setI18nConfig = () => {

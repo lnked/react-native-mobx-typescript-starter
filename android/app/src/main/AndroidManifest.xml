@@ -1,7 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.demoapp">
+  android:versionCode="${versionCode}"
+  android:versionName="${versionName}"
+  package="com.demoapp"
+  xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-sdk android:minSdkVersion="${minSdkVersion}" android:targetSdkVersion="${targetSdkVersion}" />
+    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    -->
+
+    <!--
+    <application android:label="Транспорт Краснодар" android:icon="@mipmap/icon" android:networkSecurityConfig="@xml/network_security_config">
+      <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+      <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="" />
+      <meta-data android:name="com.google.android.gms.version" android:value="@" />
+      <uses-library android:name="org.apache.http.legacy" android:required="false" />
+    </application>
+    -->
 
     <application
       android:name=".MainApplication"

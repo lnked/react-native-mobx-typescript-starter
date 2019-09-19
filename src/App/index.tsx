@@ -1,25 +1,27 @@
-import React, { Component, Fragment } from 'react';
+import * as React from 'react';
 import * as RNLocalize from 'react-native-localize';
-import {
-  SafeAreaView,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import { StatusBar } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
+import { Container } from 'native-base';
+import { configure } from 'mobx';
 
-import {
-  Header,
-  LearnMoreLinks,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import { observer, Provider } from 'mobx-react';
 
-import i18n, { setI18nConfig } from '@/i18n';
+import * as stores from '@/stores';
+import AppContainer from '@/navigation';
+import NavigationService from '@/navigation/NavigationService';
+import { setI18nConfig } from '@/i18n';
+import { Header, Footer } from '@/modules';
+import { Colors } from '@/resources/styles';
+import { isAndroid } from '@/configs';
+import { getActiveRouteName } from '@/utils';
 
-import styles from './styles';
+const uriPrefix = isAndroid ? 'app://app/' : 'app://';
 
-class App extends Component {
+configure({ enforceActions: 'observed' });
+
+@observer
+class App extends React.Component {
   constructor (props: any) {
     super(props);
 
@@ -27,6 +29,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    SplashScreen.hide();
     RNLocalize.addEventListener('change', this.handleLocalizationChange);
   }
 
@@ -39,50 +42,37 @@ class App extends Component {
     this.forceUpdate();
   }
 
+  handleNavigationChange = (prevState, currentState) => {
+    const currentScreen = getActiveRouteName(currentState);
+    const prevScreen = getActiveRouteName(prevState);
+
+    if (prevScreen !== currentScreen) {
+      stores.app.setRoute(currentScreen);
+      console.log('stores', currentScreen, prevScreen);
+    }
+  }
+
   render() {
     return (
-      <Fragment>
-        <StatusBar barStyle="dark-content" />
+      <React.Fragment>
+        <StatusBar backgroundColor={Colors.orange} barStyle="dark-content" />
 
-        <SafeAreaView>
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={styles.scrollView}
-          >
-            <Header />
-            <View style={styles.body}>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>{i18n.t('test')}</Text>
-                <Text style={styles.sectionTitle}>{i18n.t('global.show')}</Text>
-                <Text style={styles.sectionTitle}>Step One</Text>
-                <Text style={styles.sectionDescription}>
-                  Edit <Text style={styles.highlight}>App.js</Text> to change this
-                  screen and then come back to see your edits.
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>See Your Changes</Text>
-                <Text style={styles.sectionDescription}>
-                  <ReloadInstructions />
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Debug</Text>
-                <Text style={styles.sectionDescription}>
-                  <DebugInstructions />
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Learn More</Text>
-                <Text style={styles.sectionDescription}>
-                  Read the docs to discover what to do next:
-                </Text>
-              </View>
-              <LearnMoreLinks />
-            </View>
-          </ScrollView>
-        </SafeAreaView>
-      </Fragment>
+        <Provider {...stores}>
+          <Container>
+            {/* <Header /> */}
+
+            <AppContainer
+              uriPrefix={uriPrefix}
+              onNavigationStateChange={this.handleNavigationChange}
+              ref={(navigatorRef: any) => {
+                NavigationService.setTopLevelNavigator(navigatorRef);
+              }}
+            />
+
+            <Footer />
+          </Container>
+        </Provider>
+      </React.Fragment>
     );
   }
 }

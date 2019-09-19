@@ -5,8 +5,13 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  wrapper: {
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 20,
   },
   body: {
     backgroundColor: Colors.white,

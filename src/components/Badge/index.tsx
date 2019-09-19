@@ -5,9 +5,9 @@ import cn from 'react-native-classnames';
 import styles from './styles';
 
 export interface OuterProps {
-  style?: any;
-  color?: string;
-  title?: string;
+    style?: any;
+    color?: string;
+    title?: string;
 }
 
 const Badge: React.FC<OuterProps> = ({ style = {}, color = 'green', title, ...props } = {}) => {

@@ -2,6 +2,13 @@ import { StyleSheet } from 'react-native';
 import { Colors } from './';
 
 export const CommonStyles = StyleSheet.create({
+  headerStyle: {
+    elevation: 0,
+    shadowOpacity: 0,
+    backgroundColor: Colors.white,
+    borderBottomWidth: 0,
+  },
+
   container: {
     flex: 1,
     paddingHorizontal: 24,
@@ -11,23 +18,13 @@ export const CommonStyles = StyleSheet.create({
     paddingHorizontal: 24,
   },
 
-  compensateFooter: {
-    paddingBottom: 90,
-  },
-
   centralize: {
-    justifyContent: 'center',
     alignContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   flex: {
     flex: 1,
-  },
-
-  smallText: {
-    fontSize: 14,
-    color: Colors.black,
   },
 
   text: {
@@ -35,7 +32,12 @@ export const CommonStyles = StyleSheet.create({
     color: Colors.black,
   },
 
-  bigTextBold: {
+  smallText: {
+    fontSize: 14,
+    color: Colors.black,
+  },
+
+  bigText: {
     fontSize: 16,
     color: Colors.black,
     fontWeight: 'bold',
@@ -46,24 +48,8 @@ export const CommonStyles = StyleSheet.create({
     textDecorationStyle: 'solid',
   },
 
-  marginBottom: {
-    marginBottom: 10,
-  },
-
-  marginTop: {
-    marginTop: 10,
-  },
-
   backgroundImg: {
     flex: 1,
     width: '100%',
-  },
-
-  democratic: {
-    backgroundColor: Colors.black,
-  },
-
-  republican: {
-    backgroundColor: Colors.black,
   },
 });

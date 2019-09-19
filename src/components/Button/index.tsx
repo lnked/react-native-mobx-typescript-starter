@@ -8,21 +8,21 @@ import { Colors } from '@/resources/styles';
 import styles from './styles';
 
 export interface OuterProps {
-  text: string;
-  style: any;
-  theme: string;
-  loading: boolean;
-  disabled: boolean;
-  onPress: () => void;
+    text: string;
+    style: any;
+    theme: string;
+    loading: boolean;
+    disabled: boolean;
+    onPress: () => void;
 }
 
 export interface InnerState {}
 
 class Button extends Component<OuterProps, InnerState> {
 
-  onPress = () => this.props.onPress();
+    onPress = () => this.props.onPress();
 
-  theme = () => {
+    theme = () => {
     const { theme } = this.props;
 
     if (theme === 'light') {
@@ -40,7 +40,7 @@ class Button extends Component<OuterProps, InnerState> {
     return [Colors.deepSkyBlue, Colors.cerulean];
   }
 
-  render () {
+    render () {
     const disabled = this.props.loading || this.props.disabled;
     const { text, theme, style, loading } = this.props;
 

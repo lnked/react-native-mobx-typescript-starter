@@ -1,2 +1,2 @@
-export * from './stores';
+export * from './settings';
 export * from './constants';
