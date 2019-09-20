@@ -25,9 +25,9 @@ export const stackNavigatorConfig = {
 
   transitionConfig: () => ({
     transitionSpec: {
-      duration: 100,
-      easing: Easing.out(Easing.poly(4)),
-      timing: Animated.timing,
+      duration: 0,
+      // easing: Easing.out(Easing.poly(4)),
+      // timing: Animated.timing,
     },
 
     // screenInterpolator: sceneProps => {

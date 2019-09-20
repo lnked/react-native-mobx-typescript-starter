@@ -17,7 +17,7 @@ class HomeScreen extends React.Component {
             <Icon name="add" style={styles.icon} />
           </Button>
 
-          <Text style={styles.value}>100 P</Text>
+          <Text style={styles.value}>1 100 руб.</Text>
         </View>
 
         <Text style={{ fontSize: 20 }}>Home Screen</Text>
