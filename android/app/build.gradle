@@ -223,8 +223,15 @@ configurations.all {
 }
 
 dependencies {
+  def appcompat_version = "1.1.0"
+
   implementation fileTree(dir: "libs", include: ["*.jar"])
   implementation "com.facebook.react:react-native:+"  // From node_modules
+
+  implementation "androidx.appcompat:appcompat:$appcompat_version"
+  // For loading and tinting drawables on older versions of the platform
+  implementation "androidx.appcompat:appcompat-resources:$appcompat_version"
+  implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
   // JSC from node_modules
   if (useIntlJsc) {
