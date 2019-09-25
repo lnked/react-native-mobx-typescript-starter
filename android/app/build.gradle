@@ -106,11 +106,13 @@ def enableProguardInReleaseBuilds = false
 */
 def useIntlJsc = false
 
+def enableHermes = true
+
 android {
   // it tells Gradle what version of Android SDK to compile your app with.
   // It is recommended to compile with the latest SDK.
-  compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
-  buildToolsVersion BUILD_TOOLS_VERSION
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
 
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
@@ -122,10 +124,10 @@ android {
 
     // it describes the minimum Android OS version that your app will support.
     // React Native supports all Android versions higher than 4.1 (API 16).
-    minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
+    minSdkVersion rootProject.ext.minSdkVersion
 
     // it specifies the Android version your app is targeting.
-    targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+    targetSdkVersion rootProject.ext.targetSdkVersion
 
     // this is basically an integer number that describes your build version.
     // It is used to determine which application file is newer.
@@ -139,11 +141,10 @@ android {
       manifestPlaceholders = [
         versionName: APP_VERSION_NAME,
         versionCode: Integer.parseInt(APP_VERSION_CODE),
-        buildToolsVersion: BUILD_TOOLS_VERSION,
-        minSdkVersion: Integer.parseInt(MIN_SDK_VERSION),
-        compileSdkVersion: Integer.parseInt(COMPILE_SDK_VERSION),
-        targetSdkVersion: Integer.parseInt(TARGET_SDK_VERSION),
-        supportLibVersion: SUPPORT_LIB_VERSION,
+        minSdkVersion: rootProject.ext.minSdkVersion,
+        buildToolsVersion: rootProject.ext.buildToolsVersion,
+        compileSdkVersion: rootProject.ext.compileSdkVersion,
+        targetSdkVersion: rootProject.ext.targetSdkVersion,
       ]
     }
   }
@@ -222,6 +223,14 @@ dependencies {
     implementation 'org.webkit:android-jsc-intl:+'
   } else {
     implementation 'org.webkit:android-jsc:+'
+  }
+
+  if (enableHermes) {
+    def hermesPath = "../../node_modules/hermes-engine/android/";
+    debugImplementation files(hermesPath + "hermes-debug.aar")
+    releaseImplementation files(hermesPath + "hermes-release.aar")
+  } else {
+    implementation jscFlavor
   }
 }
 
