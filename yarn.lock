@@ -1235,10 +1235,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.5.tgz#e19436e7f8e9b4601005d73673b6dc4784ffcc2f"
   integrity sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
 
-"@types/node@12.7.7":
-  version "12.7.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.7.tgz#f9bd8c00fa9e1a8129af910fc829f6139c397d6c"
-  integrity sha512-4jUncNe2tj1nmrO/34PsRpZqYVnRV1svbU78cKhuQKkMntKB/AmdLyGgswcZKjFHEHGpiY8pVD8CuVI55nP54w==
+"@types/node@12.7.8":
+  version "12.7.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.8.tgz#cb1bf6800238898bc2ff6ffa5702c3cadd350708"
+  integrity sha512-FMdVn84tJJdV+xe+53sYiZS4R5yn1mAIxfj+DVoNiQjTYz1+OYmjwEZr1ev9nU0axXwda0QDbYl06QHanRVH3A==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -4938,10 +4938,10 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsc-android@224109:
-  version "224109.1.0"
-  resolved "https://registry.yarnpkg.com/jsc-android/-/jsc-android-224109.1.0.tgz#9749ec92f1e284b3c09befe7c47cc6e60b1f0cdf"
-  integrity sha512-mhALFynePc/wJsUt9BJuH13mSK/dGWtBO/pcYwVV1I0A7iduyqy3fSoAt1b0yI+/B3TzlGyue/gqjPxsqG1HRQ==
+jsc-android@241213.1.0:
+  version "241213.1.0"
+  resolved "https://registry.yarnpkg.com/jsc-android/-/jsc-android-241213.1.0.tgz#8f940d7c7f6bebf14eda32bef42a76182e336452"
+  integrity sha512-AH8NYyMNLNhcUEF97QbMxPNLNW+oiSBlvm1rsMNzgJ1d5TQzdh/AOJGsxeeESp3m9YIWGLCgUvGTVoVLs0p68A==
 
 jsc-android@^245459.0.0:
   version "245459.0.0"
@@ -7196,10 +7196,10 @@ react-navigation-stack@1.9.0:
   dependencies:
     prop-types "^15.7.2"
 
-react-navigation@4.0.9:
-  version "4.0.9"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-4.0.9.tgz#2fb7547d1888442eb94aa33fa40f72e4b26cc915"
-  integrity sha512-IfqqAd18VQzg9c1yvHPy5eV6EI6jEzbZ7uUFvL3o5yW9h1ygNvWt06wUp1d3M7uWSUuDbYPOKRA8GCaepERnKw==
+react-navigation@4.0.10:
+  version "4.0.10"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-4.0.10.tgz#ddf41134600689d6ba99e35dd22ba1f664f91e5c"
+  integrity sha512-7PqvmsdQ7HIyxPUMYbd9Uq//VoMdniEOLAOSvIhb/ExtbAt/1INSjUF+RiMWOMCWLTCNvNPRvTz7xy7qwWureg==
   dependencies:
     "@react-navigation/core" "^3.5.1"
     "@react-navigation/native" "^3.6.2"
@@ -7241,19 +7241,19 @@ react@16.9.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
-reactotron-core-client@2.8.5:
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/reactotron-core-client/-/reactotron-core-client-2.8.5.tgz#5508bb93a793e788504f600eef614e44042286ec"
-  integrity sha512-9k2F04nlHA2qMjOSr8p82mrckVsGqf1/x+2q73GCCmrpIsyHSTrvpTK0Q6Vh3JvWZVBfqXcTF93zdf7deqH+lQ==
+reactotron-core-client@2.8.6:
+  version "2.8.6"
+  resolved "https://registry.yarnpkg.com/reactotron-core-client/-/reactotron-core-client-2.8.6.tgz#c3e02aca1af6246d033f2946c38562e2c7a4df09"
+  integrity sha512-xgg6dusfgQHC98f4iRH/Zak/PNvA46znupEd2U7DSCmmhZbfCpSSveKUsYok0OW0HiSCSvi41tNELj+QU6pRVQ==
 
-reactotron-react-native@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/reactotron-react-native/-/reactotron-react-native-4.0.1.tgz#e039ff485d229e5ddd35561297cd68c746598c52"
-  integrity sha512-ZQpZFSX6xFc4z9XvCAgB4RV0br9MVfAU9SlI5hCtx5n7/OSSJNKBwMN/lYNv5sEorbmyMcwdCSkrF1geZIEXnQ==
+reactotron-react-native@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/reactotron-react-native/-/reactotron-react-native-4.0.2.tgz#b44185e95186c89617f69484bc056e9284425057"
+  integrity sha512-zY5m0TV9y52h31/Vvd/Zs3jneEKYWbJ6vGrBeZ/d6Z2gVvwI3su+7B2qh8s00KHStIF4MTg0MrKc0FYRFWmmoQ==
   dependencies:
     mitt "1.1.3"
     query-string "6.8.1"
-    reactotron-core-client "2.8.5"
+    reactotron-core-client "2.8.6"
     rn-host-detect "1.1.5"
 
 read-installed@~4.0.3:
