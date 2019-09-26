@@ -30,7 +30,8 @@
     "tslint": "tslint -t stylish -p tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint": "yarn tslint",
     "lint:fix": "yarn tslint --fix",
-    "test": "jest"
+    "test": "jest",
+    "scan": "(cd android && ./gradlew cleanBuildCache && ./gradlew assembleRelease --scan)"
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.6.2",
@@ -43,6 +44,7 @@
     "native-base": "2.13.8",
     "react": "16.9.0",
     "react-native": "0.61.1",
+    "react-native-camera": "3.6.0",
     "react-native-classnames": "0.1.1",
     "react-native-gesture-handler": "1.4.1",
     "react-native-linear-gradient": "2.5.6",

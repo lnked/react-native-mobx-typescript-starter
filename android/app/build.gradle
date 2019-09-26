@@ -104,7 +104,7 @@ def enableProguardInReleaseBuilds = false
 * when using with locales other than en-US.
 * Note that this variant is about 6MiB larger per architecture than default.
 */
-def useIntlJsc = false
+def useIntlJsc = true
 
 def enableHermes = true
 
@@ -120,7 +120,7 @@ android {
   }
 
   defaultConfig {
-    applicationId "com.demoapp"
+    applicationId "com.walletapp"
 
     // it describes the minimum Android OS version that your app will support.
     // React Native supports all Android versions higher than 4.1 (API 16).
@@ -149,7 +149,12 @@ android {
     }
 
     missingDimensionStrategy 'react-native-camera', 'general'
+    // missingDimensionStrategy "RNN.reactNativeVersion", "reactNative61_0"
   }
+  // packagingOptions {
+  //   pickFirst '**/libjsc.so'
+  //   pickFirst '**/libc++_shared.so'
+  // }
   lintOptions {
     checkReleaseBuilds false
     abortOnError true
@@ -218,7 +223,7 @@ android {
 
 configurations.all {
   resolutionStrategy {
-    force 'org.webkit:android-jsc:r224109'
+    force 'org.webkit:android-jsc:r241213'
   }
 }
 
@@ -235,9 +240,9 @@ dependencies {
 
   // JSC from node_modules
   if (useIntlJsc) {
-    implementation 'org.webkit:android-jsc-intl:r224109'
+    implementation 'org.webkit:android-jsc-intl:r241213'
   } else {
-    implementation 'org.webkit:android-jsc:r224109'
+    implementation 'org.webkit:android-jsc:r241213'
   }
 
   if (enableHermes) {
