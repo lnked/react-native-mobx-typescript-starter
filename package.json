@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.6.2",
-    "@react-native-community/netinfo": "4.3.0",
+    "@react-native-community/netinfo": "4.3.1",
     "fast-memoize": "2.5.1",
     "i18n-js": "3.3.0",
     "jsc-android": "241213.1.0",
