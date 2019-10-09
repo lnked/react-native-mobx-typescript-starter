@@ -7047,10 +7047,10 @@ react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"
   integrity sha512-INBT1QEgtcCCgvccr5/86CfD71fw9EPmDxgiJX4I2Ddr6ZsV6iFXsuby+qWJPtmNuMY0zByTsG4468P7nHuNWA==
 
-react-native-camera@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/react-native-camera/-/react-native-camera-3.7.0.tgz#777150f8e15ee3ca2f650b47d78a5e25154dc2ce"
-  integrity sha512-2DjZ/gtY6RQbhTgKv9bnmPDPDHCD2bgWKt41g99DkTE+DXz1OhGOk6I+2x0rR4NFAYj0J278WAxMIjXNZp6Zyg==
+react-native-camera@3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/react-native-camera/-/react-native-camera-3.7.1.tgz#8429fd7d237a2c71d067508d435b790014fc2450"
+  integrity sha512-+xyWmq0/jGomkctSnmJXZwWy7mHCCfj2NUsrDOnbbpZaOaQG9a646NZzBabxQQfBy38ZyfQm5Q4nxh3AEddfrQ==
   dependencies:
     prop-types "^15.6.2"
 
@@ -8743,10 +8743,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
-  integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+typescript@3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.4.tgz#b18752bb3792bc1a0281335f7f6ebf1bbfc5b91d"
+  integrity sha512-unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==
 
 ua-parser-js@^0.7.18:
   version "0.7.20"
