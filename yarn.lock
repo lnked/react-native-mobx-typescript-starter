@@ -626,8 +626,6 @@
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-shorthand-properties/-/plugin-transform-shorthand-properties-7.2.0.tgz#6333aee2f8d6ee7e28615457298934a3b46198f0"
   integrity sha512-QP4eUM83ha9zmYtpbnyjTLAGKQritA5XW/iG9cjtuOI8s1RuL/3V6a3DeSHfKutJQ+ayUfeZJPcnCYEQzaPQqg==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
 
 "@babel/plugin-transform-spread@^7.0.0":
   version "7.6.2"
@@ -1282,10 +1280,10 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-native@0.60.19":
-  version "0.60.19"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.19.tgz#4d58516f9e981c3f477ad48727331e31a0792aae"
-  integrity sha512-1Qq1EQn/bi7dnsdrZJu0f9MK18KZrEmLGMfw3V9Im5As4uwFUTCIkD4LnFJkfQtRvtJQN1cOQri6MTqT7d9fkg==
+"@types/react-native@0.60.20":
+  version "0.60.20"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.20.tgz#890cdb5e8e67eb24a5207210ab978e712b192195"
+  integrity sha512-Of4g1Ngn33Tw558HoFwvvS/sGJw8dlpgTOEdKNGyvg51fbnuVDEUvWpNgSs1oGkHJub1TFSolJEmowGtqeWYow==
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
@@ -2989,14 +2987,6 @@ eslint-plugin-react@7.12.4:
   version "7.12.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.12.4.tgz#b1ecf26479d61aee650da612e425c53a99f48c8c"
   integrity sha512-1puHJkXJY+oS1t467MjbqjvX53uQ05HXwjqDgdbGBqf5j9eeydI54G3KwiJmWciQ0HTBacIKw2jgwSBSH3yfgQ==
-  dependencies:
-    array-includes "^3.0.3"
-    doctrine "^2.1.0"
-    has "^1.0.3"
-    jsx-ast-utils "^2.0.1"
-    object.fromentries "^2.0.0"
-    prop-types "^15.6.2"
-    resolve "^1.9.0"
 
 eslint-scope@3.7.1:
   version "3.7.1"
