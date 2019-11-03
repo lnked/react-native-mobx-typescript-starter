@@ -104,13 +104,15 @@ def enableProguardInReleaseBuilds = false
 * when using with locales other than en-US.
 * Note that this variant is about 6MiB larger per architecture than default.
 */
-def useIntlJsc = false
+def useIntlJsc = true
+
+def enableHermes = true
 
 android {
   // it tells Gradle what version of Android SDK to compile your app with.
   // It is recommended to compile with the latest SDK.
-  compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
-  buildToolsVersion BUILD_TOOLS_VERSION
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
 
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
@@ -118,14 +120,14 @@ android {
   }
 
   defaultConfig {
-    applicationId "com.demoapp"
+    applicationId "com.walletapp"
 
     // it describes the minimum Android OS version that your app will support.
     // React Native supports all Android versions higher than 4.1 (API 16).
-    minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
+    minSdkVersion rootProject.ext.minSdkVersion
 
     // it specifies the Android version your app is targeting.
-    targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+    targetSdkVersion rootProject.ext.targetSdkVersion
 
     // this is basically an integer number that describes your build version.
     // It is used to determine which application file is newer.
@@ -139,14 +141,20 @@ android {
       manifestPlaceholders = [
         versionName: APP_VERSION_NAME,
         versionCode: Integer.parseInt(APP_VERSION_CODE),
-        buildToolsVersion: BUILD_TOOLS_VERSION,
-        minSdkVersion: Integer.parseInt(MIN_SDK_VERSION),
-        compileSdkVersion: Integer.parseInt(COMPILE_SDK_VERSION),
-        targetSdkVersion: Integer.parseInt(TARGET_SDK_VERSION),
-        supportLibVersion: SUPPORT_LIB_VERSION,
+        minSdkVersion: rootProject.ext.minSdkVersion,
+        buildToolsVersion: rootProject.ext.buildToolsVersion,
+        compileSdkVersion: rootProject.ext.compileSdkVersion,
+        targetSdkVersion: rootProject.ext.targetSdkVersion,
       ]
     }
+
+    missingDimensionStrategy 'react-native-camera', 'general'
+    // missingDimensionStrategy "RNN.reactNativeVersion", "reactNative61_0"
   }
+  // packagingOptions {
+  //   pickFirst '**/libjsc.so'
+  //   pickFirst '**/libc++_shared.so'
+  // }
   lintOptions {
     checkReleaseBuilds false
     abortOnError true
@@ -213,15 +221,36 @@ android {
   }
 }
 
+configurations.all {
+  resolutionStrategy {
+    force 'org.webkit:android-jsc:r241213'
+  }
+}
+
 dependencies {
+  def appcompat_version = "1.1.0"
+
   implementation fileTree(dir: "libs", include: ["*.jar"])
-  implementation "com.facebook.react:react-native:+"  // From node_modules
+  implementation "com.facebook.react:react-native:$REACT_NATIVE_VERSION" // From node_modules
+
+  implementation "androidx.appcompat:appcompat:$appcompat_version"
+  // For loading and tinting drawables on older versions of the platform
+  implementation "androidx.appcompat:appcompat-resources:$appcompat_version"
+  implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
   // JSC from node_modules
   if (useIntlJsc) {
-    implementation 'org.webkit:android-jsc-intl:+'
+    implementation 'org.webkit:android-jsc-intl:r241213'
   } else {
-    implementation 'org.webkit:android-jsc:+'
+    implementation 'org.webkit:android-jsc:r241213'
+  }
+
+  if (enableHermes) {
+    def hermesPath = "../../node_modules/hermes-engine/android/";
+    debugImplementation files(hermesPath + "hermes-debug.aar")
+    releaseImplementation files(hermesPath + "hermes-release.aar")
+  } else {
+    implementation jscFlavor
   }
 }
 
