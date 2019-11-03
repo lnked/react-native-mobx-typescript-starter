@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.6.2",
-    "@react-native-community/netinfo": "4.4.0",
+    "@react-native-community/netinfo": "4.6.0",
     "fast-memoize": "2.5.1",
     "i18n-js": "3.3.0",
     "jsc-android": "241213.1.0",
@@ -98,7 +98,7 @@
     "react-native-testing-library": "1.11.1",
     "react-test-renderer": "16.11.0",
     "ts-jest": "24.1.0",
-    "tslint": "5.20.0",
+    "tslint": "6.0.0-beta0",
     "tslint-config-airbnb": "5.11.2",
     "tslint-react": "4.1.0",
     "tslint-react-hooks": "2.2.1",
