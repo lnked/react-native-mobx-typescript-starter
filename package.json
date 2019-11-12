@@ -37,7 +37,7 @@
     "@react-native-community/async-storage": "1.6.2",
     "@react-native-community/netinfo": "4.6.0",
     "fast-memoize": "2.5.1",
-    "i18n-js": "3.3.0",
+    "i18n-js": "3.5.0",
     "jsc-android": "241213.1.0",
     "mobx": "5.15.0",
     "mobx-react": "6.1.4",
