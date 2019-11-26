@@ -7411,7 +7411,12 @@ react-native-localize@1.3.1:
   resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-1.3.1.tgz#d0b7046acd4214ac2bcb61102317374351400c76"
   integrity sha512-Y3LzTHyrgsIsDYvjWSRguARBKjiLaahcbJg663ZqP1Tcpan4LYn/f3iusM+Oh6qYvClnlo9AlBkLdCZbWwe7Tw==
 
-react-native-permissions@2.0.3, react-native-permissions@^2.0.2:
+react-native-permissions@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.0.4.tgz#faef2b14da826b5537b1b7884fa6b4cc6e946b53"
+  integrity sha512-QITF60wXwIXnsaOFbMys2+GRZI/5X22vmTjfX5iYk1vGCtmGO0WUy/upyEFFvglS0zDfYC3Axd7yqyd1TCBkvQ==
+
+react-native-permissions@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.0.3.tgz#b6da83e5e313e41ba5f70ff2c4567291766b0140"
   integrity sha512-8pd+UhyphAiFGzBil5d5pDxRf/rH+20SzDNu9cFnCtoD2MbYTVH7GjXsxaZ2lPsmwrqYYbF8FBfwmncKf/G1+Q==
