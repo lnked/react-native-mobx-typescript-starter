@@ -1459,10 +1459,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@16.9.14":
-  version "16.9.14"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.14.tgz#7f1158ce450b4b5aa83b1c5e1324fa75f348bdd1"
-  integrity sha512-Q4tW4RGmR+u/CgzR8VqZcsUWjP4Pz/LcHfs9AzSG+aBnwq8As3Bid3vG1eGGsXg/xuR2k2tqNlI8pzyV8kxe0g==
+"@types/react@16.9.15":
+  version "16.9.15"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.15.tgz#aeabb7a50f96c9e31a16079ada20ede9ed602977"
+  integrity sha512-WsmM1b6xQn1tG3X2Hx4F3bZwc2E82pJXt5OPs2YJgg71IzvUoKOSSSYOvLXYCg1ttipM+UuA4Lj3sfvqjVxyZw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -7411,10 +7411,10 @@ react-native-localize@1.3.1:
   resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-1.3.1.tgz#d0b7046acd4214ac2bcb61102317374351400c76"
   integrity sha512-Y3LzTHyrgsIsDYvjWSRguARBKjiLaahcbJg663ZqP1Tcpan4LYn/f3iusM+Oh6qYvClnlo9AlBkLdCZbWwe7Tw==
 
-react-native-permissions@2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.0.5.tgz#fbb338f5f4fd3dfcaff415d614a5d3b4af63885b"
-  integrity sha512-6eKWGPvBL3RpobqumNNjXxCvZIfIZOKwOSPq8rGu2jL9O9jSllm0IqBcamRKhi3BN+uwh4gWaOBzFLLq2/94zQ==
+react-native-permissions@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.0.6.tgz#4b4d5a18180a8c9325ca0f0d5be99a907799defc"
+  integrity sha512-oW4A6HU5B0dtiD5m4sI5UeJqnBhdZMU4bRp9L+cEoTl8giViGNfuhY4SJQjX6R9BSR3oSwul/8sNDlkhWtMWKQ==
 
 react-native-permissions@^2.0.2:
   version "2.0.3"
