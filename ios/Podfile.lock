@@ -237,7 +237,7 @@ PODS:
     - React
   - RNLocalize (1.3.1):
     - React
-  - RNPermissions (2.0.4):
+  - RNPermissions (2.0.6):
     - React
   - RNReanimated (1.4.0):
     - React
@@ -394,7 +394,7 @@ SPEC CHECKSUMS:
   RNCAsyncStorage: 3c304d1adfaea02ec732ac218801cb13897aa8c0
   RNGestureHandler: 946a7691e41df61e2c4b1884deab41a4cdc3afff
   RNLocalize: 07eb7a91d10021cdf59d80061ebf3adb8a5b5688
-  RNPermissions: 35959d09546f1cd60c129ee128146a120ea595c3
+  RNPermissions: 4fa81b28a6e07b31ed9068fa7dab24e2b8a3902b
   RNReanimated: b2ab0b693dddd2339bd2f300e770f6302d2e960c
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
